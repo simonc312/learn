@@ -20,6 +20,7 @@ group :assets do
   gem 'cucumber-rails', :require =>false
   gem 'database_cleaner' 
   gem 'uglifier', '>= 1.0.3'
+  gem 'haml-rails', "~>0.4"
 end
 
 gem 'jquery-rails'
