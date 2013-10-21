@@ -1,6 +1,7 @@
 LearningShelter::Application.routes.draw do
 #  get "basic/index"
   root :to => "basic#index"
+  match "/about" => "basic#about"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
