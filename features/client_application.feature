@@ -18,4 +18,4 @@ Scenario: Volunteer trying to apply for positions available(sad path)
   And I am a volunteer
   When I go to the apply_page
   Then I should not be on client_apply_page
-  
+
