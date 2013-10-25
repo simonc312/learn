@@ -1,4 +1,6 @@
 <h1>The learning Shelter</h1>
+
+<h1>Dashboard</h1>
 The Learning Shelter
 
 <div>Tabs: about, sign up, login</div>
@@ -26,6 +28,4 @@ The Learning Shelter
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 
-<h2>extra</h2>
-
-<%= render "devise/shared/links/signin" %>
+<%= render "devise/shared/links" %>
