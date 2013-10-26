@@ -26,11 +26,6 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
 
-group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
-end
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
