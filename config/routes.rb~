@@ -6,7 +6,8 @@ LearningShelter::Application.routes.draw do
 #  get "basic/index"
   root :to => "home#index"
   match "/about" => "basic#about"
-  get 'dashboard/application/clients' => 'application#apply_client', :as => :apply_client # link
+  match 'dashboard/application/c' => 'application#apply_client'
+#  get 'dashboard/application/c' => 'application#apply_client', :as => :apply_client # link
   #CRUD
   namespace :dashboard do
     namespace :application do
@@ -14,7 +15,7 @@ LearningShelter::Application.routes.draw do
     end
   end	
   #CRUD
-  get 'dashboard/application/volunteers' => 'application#apply_volunteer', :as => :apply_volunteer # link
+  get 'dashboard/application/volunteer' => 'application#apply_volunteer', :as => :apply_volunteer # link
 
   namespace :dashboard do
     namespace :application do

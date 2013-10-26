@@ -4,4 +4,6 @@ class Dashboard::Application::VolunteersController < ApplicationController
     flash[:notice] = "NEW APPLICATION"
     redirect_to '/'
   end
+  def index
+  end
 end

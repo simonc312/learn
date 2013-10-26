@@ -1,4 +1,4 @@
-class Dashboard::Application::VolunteersController < ActionController::Base
+class Dashboard::Application::VolunteersController < ApplicationController
   def create
     Volunteer.create!(params[:volunteer])
     flash[:notice] = "NEW APPLICATION"

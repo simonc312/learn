@@ -1,6 +1,6 @@
 %h1 Apply to be a Volunteer
 
-= form_tag apply_volunteer_path do
+= form_tag dashboard_application_volunteers_path do
 
   = label :volunteer, :first_name, 'First Name'
   = text_field :volunteer, 'first name'

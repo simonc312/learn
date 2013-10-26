@@ -6,16 +6,17 @@ LearningShelter::Application.routes.draw do
 #  get "basic/index"
   root :to => "home#index"
   match "/about" => "basic#about"
-  get 'dashboard/application/client' => 'application#apply_client', :as => :apply_client # link
+  
+  match 'dashboard/application/cl' => 'application#apply_client' # link
   #CRUD
   namespace :dashboard do
     namespace :application do
       resources :clients
     end
   end	
+ 
+  match 'dashboard/application/vol' => 'application#apply_volunteer' # link
   #CRUD
-  get 'dashboard/application/volunteer' => 'application#apply_volunteer', :as => :apply_volunteer # link
-
   namespace :dashboard do
     namespace :application do
       resources :volunteers

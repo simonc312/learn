@@ -3,11 +3,11 @@
 = form_tag apply_client_path do
 
   = label :client, :first_name, 'First Name'
-  = text_field :app, 'first_name'
+  = text_field :client, 'first_name'
   %br
 
   = label :client, :last_name, 'Last Name'
-  = text_field :app, 'last_name'
+  = text_field :client, 'last_name'
   %br
 
   /make to checkbox?
