@@ -1,17 +1,37 @@
-%h1 Apply as a Volunteer
+%h1 Apply to be a Volunteer
 
 = form_tag apply_volunteer_path do
 
-  = label :movie, :title, 'Title'
-  = text_field :movie, 'title'
+  = label :volunteer, :first_name, 'First Name'
+  = text_field :volunteer, 'first name'
+  %br
 
-  = label :movie, :rating, 'Rating'
-  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
+  = label :volunteer, :last_name, 'Last Name'
+  = text_field :volunteer, 'last name'
+  %br
 
-  = label :movie, :director, 'Director'
-  = text_field :movie:, 'director'
+  /make to checkbox?
+  = label :volunteer, :gender, 'Gender' 
+  = text_field :volunteer, 'director'
+  %br
 
-  = label :movie, :release_date, 'Released On'
-  = date_select :movie, :release_date
+  = label :volunteer, :birthday, 'Birthday'
+  = date_select :volunteer, :birthday
+  %br
 
-  = submit_tag 'Save Changes'
+  = label :volunteer, :phone, 'Phone number' 
+  = text_field :volunteer, 'phone number'
+  %br
+
+  = label :volunteer, :street_address, 'Street Address' 
+  = text_field :volunteer, 'street address'
+  %br
+
+  = label :volunteer, :city, 'City' 
+  = text_field :volunteer, 'city'
+  %br
+  = label :volunteer, :state, 'State' 
+  = text_field :volunteer, 'state'
+  %br
+
+  = submit_tag 'Apply'
