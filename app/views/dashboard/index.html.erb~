@@ -7,7 +7,7 @@ The Learning Shelter
 
 <div> Apply as a client to our 90-day program! </div>
 
-
+<%# TODO =============================
 
 
 <%= link_to "apply_client", apply_client_path %>
@@ -19,5 +19,5 @@ The Learning Shelter
 
 <div> We need all the help we can get, apply as a volunteer today!</div>
 
-
+<%# TODO ============================= 
 <%= link_to "apply_volunteer", apply_volunteer_path %>

@@ -6,6 +6,8 @@ LearningShelter::Application.routes.draw do
 #  get "basic/index"
   root :to => "home#index"
   match "/about" => "basic#about"
+  get 'dashboard/application/client' => 'application#apply_client', :as => :apply_client
+  get 'dashboard/application/volunteer' => 'application#apply_volunteer', :as => :apply_volunteer
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
