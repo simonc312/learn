@@ -4,10 +4,8 @@ class DashboardController < ApplicationController
   def index
 
   end
-
   def apply_client
   end
-
   def apply_volunteer
   end
   

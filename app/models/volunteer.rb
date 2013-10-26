@@ -1,3 +1,3 @@
-class Volunteer < Application
+class Volunteer < App
 
 end

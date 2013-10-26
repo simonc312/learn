@@ -1,3 +1,3 @@
-class Client < Application
+class Client < App
 
 end
