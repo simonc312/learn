@@ -16,7 +16,7 @@
   %br
 
   = label :volunteer, :birthday, 'Birthday'
-  = date_select :volunteer, :birthday
+  = date_select :volunteer, :birthday, start_year: 1950, end_year: Time.now.year - 10
   %br
 
   = label :volunteer, :phone, 'Phone number' 
