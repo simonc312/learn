@@ -1,17 +1,37 @@
-%h1 Create New Movie
+%h1 Apply to be a Client
 
 = form_tag apply_client_path do
 
-  = label :movie, :title, 'Title'
-  = text_field :movie, 'title'
+  = label :client, :first_name, 'First Name'
+  = text_field :client, 'first name'
+  %br
 
-  = label :movie, :rating, 'Rating'
-  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
+  = label :client, :last_name, 'Last Name'
+  = text_field :client, 'last name'
+  %br
 
-  = label :movie, :director, 'Director'
-  = text_field :movie, 'director'
+  /make to checkbox?
+  = label :client, :gender, 'Gender' 
+  = text_field :client, 'director'
+  %br
 
-  = label :movie, :release_date, 'Released On'
-  = date_select :movie, :release_date
+  = label :client, :birthday, 'Birthday'
+  = date_select :client, :birthday
+  %br
 
-  = submit_tag 'Save Changes'
+  = label :client, :phone, 'Phone number' 
+  = text_field :client, 'phone number'
+  %br
+
+  = label :client, :street_address, 'Street Address' 
+  = text_field :client, 'street address'
+  %br
+
+  = label :client, :city, 'City' 
+  = text_field :client, 'city'
+  %br
+  = label :client, :state, 'State' 
+  = text_field :client, 'state'
+  %br
+
+  = submit_tag 'Apply'
