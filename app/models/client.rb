@@ -1,0 +1,3 @@
+class Client < Application
+
+end
