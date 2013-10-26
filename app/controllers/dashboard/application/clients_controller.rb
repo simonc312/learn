@@ -5,6 +5,7 @@ class Dashboard::Application::ClientsController < ApplicationController
     redirect_to '/'
   end
   def index
+  	@client = Client.all
 
   end
 end
