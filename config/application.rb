@@ -59,6 +59,6 @@ module LearningShelter
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.initialze_on_precompile = false
+#config.assets.initialze_on_precompile = false
   end
 end
