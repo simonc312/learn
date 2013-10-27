@@ -51,11 +51,11 @@ Cucumber Features:
     /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard/application/clients_controller.rb:
     - 1
     - 1
-    - 0
-    - 0
+    - 1
+    - 1
     - 
-    - 0
-    - 0
+    - 1
+    - 1
     - 
     - 1
     - 0
@@ -74,9 +74,9 @@ Cucumber Features:
     /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard/application/volunteers_controller.rb:
     - 1
     - 1
-    - 0
-    - 0
-    - 0
+    - 1
+    - 1
+    - 1
     - 
     - 1
     - 0
@@ -86,19 +86,24 @@ Cucumber Features:
     - 1
     - 
     - 
-    /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard/application/volunteers_controller.rb.BACKUP.5617.rb:
+    /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
     - 
     - 
     - 
     - 
     - 
+    /home/saasbook/Documents/LearningShelter/learn/app/controllers/home_controller.rb:
+    - 1
+    - 
+    - 1
+    - 2
+    - 2
     - 
     - 
     - 
     - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  :created_at: 2013-10-26 18:46:16.957923834 -07:00
+  :created_at: 2013-10-26 18:53:20.231170077 -07:00
