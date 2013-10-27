@@ -5,52 +5,62 @@ I want to sign up and enter my purpose
 So that I can get involved with the program
 
 
-Scenario: Trying to sign up for the program as a Volunteer 
-  Given I am on the sign_up_page
-  Given I choose: volunteer
-  Given I fill in all the forms
-  When I click submit
-  Then I should be on login_page
-  And I should see a confirm_message
+Scenario: Successful sign up
+  Given I am on the home page
 
-Scenario: Trying to sign up as a Client
-  Given I am on the sign_up_page
-  Given I choose: client
-  Given I fill in all the forms
-  When I click submit
-  Then I should be on login_page
-  And I should see a confirm_message
+  When I fill in the following:
+    | Email          				| success@gmail.com  |
+    | Password      			  | successpwd   			 |
+    | Password confirmation | successpwd				 |
 
-Scenario: Trying to sign up as a Donor
-  Given I am on the sign_up_page
-  Given I choose: donor
-  Given I fill in all the forms
-  When I click submit
-  Then I should be on login_page
-  And I should see a confirm_message
+  When I press "Sign up"
+  Then I should be on the dashboard page
+	And I should see "Signed in as success@gmail.com"
+	And I should see "Apply as a client"
+	And I should see "Apply as a volunteers"
+	
 
 
-Scenario: Trying to sign up as a Staff
-  Given I am on the sign_up_page
-  Given I choose: staff
-  Given I fill in all the forms
-  When I click submit
-  Then I should be on login_page
-  And I should see a confirm_message
+Scenario: Password length too short
+  Given I am on the home page
 
-Scenario: Invalid Password
-  Given the password is invalid
-  When I click submit
-  Then I should be on the sign_up_page
-  And I should see the invalid-password-message
-  And I should see the password form marked invalid
+  When I fill in the following:
+    | Email          				| short@gmail.com  |
+    | Password      			  | short     			 |
+    | Password confirmation | short  					 |
 
-Scenario: Invalid Email
-  Given the email is invalid
-  When I click submit
-  Then I should be on the sign_up_page
-  Then I should see the invalid-email-message
-  And I should see the email form marked invalid
+  When I press "Sign up"
+  Then I should be on the users page
+	And I should see "Password is too short (minimum is 8 characters)"
+
+Scenario: Password does not match
+  Given I am on the home page
+
+  When I fill in the following:
+    | Email          				| failure@gmail.com  |
+    | Password      			  | failurepwd   			 |
+    | Password confirmation | notmatchpwd				 |
+
+  When I press "Sign up"
+  Then I should be on the users page
+	And I should see "Password doesn't match confirmation"
+
+
+
+Scenario: Email is already taken
+  Given I am on the home page
+	And there is the user with email "success@gmail.com" in the database 
+
+  When I fill in the following:
+    | Email          				| success@gmail.com  |
+    | Password      			  | successpwd   			 |
+    | Password confirmation | successpwd				 |
+
+  When I press "Sign up"
+  Then I should be on the users page
+	Then I should see "Email has already been taken"
+	And there is only one user with the email "success@gmail.com" in the database
+
 
 
 
