@@ -25,9 +25,6 @@ module NavigationHelpers
     when /^the dashboard page$/
       '/dashboard'
 
-    when /^the users page$/
-      '/users'
-
     else
       begin
         page_name =~ /^the (.*) page$/

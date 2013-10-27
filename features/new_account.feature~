@@ -59,7 +59,7 @@ Scenario: Email is already taken
   When I press "Sign up"
   Then I should be on the users page
 	Then I should see "Email has already been taken"
-	And there is only one user with the email "success@gmail.com" in the database
+	And there is only one user with the email "first@gmail.com" in the database
 
 
 
