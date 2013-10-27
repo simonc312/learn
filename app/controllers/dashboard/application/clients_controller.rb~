@@ -1,10 +1,11 @@
-class Dashboard::Application::ClientsController < AppicationController
+class Dashboard::Application::ClientsController < ApplicationController
   def create
     Client.create!(params[:client])
     flash[:notice] = "NEW APPLICATION"
     redirect_to '/'
   end
   def index
+  	@clients = User.find_all_by_type('Client')
 
   end
 end

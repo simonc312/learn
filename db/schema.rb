@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20131026073506) do
     t.string   "state"
     t.text     "street_address"
     t.string   "phone"
+    t.string   "type"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end

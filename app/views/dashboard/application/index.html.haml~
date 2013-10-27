@@ -1,0 +1,27 @@
+%h1 Testing Applications Page
+
+%table#apps
+  %thead
+    %tr
+      %th First Name
+      %th Last Name
+      %th Gender
+      %th Birthday
+      %th Phone Number
+      %th Street Address
+      %th City
+      %th State
+     
+  %tbody
+    - @client.each do |client|
+      %tr
+        %td= client.first_name
+        %td= client.last_name
+        %td= client.gender
+        %td= client.birthday
+        %td= client.phone
+        %td= client.street_address
+        %td= client.city
+        %td= client.state
+
+
