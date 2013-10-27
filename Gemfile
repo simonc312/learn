@@ -6,9 +6,9 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do 
   gem 'sqlite3'
-  gem 'launchy'
-  gem 'simplecov'
-  gem 'rspec-rails'
+#  gem 'launchy'
+#  gem 'simplecov'
+#  gem 'rspec-rails'
 end
 group :production do 
   gem 'pg'
@@ -28,7 +28,9 @@ end
 gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'launchy'
+gem 'simplecov'
+gem 'respec-rails'
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
