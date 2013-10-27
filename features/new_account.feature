@@ -62,7 +62,17 @@ Scenario: Email is already taken
 	And there is only one user with the email "success@gmail.com" in the database
 
 
+Scenario: Try to navigate to home page after creating account
+  Given I am on the home page
+  When I fill in the following:
+    | Email          				| success@gmail.com  |
+    | Password      			  | successpwd   			 |
+    | Password confirmation | successpwd				 |
 
+  When I press "Sign up"
+  Then I should be on the dashboard page
+  When I go to the home page
+  Then I should be on the dashboard page
 
 
 
