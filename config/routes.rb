@@ -1,10 +1,11 @@
 LearningShelter::Application.routes.draw do
   devise_for :users
-
 	resources :dashboard
 
 #  get "basic/index"
+  resources :home
   root :to => "home#index"
+  get '/index' => "home#index", :as => 'index'
   match "/about" => "basic#about"
   
   match 'dashboard/application/cl' => 'application#apply_client' # link

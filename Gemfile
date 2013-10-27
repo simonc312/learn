@@ -9,6 +9,13 @@ group :development, :test do
 #  gem 'launchy'
 #  gem 'simplecov'
 #  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
 end
 group :production do 
   gem 'pg'
@@ -20,22 +27,23 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'cucumber-rails', :require =>false
-  gem 'database_cleaner' 
+#  gem 'cucumber-rails', :require =>false
+#  gem 'database_cleaner' 
   gem 'uglifier', '>= 1.0.3'
 #  gem 'haml-rails', "~>0.4"
 end
 gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
-gem 'launchy'
-gem 'simplecov'
-gem 'rspec-rails'
-gem 'rails_12factor'
-group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
-end
+#gem 'launchy'
+#gem 'simplecov'
+#gem 'rspec-rails'
+#gem 'rails_12factor'
+#gem 'capybara'
+#group :test do
+#  gem 'cucumber-rails', :require => false
+#  gem 'cucumber-rails-training-wheels'
+#end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
