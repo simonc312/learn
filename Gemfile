@@ -30,7 +30,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'launchy'
 gem 'simplecov'
-gem 'respec-rails'
+gem 'rspec-rails'
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
