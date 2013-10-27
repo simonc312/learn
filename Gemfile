@@ -20,7 +20,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'cucumber-rails', :require =>false
+#  gem 'cucumber-rails', :require =>false
   gem 'database_cleaner' 
   gem 'uglifier', '>= 1.0.3'
 #  gem 'haml-rails', "~>0.4"

@@ -22,11 +22,11 @@ Cucumber Features:
     - 1
     - 
     - 1
-    - 0
+    - 8
     - 
     - 
     - 1
-    - 0
+    - 8
     - 
     - 
     - 1
@@ -53,11 +53,12 @@ Cucumber Features:
     - 1
     - 0
     - 0
+    - 
+    - 0
     - 0
     - 
     - 1
     - 0
-    - 
     - 
     - 
     /home/saasbook/Desktop/project/learning_shelter/app/models/client.rb:
@@ -92,10 +93,6 @@ Cucumber Features:
     - 1
     - 
     - 
-    - 1
-    - 
-    - 1
-    - 
     - 
     - 
     - 
@@ -103,10 +100,10 @@ Cucumber Features:
     - 1
     - 
     - 1
-    - 0
-    - 0
+    - 5
+    - 1
     - 
     - 
     - 
     - 
-  :created_at: 2013-10-26 17:09:21.084912716 -07:00
+  :created_at: 2013-10-26 17:54:55.284902359 -07:00
