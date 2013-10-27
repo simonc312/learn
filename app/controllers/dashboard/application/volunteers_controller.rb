@@ -5,6 +5,6 @@ class Dashboard::Application::VolunteersController < ApplicationController
     redirect_to '/'
   end
   def index
-  	@apps = Volunteer.all
+  	@voluneers = Volunteer.all
   end
 end
