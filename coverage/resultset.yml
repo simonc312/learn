@@ -109,7 +109,7 @@ Cucumber Features:
   :created_at: 2013-10-27 12:24:44.648797388 -07:00
 RSpec:
   :original_result:
-    /home/saasbook/workspace/project/learn/app/models/user.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/models/user.rb:
     - 1
     - 
     - 
@@ -122,11 +122,11 @@ RSpec:
     - 1
     - 1
     - 
-    /home/saasbook/workspace/project/learn/app/controllers/application_controller.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/application_controller.rb:
     - 1
     - 1
     - 
-    /home/saasbook/workspace/project/learn/app/helpers/application_helper.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/helpers/application_helper.rb:
     - 1
     - 
     - 1
@@ -142,47 +142,26 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/workspace/project/learn/app/helpers/basic_helper.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/helpers/basic_helper.rb:
     - 1
     - 
-    /home/saasbook/workspace/project/learn/app/helpers/dashboard_helper.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/helpers/dashboard_helper.rb:
     - 1
     - 
-    /home/saasbook/workspace/project/learn/app/helpers/home_helper.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/helpers/home_helper.rb:
     - 1
     - 
-    /home/saasbook/workspace/project/learn/app/controllers/basic_controller.rb:
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/workspace/project/learn/app/controllers/dashboard/application/clients_controller.rb:
-    - 1
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/basic_controller.rb:
     - 1
     - 1
     - 
     - 
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/workspace/project/learn/app/models/client.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/workspace/project/learn/app/models/app.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/application/clients_controller.rb:
     - 1
     - 1
     - 1
     - 
     - 
-    /home/saasbook/workspace/project/learn/app/controllers/dashboard/application/volunteers_controller.rb:
-    - 1
-    - 1
-    - 1
     - 1
     - 1
     - 
@@ -190,28 +169,49 @@ RSpec:
     - 1
     - 
     - 
-    /home/saasbook/workspace/project/learn/app/models/volunteer.rb:
+    /home/saasbook/Desktop/project/learning_shelter/app/models/client.rb:
     - 1
     - 
     - 
-    /home/saasbook/workspace/project/learn/app/controllers/dashboard_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/workspace/project/learn/app/controllers/home_controller.rb:
-    - 1
-    - 
+    /home/saasbook/Desktop/project/learning_shelter/app/models/app.rb:
     - 1
     - 1
     - 1
     - 
     - 
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/application/volunteers_controller.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
     - 
     - 
-  :created_at: 2013-10-27 21:08:32.009311298 -07:00
+    /home/saasbook/Desktop/project/learning_shelter/app/models/volunteer.rb:
+    - 1
+    - 
+    - 
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/Desktop/project/learning_shelter/app/controllers/home_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+  :created_at: 2013-10-27 21:30:48.792297708 -07:00
