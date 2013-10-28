@@ -35,6 +35,7 @@ end
 gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
+gem 'factory_girl'
 #gem 'launchy'
 #gem 'simplecov'
 #gem 'rspec-rails'
