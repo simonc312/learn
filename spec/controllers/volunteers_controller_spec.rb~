@@ -10,7 +10,7 @@ describe Dashboard::Application::VolunteersController do
   describe 'create volunter' do 
     it 'should redirect to the dashboard' do
       post :create
-      response.should redirect_to '/dashboard'
+      response.should redirect_to(:dashboard)
     end
   end
 end
