@@ -16,6 +16,7 @@ group :development, :test do
   gem 'launchy'
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
+  gem 'factory_girl_rails'
 end
 group :production do 
   gem 'pg'
@@ -35,7 +36,7 @@ end
 gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
-gem 'factory_girl'
+#gem 'factory_girl'
 #gem 'launchy'
 #gem 'simplecov'
 #gem 'rspec-rails'
