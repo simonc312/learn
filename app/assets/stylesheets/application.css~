@@ -13,7 +13,6 @@
  */
 html, body {
   margin: 0;
-		margin-left: 33px;
   padding: 0;
   background: White;
   color: DarkSlateGrey;
