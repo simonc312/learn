@@ -13,7 +13,7 @@
  */
 html, body {
   margin: 0;
-		margin-left: 33px;
+  margin-left: 33px;
   padding: 0;
   background: White;
   color: DarkSlateGrey;
@@ -27,7 +27,7 @@ div#main {
 a {
   background: transparent;
   color: maroon;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-weight: bold;
 }
 h1 {
@@ -42,15 +42,16 @@ h1.title {
   padding: 10px;
   background-color: orange;
   color: white;
-  border-bottom: 4px solid gold;
+  /*border-bottom: 4px solid gold;*/
   font-size: 2em;
   font-style: normal;
+	align: center;
 }
 table#apps {
   margin: 10px;
   border-collapse: collapse;
   width: 100%;
-  border-bottom: 2px solid black;
+  /*border-bottom: 2px solid black;*/
 }
 table#apps th {
   border: 2px solid white;
