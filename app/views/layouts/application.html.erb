@@ -5,8 +5,10 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-	<script src="/assets/javascripts/tabs.js"></script>
-	<link rel="stylesheet" type="text/css" href="/assets/stylesheets/home.css.scss">
+	<script src="tabs.js"></script>
+	<%= stylesheet_link_tag "dialog","fullcalendar","jquery-ui","style" %>
+	<%= javascript_include_tag "jrails1/fullcalendar.js","jrails1/jquery-ui.js","jrails1/gcal.js","jrails1/jrails.js","jrails1/jquery.validate.js"%>
+
 </head>
 
 <body onload="init()">
