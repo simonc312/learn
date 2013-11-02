@@ -26,3 +26,6 @@ The Learning Shelter
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 
+<h2>extra</h2>
+
+<%= render "devise/shared/links/signin" %>

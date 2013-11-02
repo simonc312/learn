@@ -26,16 +26,16 @@ div#main {
 }
 a {
   background: transparent;
-  color: maroon;
+  color: orange;
   /*text-decoration: underline;*/
   font-weight: bold;
 }
 h1 {
-  color: maroon;
+  color: white;
   font-size: 150%;
   display: block;
   width: 100%;
-  border-bottom: 19px solid DarkSlateGrey;
+  border-bottom: 1px solid DarkSlateGrey;
 }
 h1.title {
   margin: 0 0 1em;
@@ -45,6 +45,7 @@ h1.title {
   /*border-bottom: 4px solid gold;*/
   font-size: 2em;
   font-style: normal;
+	align: center;
 }
 table#apps {
   margin: 10px;
@@ -73,5 +74,5 @@ form label {
   display: block;
   line-height: 25px;
   font-weight: bold;
-  color: maroon;
+  color: white;
 }
