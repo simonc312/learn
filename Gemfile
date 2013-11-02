@@ -36,6 +36,7 @@ end
 gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
+gem 'event-calendar', :require => 'event_calendar'
 #gem 'factory_girl'
 #gem 'launchy'
 #gem 'simplecov'
