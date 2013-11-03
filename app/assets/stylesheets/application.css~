@@ -11,14 +11,19 @@
  *= require_self
  *= require_tree .
  */
+a#user_nav {
+	margin-left: 200px;
+font-size: 30pt;
+}
 html, body {
   margin: 0;
   margin-left: 33px;
   padding: 0;
-  background: White;
+	background-color: #E0B547;
   color: DarkSlateGrey;
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 10pt;
+	height: 100%;
 }
 div#main {
   margin: 0;
@@ -35,7 +40,8 @@ h1 {
   font-size: 150%;
   display: block;
   width: 100%;
-  border-bottom: 1px solid DarkSlateGrey;
+  /*border-bottom: 1px solid DarkSlateGrey;*/
+	font-style: bold;
 }
 h1.title {
   margin: 0 0 1em;
@@ -44,7 +50,7 @@ h1.title {
   color: white;
   /*border-bottom: 4px solid gold;*/
   font-size: 2em;
-  font-style: normal;
+  font-style: bold;
 	align: center;
 }
 table#apps {
