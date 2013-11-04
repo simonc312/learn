@@ -11,7 +11,10 @@
  *= require_self
  *= require_tree .
  */
-
+a#user_nav {
+	margin-left: 200px;
+font-size: 30pt;
+}
 html, body {
   margin: 0;
   margin-left: 33px;

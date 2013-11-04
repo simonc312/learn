@@ -9,8 +9,8 @@ describe Dashboard::Application::ClientsController do
   end
   describe 'get clients#create' do 
     it 'should render the create page for clients' do 
-      get :create, :client => '12'
-      response.should redirect_to(dashboard_path)
+      post :create
+      response.should redirect_to '/dashboard'
     end
   end
 end 
