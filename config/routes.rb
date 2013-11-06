@@ -4,6 +4,12 @@ LearningShelter::Application.routes.draw do
   devise_for :users
 	resources :dashboard
 
+# calendar
+  match 'calendar/event/new' => 'events#new' # link
+  namespace :calendar do
+     resources :event
+  end	
+
 #  get "basic/index"
   resources :home
   root :to => "home#index"

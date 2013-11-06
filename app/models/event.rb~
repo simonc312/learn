@@ -1,0 +1,7 @@
+class Event < ActiveRecord::Base
+  has_event_calendar
+
+	def new
+		
+	end
+end

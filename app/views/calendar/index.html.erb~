@@ -4,5 +4,10 @@
 
 <h1>Calendar</h1>
 
-<%= event_calendar %>
+<% form_tag new_calendar_event_path, :method => :get do %>
+	<%= button_tag "Add New Event" %>
+	<%= submit_tag 'Add Event' %>
+<% end %>
+
+<%= raw(event_calendar) %>
 
