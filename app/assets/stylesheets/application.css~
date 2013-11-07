@@ -11,10 +11,8 @@
  *= require_self
  *= require_tree .
  */
-a#user_nav {
-	margin-left: 200px;
-font-size: 30pt;
-}
+
+<<<<<<< HEAD
 html, body {
   margin: 0;
   margin-left: 33px;
@@ -82,3 +80,5 @@ form label {
   font-weight: bold;
   color: white;
 }
+=======
+>>>>>>> calendarbranch
