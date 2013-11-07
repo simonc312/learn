@@ -3,11 +3,8 @@
 <%= javascript_include_tag 'event_calendar' %>
 
 <h1>Calendar</h1>
-
-<% form_tag new_calendar_event_path, :method => :get do %>
-	<%= button_tag "Add New Event" %>
-	<%= submit_tag 'Add Event' %>
-<% end %>
+<%= @event %>
+<%= button_to "Add New Event", new_calendar_event_path, :method => :get %>
 
 <%= raw(event_calendar) %>
 
