@@ -1,7 +1,10 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+a#user_nav {
+	margin-left: 200px;
+	font-size: 30pt;
+}
 h1 {
 	color:black;
 	font-size: 200%; 

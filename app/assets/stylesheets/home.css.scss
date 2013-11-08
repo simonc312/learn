@@ -1,9 +1,31 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: myfont;
+  src:url('BIRTH_OF_A_HERO.ttf');
+  src: local("myfont"), url("/assets/fonts/BIRTH_OF_A_HERO.ttf");
+}
+.maintitle {
+  font-family:myFont;
+}
 a#user_nav {
 	margin-left: 200px;
 	font-size: 30pt;
+}
+.left {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 65%;
+    margin-left: 10px;
+    float:left;
+}
+.tabtext {
+  margin-left:20px;
+  margin-right:20px;
 }
 h1 {
 	color:black;
@@ -60,6 +82,7 @@ div.tabContent {
 	border: 1px solid #c9c3ba;
 	padding: 0.5em; 
 	background-color: #f1f0ee; 
+  height:450px;
 }
 div.tabContent.hide { 
 	display: none; 
