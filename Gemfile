@@ -9,6 +9,7 @@ group :development, :test do
 #  gem 'launchy'
 #  gem 'simplecov'
 #  gem 'rspec-rails'
+  gem 'jasmine'
   gem 'capybara'
   gem 'rspec-rails'
   gem 'simplecov'
