@@ -74,6 +74,16 @@ Scenario: Try to navigate to home page after creating account
   When I go to the home page
   Then I should be on the dashboard page
 
+Scenario: Successful signin
+  Given there is the user with email "blah1@gmail.com" in the database
+  When I am on the signin page
+  When I fill in the following:
+    | Email          				| blah1@gmail.com  |
+    | Password      			  | password123 		 |
+  And I press "Sign in"
+  Then I should be on the dashboard page
+  
+
 
 
 

@@ -37,7 +37,35 @@ Cucumber Features:
     /home/saasbook/learn/app/helpers/basic_helper.rb:
     - 1
     - 
+    /home/saasbook/learn/app/helpers/calendar_helper.rb:
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
     /home/saasbook/learn/app/helpers/dashboard_helper.rb:
+    - 1
+    - 
+    /home/saasbook/learn/app/helpers/events_helper.rb:
     - 1
     - 
     /home/saasbook/learn/app/helpers/home_helper.rb:
@@ -48,14 +76,27 @@ Cucumber Features:
     - 1
     - 
     - 
-    /home/saasbook/learn/app/controllers/dashboard/application/clients_controller.rb:
-    - 1
-    - 1
-    - 1
+    /home/saasbook/learn/app/controllers/calendar_controller.rb:
     - 1
     - 
     - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/application/clients_controller.rb:
     - 1
+    - 1
+    - 0
+    - 
+    - 
+    - 0
+    - 0
     - 
     - 1
     - 0
@@ -74,9 +115,9 @@ Cucumber Features:
     /home/saasbook/learn/app/controllers/dashboard/application/volunteers_controller.rb:
     - 1
     - 1
-    - 1
-    - 1
-    - 1
+    - 0
+    - 0
+    - 0
     - 
     - 1
     - 0
@@ -96,17 +137,42 @@ Cucumber Features:
     - 
     - 
     - 
+    /home/saasbook/learn/app/controllers/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/models/event.rb:
+    - 1
+    - 1
+    - 1
+    - 
     /home/saasbook/learn/app/controllers/home_controller.rb:
     - 1
     - 
     - 1
-    - 10
-    - 5
+    - 9
+    - 4
     - 
     - 
     - 
     - 
-  :created_at: 2013-10-27 12:24:44.648797388 -07:00
+  :created_at: 2013-11-07 16:30:34.977109069 -08:00
 RSpec:
   :original_result:
     /home/saasbook/Desktop/project/learning_shelter/app/models/user.rb:

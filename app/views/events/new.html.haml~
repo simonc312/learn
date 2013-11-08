@@ -1,18 +1,29 @@
-%h1 Add New Event
+.mainform
+  %h1 Add New Event
+  = form_tag calendar_path(@event), :method => :put do
+    .below
+      = label :event, :title, 'Event Title'
+    = text_field :event, 'title', :value => 'Untitled'
+    %p
+    .below
+      = label :event, :location, 'Location'
+    = text_field :event, 'location'
+    %p
+    .below
+      = label :event, :description, 'Description'
+    = text_field :event, 'description'
 
-= form_tag calendar_path(@movie), :method => :put do
-
-  = label :event, :title, 'Event Title'
-  = text_field :event, 'title', :value => 'Untitled'
-  %p
-    = label :event, :start_date, 'Start Date'
-    = date_select :event, :start_date
-    = label :event, :start_time, 'Start Time'
-    = time_select :event, :start_time
-  %p
-    = label :event, :end_date, 'End Date'
-    = date_select :event, :end_date
-    = label :event, :end_time, 'End Time'
-    = time_select :event, :end_time
-  %p
-    = submit_tag 'Save Event'
+    %p
+      = label :event, :start_date, 'Start Date'
+      = date_select :event, :start_date
+      .below
+        = label :event, :start_time, 'Start Time'
+        = time_select :event, :start_time
+    %p
+      = label :event, :end_date, 'End Date'
+      = date_select :event, :end_date
+      .below
+        = label :event, :end_time, 'End Time'
+        = time_select :event, :end_time
+    %p
+      = submit_tag 'Save Event'

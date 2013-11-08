@@ -32,7 +32,7 @@ Scenario: Admin adds event
   Then I should see new event on calender 
 
 Scenario: User clicks event
-  Given I am logged in as "userone@gmail.com"
+  Given I am logged in as User
   And I am on the dashboard page
   When I follow "Event Title" link on Calender
   Then I should see a sidebar or pop up window with Event info

@@ -64,7 +64,6 @@ Scenario: Email is already taken
 
 Scenario: Try to navigate to home page after creating account
   Given I am on the home page
-
   When I fill in the following:
     | Email          				| success@gmail.com  |
     | Password      			  | successpwd   			 |
@@ -72,9 +71,17 @@ Scenario: Try to navigate to home page after creating account
 
   When I press "Sign up"
   Then I should be on the dashboard page
-
   When I go to the home page
   Then I should be on the dashboard page
+
+Scenario: Successful signin
+  Given there is the user with email "blah1@gmail.com" in the database
+  When I am on the signin page
+  When I fill in the following:
+    | Email          				| blah1@gmail.com  |
+    | Password      			  | password123 		 |
+  Then I should be on the dashboard page
+  
 
 
 
