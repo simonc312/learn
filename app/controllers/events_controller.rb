@@ -9,6 +9,8 @@ class EventsController < ApplicationController
 	end
 
   def create
+    render text: params[:event].inspect
+    puts "CREATE WAS CALLED-----------------------------------------------------------"
     eventhash = Hash.new()
     startDate = params[:event][:start_date]
     endDate = params[:event][:end_date]
@@ -23,7 +25,7 @@ class EventsController < ApplicationController
 
     @event = Event.create!(eventhash[:event])
 
-    flash[:notice] = "#{@event.name} was successfully created."
+    flash.keep[:notice] = "#{@event.name} was successfully created."
     redirect_to calendar_path
   end
 
