@@ -1,7 +1,7 @@
 .body
   .mainform
     %h1 Add New Event
-    = form_tag calendar_path do
+    = form_tag events_path, :method => :post do
       .below
         = label :event, :title, 'Event Title'
       = text_field :event, 'title', :value => 'Untitled'
@@ -19,7 +19,7 @@
         = date_select :event, :start_date
         .below
           = label :event, :start_time, 'Start Time'
-          = time_select :event, :start_time
+          = datetime_select :event, :start_time
       %p
         = label :event, :end_date, 'End Date'
         = date_select :event, :end_date
