@@ -11,7 +11,7 @@ LearningShelter::Application.routes.draw do
   end	
 
 # /admin
-  match 'admin' => 'admin#index', :as => 'index'
+  match '/admin' => 'admin#index'
 
 #  get "basic/index"
   resources :home
