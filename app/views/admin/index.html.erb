@@ -1,6 +1,128 @@
-<h1>The learning Shelter</h1>
 
-<h4>Admin Page</h4>
+<div id='maininfohome'>
+
+	<h1 class='maintitle'>Admin Page</h1>
+
+	
+	<div class="learningShelterLogo"> 
+  		<img src= "public/assets/images/logo_wrench_bed.png">
+  	</div>
+	<ul id="tabs">
+		<li><a href="#about">About Us</a></li>
+		<li><a href="#users">Users</a></li>
+		<li><a href="#clients">Clients</a></li>
+		<li><a href="#volunteers">Volunteers</a></li>
+	</ul>
+
+
+  <div class="tabContent" id="about">
+  	
+    <div class='tabtext'>
+
+      <h2>About The Learning Shelter</h2>
+			  <p>The Vision of The Learning Shelter is to become a shelter system by example. As the first model we are testing the ideas which will become a live in/work in program built to allow individuals who seem to be qualified and have been skills tested to show an aptitude for making products both digital and tangible. Once qualified, cohorts will work as individuals among groups to find their own pace and channels then be guided through accelerated learning programs that teach skills which are currently relevant, less likely to be crowded by unemployed experts, and which have highly probable future viability.</p>
+			  <p>The Learning Shelter is currently planning out the due diligence process with some San Francisco based California 501(c)(3) non-profit corporations, in the hopes of finding a responsible and experienced home base that will sufficiently allow the project to grow into it's own non-profit in 2014.</p>
+			  <p><h3 style='display:inline'>Our Motto:</h3> Our job is to put ourselves out of jobs by creating graduates that don't come back.</p>
+			  <p>We hope to find partner companies that can both provide training using real world products of innovative design as well as hopefully employ and encourage our graduates after they have completed a 90 day program. It is very possible that this partners can go beyond employment over a short number of years and even incubate or fund some creative new business ideas. The reality of these ideas are yet to be tested, but the hope is strong.</p>
+			  <p>Through community alliances with other non-profits The Learning Shelter can make a difference in the life of anyone who is homeless if we can reduce the resource draw and increase the volume of tax paying citizens in a local economy. So while we aren't a solution for every kind of homeless person, we are ultimately going to be able to make an impact that will help not only the entire homeless community, but ultimately the entire community around The Learning Shelter.</p>
+    </div>
+  </div>
+
+	<div class="tabContent" id="users">
+		<div id ="usertable">
+			<table>
+				<tr> 
+					<th> User ID </th>
+					<th> User E-mail </th>
+					<th> Applications </th>
+				</tr>
+				<% @users.each do |user| %>
+				<tr>
+					<td><%= user.id %> </td>
+					<td><%= user.email %></td>
+					<td><%= user.apps %></td>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="tabContent" id="clients">
+    <div class='tabtext'>
+    	<div id ="clientstable">
+			<table>
+				<tr> 
+					<th> First Name </th>
+					<th> Last Name </th>
+					<th> Gender </th>
+					<th> Birthday </th>
+					<th> Phone Number </th>
+					<th> Street Address </th>
+					<th> City </th>
+					<th> State </th>
+					<th> User ID </th>
+					<th> Submission Time </th>
+				</tr>
+				<% @clients.each do |client| %>
+				<tr>
+					<td><%= client.first_name %> </td>
+					<td><%= client.last_name %></td>
+					<td><%= client.gender %></td>
+					<td><%= client.birthday %></td>
+					<td><%= client.phone %> </td>
+					<td><%= client.street_address %></td>
+					
+					<td><%= client.city %> </td>
+					<td><%= client.state %></td>
+					<td><%= client.user_id %></td>
+					<td><%= client.created_at %></td>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+    </div>
+	</div>
+
+	
+  <div class="tabContent" id="volunteers">
+    <div class='tabtext'>
+		  <div id ="volunteerstable">
+			<table>
+				<tr> 
+					<th> First Name </th>
+					<th> Last Name </th>
+					<th> Gender </th>
+					<th> Birthday </th>
+					<th> Phone Number </th>
+					<th> Street Address </th>
+					<th> City </th>
+					<th> State </th>
+					<th> User ID </th>
+					<th> Submission Time </th>
+				</tr>
+				<% @volunteers.each do |volunteer| %>
+				<tr>
+					<td><%= volunteer.first_name %> </td>
+					<td><%= volunteer.last_name %></td>
+					<td><%= volunteer.gender %></td>
+					<td><%= volunteer.birthday %></td>
+					<td><%= volunteer.phone %> </td>
+					<td><%= volunteer.street_address %></td>
+					
+					<td><%= volunteer.city %> </td>
+					<td><%= volunteer.state %></td>
+					<td><%= volunteer.user_id %></td>
+					<td><%= volunteer.created_at %></td>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+    </div>
+  </div>
+
+
+</div>
 
 
 
