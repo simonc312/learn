@@ -3,11 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
   font-family: myfont;
-  src:url('BIRTH_OF_A_HERO.ttf');
-  src: local("myfont"), url("/assets/fonts/BIRTH_OF_A_HERO.ttf");
+  src:url('AmaticSC-Regular.ttf');
+  src: local("myfont"), url("/assets/fonts/AmaticSC-Regular.ttf");
 }
 .maintitle {
   font-family:myFont;
+  background-color: white;
+  border-radius: 5px;
 }
 a#user_nav {
 	margin-left: 200px;
@@ -31,20 +33,27 @@ h1 {
 	color:black;
 	font-size: 200%; 
 }
+#maininfohome{
+
+}
 #maininfo {
 	margin-left: 200px;
 	margin-right: 200px;
 	background-color: #E0B547;
 }
 body { 
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
 	background-color: #E0B547;
   position: absolute;
 	top:0px;
   bottom: 0px;
 	left:0px;
   right: 0px;
-	background:url('http://makingsociety.com/wp-content/uploads/2013/06/garden-freespace-e1372145741103.jpg');
+	background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: cover;
 }
 ul#tabs { 
 	list-style-type: none; 
@@ -82,11 +91,59 @@ div.tabContent {
 	border: 1px solid #c9c3ba;
 	padding: 0.5em; 
 	background-color: #f1f0ee; 
-  height:450px;
+  height: 100%;
 }
 div.tabContent.hide { 
 	display: none; 
 }
 
 
-
+    .myButton {
+        
+        -moz-box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        -webkit-box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbb34f), color-stop(1, #e0b547));
+        background:-moz-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-webkit-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-o-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-ms-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:linear-gradient(to bottom, #dbb34f 5%, #e0b547 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbb34f', endColorstr='#e0b547',GradientType=0);
+        
+        background-color:#dbb34f;
+        
+        -moz-border-radius:12px;
+        -webkit-border-radius:12px;
+        border-radius:12px;
+        
+        border:1px solid #c97e1c;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:Georgia;
+        font-size:15px;
+        font-weight:bold;
+        padding:2px 18px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #8f7f24;
+        
+    }
+    .myButton:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e0b547), color-stop(1, #dbb34f));
+        background:-moz-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-webkit-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-o-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-ms-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:linear-gradient(to bottom, #e0b547 5%, #dbb34f 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0b547', endColorstr='#dbb34f',GradientType=0);
+        
+        background-color:#e0b547;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
