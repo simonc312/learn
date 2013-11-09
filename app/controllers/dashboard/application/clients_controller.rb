@@ -1,8 +1,9 @@
 class Dashboard::Application::ClientsController < ApplicationController
   def create
-    @client = Client.create!(params[:client])
-    #current_user.apps << @client
-    # flash[:notice] = "current_user's id: #{current_user.id}"
+    client_app = Client.create!(params[:client])
+    if current_user.apps.none?
+    	current_user.apps << client_app
+    end
     flash[:notice] = "A new Client Application has been submitted!"
     redirect_to '/dashboard'
   end

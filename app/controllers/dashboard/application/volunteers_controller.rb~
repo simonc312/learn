@@ -1,10 +1,10 @@
 class Dashboard::Application::VolunteersController < ApplicationController
   def create
     Volunteer.create!(params[:volunteer])
-    flash[:notice] = "NEW APPLICATION"
-    redirect_to '/'
+    flash[:notice] = "A new Volunteer Application has been submitted!"
+    redirect_to '/dashboard'
   end
   def index
-  	@apps = Volunteer.all
+  	@volunteers = Volunteer.all
   end
 end

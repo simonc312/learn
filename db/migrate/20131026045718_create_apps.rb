@@ -10,6 +10,7 @@ class CreateApps < ActiveRecord::Migration
       t.text :street_address
       t.string :phone
       t.string :type
+      t.string :user_id
       t.timestamps 
     end
   end
