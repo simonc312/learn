@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(:version => 20131109051550) do
     t.string   "phone"
     t.string   "type"
     t.string   "user_id"
+    t.text     "resume"
+    t.text     "cover_letter"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
