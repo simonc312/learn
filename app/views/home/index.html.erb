@@ -2,8 +2,11 @@
 <div id='maininfohome'>
 
 	<h1 class='maintitle'>The Learning Shelter</h1>
-	<h1>Home</h1>
 
+	
+	<div class="learningShelterLogo"> 
+  		<img src= "public/assets/images/logo_wrench_bed.png">
+  	</div>
 	<ul id="tabs">
 		<li><a href="#about">About Us</a></li>
 		<li><a href="#goals">Goals</a></li>
@@ -13,8 +16,11 @@
 
 	</ul>
 
+
   <div class="tabContent" id="about">
+  	
     <div class='tabtext'>
+
       <h2>About The Learning Shelter</h2>
 			  <p>The Vision of The Learning Shelter is to become a shelter system by example. As the first model we are testing the ideas which will become a live in/work in program built to allow individuals who seem to be qualified and have been skills tested to show an aptitude for making products both digital and tangible. Once qualified, cohorts will work as individuals among groups to find their own pace and channels then be guided through accelerated learning programs that teach skills which are currently relevant, less likely to be crowded by unemployed experts, and which have highly probable future viability.</p>
 			  <p>The Learning Shelter is currently planning out the due diligence process with some San Francisco based California 501(c)(3) non-profit corporations, in the hopes of finding a responsible and experienced home base that will sufficiently allow the project to grow into it's own non-profit in 2014.</p>
@@ -61,9 +67,12 @@
 			  <div class='left'><%= f.label :password_confirmation %></div>
 			  <div class='right'>
           <%= f.password_field :password_confirmation %>
-          <p><%= f.submit "Sign up" %></p>
+          <p><%= f.submit "Sign up", :class => "myButton" %></p>
         </div>
 		  <% end %>
+		  <!-- newlines for height fit -->
+		  <br><br><br><br><br>
+		  <br><br><br><br><br> 
     </div>
   </div>
 
