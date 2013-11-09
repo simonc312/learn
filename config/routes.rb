@@ -10,6 +10,9 @@ LearningShelter::Application.routes.draw do
      resources :event
   end	
 
+# /admin
+  match '/admin' => 'admin#index'
+
 #  get "basic/index"
   resources :home
   root :to => "home#index"
