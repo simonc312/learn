@@ -6,5 +6,10 @@
 <%= params %>
 <%= button_to "Add New Event", new_calendar_event_path, :method => :get %>
 
+<%= @cur_date %>
+<%= @end_date %>
+
+<%= @events %>
+
 <%= raw(event_calendar) %>
 

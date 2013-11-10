@@ -5,12 +5,10 @@ LearningShelter::Application.routes.draw do
 	resources :dashboard
 
 # calendar
-  match 'calendar/events/new' => 'events#new' # link
+  #match 'calendar/events/new' => 'events#new' # link
   namespace :calendar do
      resources :events
   end	
-
-  resources :events
 
 # /admin
   match '/admin' => 'admin#index'
