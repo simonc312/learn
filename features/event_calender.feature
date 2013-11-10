@@ -26,7 +26,7 @@ Scenario: Admin adds event
   When I click "New Event" button
   When I fill in fields 
   When I submit "Save"
-  I should see new event on calender at right place and time
+  Then  I should see new event on calender at right place and time
   When I log out and sign in as "User"
   When I am on the dashboard page 
   Then I should see new event on calender 
@@ -44,7 +44,7 @@ Scenario: User adds event
   When I click "New Event" button
   When I fill in fields 
   When I submit "Save"
-  I should see new event on calender at right place and time
+  Then I should see new event on calender at right place and time
   When I log out and sign in as "Admin"
   When I am on the dashboard page 
   Then I should not see new event on calender 
