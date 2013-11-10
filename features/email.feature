@@ -6,17 +6,17 @@ Feature: Internal email system
 Scenario: Receiving confirmation email for signup
 
   Given I am a new, authenticated user
-  I should recieve an account confirmation email
+  Then I should recieve an account confirmation email
 
 Scenario: Receiving confirmation email for volunteer application.
 
   Given I have a successful volunteer application
-  I should recieve an application confirmation email
+  Then I should recieve an application confirmation email
 
 Scenario: Receiving confirmation email for client application.
 
   Given I have a successful client application
-  I should recieve an application confirmation email
+  Then I should recieve an application confirmation email
 
 Scenario: Admin send to mailing list
 
@@ -24,4 +24,4 @@ Scenario: Admin send to mailing list
   And I am viewing all the users
   And I press "Compose e-mail"
   Then Press "Send"
-  The users should recieve an email
+  And The users should recieve an email

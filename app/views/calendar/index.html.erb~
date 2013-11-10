@@ -4,9 +4,9 @@
 
 <h1>Calendar</h1>
 <%= params %>
-<%= flash_notice %>
+<%= button_to "Add New Event", new_calendar_events_path, :method => :get %>
 
-<%= button_to "Add New Event", new_calendar_event_path, :method => :get %>
+
 
 <%= raw(event_calendar) %>
 

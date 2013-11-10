@@ -22,11 +22,11 @@ Cucumber Features:
     - 1
     - 
     - 1
-    - 10
+    - 0
     - 
     - 
     - 1
-    - 10
+    - 0
     - 
     - 
     - 1
@@ -71,10 +71,95 @@ Cucumber Features:
     /home/saasbook/learn/app/helpers/home_helper.rb:
     - 1
     - 
+    /home/saasbook/learn/app/controllers/admin_controller.rb:
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
     /home/saasbook/learn/app/controllers/basic_controller.rb:
     - 1
     - 1
     - 
+    - 
+    /home/saasbook/learn/app/controllers/calendar/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/models/event.rb:
+    - 1
+    - 1
+    - 1
     - 
     /home/saasbook/learn/app/controllers/calendar_controller.rb:
     - 1
@@ -85,7 +170,14 @@ Cucumber Features:
     - 
     - 0
     - 
+    - 
+    - 
     - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
     - 
     - 
     - 
@@ -93,10 +185,15 @@ Cucumber Features:
     - 1
     - 1
     - 0
-    - 
+    - 0
+    - 0
+    - 0
+    - 0
     - 
     - 0
     - 0
+    - 
+    - 
     - 
     - 1
     - 0
@@ -118,6 +215,13 @@ Cucumber Features:
     - 0
     - 0
     - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
     - 
     - 1
     - 0
@@ -137,42 +241,17 @@ Cucumber Features:
     - 
     - 
     - 
-    /home/saasbook/learn/app/controllers/events_controller.rb:
-    - 1
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/learn/app/models/event.rb:
-    - 1
-    - 1
-    - 1
-    - 
     /home/saasbook/learn/app/controllers/home_controller.rb:
     - 1
     - 
     - 1
-    - 9
-    - 4
+    - 0
+    - 0
     - 
     - 
     - 
     - 
-  :created_at: 2013-11-07 16:30:34.977109069 -08:00
+  :created_at: 2013-11-10 11:19:47.466984920 -08:00
 RSpec:
   :original_result:
     /home/saasbook/Desktop/project/learning_shelter/app/models/user.rb:
