@@ -15,3 +15,5 @@
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 //= require_tree ./signin
+//= require_tree ./calendar
+//= require_tree ./tabs
