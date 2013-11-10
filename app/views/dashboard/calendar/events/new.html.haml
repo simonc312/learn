@@ -1,0 +1,26 @@
+.body
+  .mainform
+    %h1 Add New Event
+    = form_tag dashboard_calendar_events_path, :method => :post do
+      .below
+        = label :event, :name, 'Event Name'
+      = text_field :event, 'name', :value => 'Untitled'
+      %p
+      .below
+        = label :event, :location, 'Location'
+      = text_field :event, 'location'
+      %p
+      .below
+        = label :event, :description, 'Description'
+      = text_field :event, 'description'
+
+      %p
+        .below
+          = label :event, :start_at, 'Start Time'
+          = datetime_select :event, :start_at
+      %p
+        .below
+          = label :event, :end_at, 'End Time'
+          = datetime_select :event, :end_at
+      %p
+        = submit_tag 'Save Event'
