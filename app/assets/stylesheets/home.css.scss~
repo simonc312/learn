@@ -5,9 +5,9 @@
 @font-face {
   font-family: myfont;
   src:url('AmaticSC-Regular.ttf');
-  src: local("myfont"), url("/assets/fonts/AmaticSC-Regular.ttf");
+  src: local("myfont"), asset_path("AmaticSC-Regular.ttf");
 }
-.maininfohome {
+#maininfohome {
   margin:30px;
 }
 .maintitle {
