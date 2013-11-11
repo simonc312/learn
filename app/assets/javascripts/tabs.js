@@ -65,3 +65,47 @@ function getHash( url ) {
   return url.substring( hashPos + 1 );
 }
 
+function validateSignUpForm()
+{
+var email=document.getElementById("user_email").value;
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+var pass = document.getElementById("user_password").value;
+var cpass = document.getElementById("user_password_confirmation").value;
+if (pass.length < 8)
+  {
+  alert("Password must be 8 characters or more");
+  return false;
+  }
+if (pass != cpass)
+  {
+  alert("Passwords must match")
+  return false;
+  }
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+
+function validateSignInForm()
+{
+var email=document.getElementById("user_email").value;
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+var pass = document.getElementById("user_password").value;
+if (pass.length < 8)
+  {
+  alert("Incorrect password");
+  return false;
+  }
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+
+}
+
