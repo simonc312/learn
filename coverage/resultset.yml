@@ -508,17 +508,17 @@ RSpec:
     - 
     - 1
     - 1
-    - 0
-    - 0
-    - 0
+    - 1
+    - 1
+    - 1
     - 
     - 
     - 1
-    - 0
+    - 2
     - 
     - 
-    - 0
-    - 0
+    - 1
+    - 1
     - 
     - 
     - 
@@ -615,19 +615,19 @@ RSpec:
     /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard/application/clients_controller.rb:
     - 1
     - 1
-    - 1
-    - 1
     - 0
     - 0
     - 0
-    - 
     - 0
     - 0
     - 
+    - 0
+    - 0
+    - 
     - 
     - 
     - 1
-    - 1
+    - 0
     - 
     - 
     /home/saasbook/Documents/LearningShelter/learn/app/models/client.rb:
@@ -643,19 +643,19 @@ RSpec:
     /home/saasbook/Documents/LearningShelter/learn/app/controllers/dashboard/application/volunteers_controller.rb:
     - 1
     - 1
-    - 1
-    - 1
     - 0
     - 0
     - 0
-    - 
     - 0
     - 0
     - 
+    - 0
+    - 0
+    - 
     - 
     - 
     - 1
-    - 1
+    - 0
     - 
     - 
     /home/saasbook/Documents/LearningShelter/learn/app/models/volunteer.rb:
@@ -827,8 +827,8 @@ RSpec:
     - 1
     - 
     - 1
-    - 1
-    - 1
+    - 0
+    - 0
     - 
     - 
     - 
@@ -842,4 +842,4 @@ RSpec:
     - 
     - 
     - 
-  :created_at: 2013-11-10 23:06:42.032286152 -08:00
+  :created_at: 2013-11-10 23:21:34.362197523 -08:00
