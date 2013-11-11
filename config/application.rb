@@ -62,6 +62,6 @@ module LearningShelter
     #added on 11-8-13 4:57pm
     config.assets.precomile = %w( *.js *.css )
 
-#config.assets.initialze_on_precompile = false
+    config.assets.initialze_on_precompile = false
   end
 end
