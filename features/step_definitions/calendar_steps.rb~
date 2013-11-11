@@ -9,9 +9,3 @@ Given /the following events exist/ do |events_table|
 	assert events_table.hashes.size == event.all.size
   #flunk "Unimplemented"
 end
-
-Given /the following users exist/ do |users_table|
-  users_table.hashes.each do |user|
-    User.create!(user)
-  end
-end

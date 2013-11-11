@@ -1,7 +1,11 @@
+<%= stylesheet_link_tag "event_calendar" %>
+<%= javascript_include_tag 'event_calendar' %>
+
+<div class='mainform'>
+
 <h1>The Learning Shelter</h1>
 <%= link_to "about", about_path %>
-<h1>Dashboard</h1>
-The Learning Shelter
+<h1>Dashboard</h1><h3><%= link_to "My Calendar", dashboard_calendar_path %></h3>
 
 <h2> Apply as a client</h2>
 
@@ -10,10 +14,11 @@ The Learning Shelter
 <%= link_to "Apply as Client", '/dashboard/application/cl' %>
 
 
-
-
 <h2> Apply as a volunteers</h2>
 
 <div> We need all the help we can get, apply as a volunteer today!</div>
 <br>
 <%= link_to "Apply as Volunteer", '/dashboard/application/vol' %>
+
+</div>
+

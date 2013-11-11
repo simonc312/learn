@@ -2,7 +2,7 @@ LearningShelter::Application.routes.draw do
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
   devise_for :users
-	#namespace :dashboard
+	namespace :dashboard
 
 # calendar
   #match 'calendar/events/new' => 'events#new' # link
@@ -18,7 +18,7 @@ LearningShelter::Application.routes.draw do
   match "/about" => "basic#about"
   
   match 'dashboard/application/cl' => 'application#apply_client' # link
-  match 'dashboard/calendar' => 'calendar#index' # link
+  match 'dashboard/calendar' => 'dashboard/calendar#index' # link
   #CRUD
   namespace :dashboard do
     namespace :application do

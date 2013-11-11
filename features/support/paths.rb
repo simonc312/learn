@@ -31,6 +31,18 @@ module NavigationHelpers
     when /^the signin page$/
       '/users/sign_in'
 
+    when /^the calendar page$/
+      '/dashboard/calendar'
+
+    when /^the new event page$/
+      '/dashboard/calendar/events/new'
+
+    when /^the event details page$/
+      dashboard_calendar_event_path
+
+    when /^the edit event page$/
+      edit_dashboard_calendar_event_path
+
     else
       begin
         page_name =~ /^the (.*) page$/

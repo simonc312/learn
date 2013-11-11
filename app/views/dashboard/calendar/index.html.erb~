@@ -4,7 +4,7 @@
 
 <h1>Calendar</h1>
 <%= params %>
-<%= button_to "Add New Event", new_calendar_event_path, :method => :get %>
+<%= button_to "Add New Event", new_dashboard_calendar_event_path, :method => :get %>
 
 <%= @cur_date %>
 <%= @end_date %>
