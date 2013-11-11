@@ -36,6 +36,10 @@ LearningShelter::Application.routes.draw do
       resources :volunteers
     end
   end	
+
+  #ERROR
+  match '*a', :to => 'errors#routing'
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

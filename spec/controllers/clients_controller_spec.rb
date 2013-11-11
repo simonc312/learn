@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe Dashboard::Application::ClientsController do 
+
+  before(:each) do 
+    @user = FactoryGirl.create(:user)
+    sign_in @user
+  end
   describe 'get clients#index' do 
     it 'should render a new page for clients' do 
       get :index

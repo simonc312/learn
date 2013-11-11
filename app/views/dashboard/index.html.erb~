@@ -5,7 +5,9 @@
 
 <h1>The Learning Shelter</h1>
 <%= link_to "about", about_path %>
-<h1>Dashboard</h1><h3><%= link_to "My Calendar", '/dashboard/calendar' %></h3>
+<h1>Dashboard</h1><h3><%= link_to "My Calendar", dashboard_calendar_path %></h3>
+
+<%= raw(CalendarHelper.event_calendar) %>
 
 <h2> Apply as a client</h2>
 

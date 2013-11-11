@@ -13,17 +13,22 @@
   #2eac6a - hover (green)
 */
 .mainform {
-  background-color:rgba(255,243,210,0.8);
+  background-color:rgba(255,250,230,0.85);
   padding:35px;
   border-radius:25px;
+  width:80%;
 }
-
+#neweventbutton {
+  float:right;
+}
 /* Outer most container */
 .ec-calendar {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 11px;
   line-height: 14px;
-  margin: 0;
+  margin: 10%;
+  margin-top:1%;
+  margin-bottom:1%;
   padding: 0;
   border-bottom: 1px solid #d5d5d5;
 }
@@ -33,10 +38,12 @@
   padding: 5px 0;
   width: 100%;
   table-layout: fixed;
+  font-size: 21px;
+  text-align:center;
 }
 
 .ec-month-name {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
 }
 

@@ -1,15 +1,19 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 @font-face {
   font-family: myfont;
   src:url('AmaticSC-Regular.ttf');
   src: local("myfont"), url("/assets/fonts/AmaticSC-Regular.ttf");
 }
+.maininfohome {
+  margin:30px;
+}
 .maintitle {
-  font-family:myFont;
+  font-family:myfont;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 a#user_nav {
 	margin-left: 200px;
@@ -33,9 +37,6 @@ h1 {
 	color:black;
 	font-size: 200%; 
 }
-#maininfohome{
-
-}
 #maininfo {
 	margin-left: 200px;
 	margin-right: 200px;
@@ -43,21 +44,16 @@ h1 {
 }
 body { 
 	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
-	background-color: #E0B547;
   position: absolute;
 	top:0px;
   bottom: 0px;
 	left:0px;
   right: 0px;
-<<<<<<< HEAD
-	background:url('http://makingsociety.com/wp-content/uploads/2013/06/garden-freespace-e1372145741103.jpg');
-=======
 	background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');
     background-repeat:no-repeat;
     background-position:center;
     background-attachment:fixed;
     background-size: cover;
->>>>>>> 365edb3969dca618ba2af73861537ced81f4eb21
 }
 ul#tabs { 
 	list-style-type: none; 
