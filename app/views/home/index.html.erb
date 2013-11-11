@@ -67,7 +67,7 @@
 			  <div class='left'><%= f.label :password_confirmation %></div>
 			  <div class='right'>
           <%= f.password_field :password_confirmation %>
-          <p><%= f.submit "Sign up", :class => "myButton" %></p>
+          <p><%= f.submit "Sign up", :class => "myButton", :onclick=>"return validateSignUpForm();" %></p>
         </div>
 		  <% end %>
 		  <!-- newlines for height fit -->
