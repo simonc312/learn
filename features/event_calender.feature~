@@ -13,10 +13,10 @@ I want to be able to delete events on my calendar
 So that I can remove events that have passed or been canceled
 
 Background:
-Given the following users exist:
-		| email               | password           |
-		| userone@gmail.com   | 12345678           |
-		| usertwo@gmail.com   | 12345678           |
+Given the following events exist:
+  | name             | location             | description       |
+  | Orientation      | orientation location | orientation desc  |
+  | Lunch            | lunch location       | lunch desc        |
 
 Scenario: Add new event
   When I am on the calendar page
