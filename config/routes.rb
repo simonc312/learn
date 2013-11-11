@@ -3,7 +3,7 @@ LearningShelter::Application.routes.draw do
 
   devise_for :users
 	#namespace :dashboard
-
+  match 'dashboard' => 'dashboard#index'
 # calendar
   #match 'calendar/events/new' => 'events#new' # link
 
