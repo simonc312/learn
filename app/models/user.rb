@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   has_many :apps
   accepts_nested_attributes_for :apps
-  after_save :send_confirmation_email
+  after_create :send_confirmation_email
   protected
   def send_confirmation_email
     UserMailer.welcome_email(self).deliver
