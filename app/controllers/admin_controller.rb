@@ -9,8 +9,8 @@ class AdminController < ApplicationController
   end
 
   def authenticate_admin!
-  	if current_user.admin?
-    	
+  	if current_user.try(:admin?)
+      #do nothing
     else
       flash[:notice] = "You do not have the authorization to access this page"
       redirect_to '/dashboard'
