@@ -12,3 +12,7 @@ When(/^I visit the admin page$/) do
 	visit '/admin'
 end
 
+When (/^I visit a non-existent url$/) do
+	visit '/adf'
+end
+
