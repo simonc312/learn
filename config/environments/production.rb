@@ -73,6 +73,6 @@ LearningShelter::Application.configure do
     :domain => 'learningshelter2013@gmail.com',
     :authentication => :plain,
     :user_name => 'learningshelter2013',
-    :password => '2013learningshelter
-  }'
+    :password => '2013learningshelter'
+  }
 end
