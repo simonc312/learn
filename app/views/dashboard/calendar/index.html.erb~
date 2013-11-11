@@ -2,14 +2,8 @@
 <%= stylesheet_link_tag "event_calendar" %>
 <%= javascript_include_tag 'event_calendar' %>
 
-<h1>Calendar</h1>
-<%= params %>
-<%= button_to "Add New Event", new_dashboard_calendar_event_path, :method => :get %>
-
-<%= @cur_date %>
-<%= @end_date %>
-
-<%= @events %>
-
-<%= raw(event_calendar) %>
+<div class="mainform">
+  <%= button_to "Add New Event", new_dashboard_calendar_event_path, :method => :get %>
+  <%= raw(event_calendar) %>
+</div>
 
