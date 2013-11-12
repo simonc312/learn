@@ -29,7 +29,7 @@ describe Dashboard::Calendar::EventsController do
       post :create
       assigns[:event].should eq(new_event)
     end
-
+  end
   describe "#create" do 
      it 'should add event to database and redirect to home page' do
       e = mock('Event')
