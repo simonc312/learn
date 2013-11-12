@@ -16,6 +16,7 @@ class Dashboard::Calendar::EventsController < ApplicationController
     #render text: params[:event].inspect
     #puts "CREATE WAS CALLED-----------------------------------------------------------"
     eventhash = Hash.new()
+    puts params
     startYear = params[:event]['start_at(1i)'].to_i
     startMonth = params[:event]['start_at(2i)'].to_i
     startDay = params[:event]['start_at(3i)'].to_i
