@@ -21,21 +21,21 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-11T19:30:17-08:00">2013-11-11T19:30:17-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-11T19:57:33-08:00">2013-11-11T19:57:33-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="red">71.85%</span>)
+    (<span class="red">77.78%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>22</b> files in total.
     <b>135</b> relevant lines. 
-    <span class="green"><b>97</b> lines covered</span> and
-    <span class="red"><b>38</b> lines missed </span>
+    <span class="green"><b>105</b> lines covered</span> and
+    <span class="red"><b>30</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -97,11 +97,11 @@
       
       <tr>
         <td><a href="#3e56c950b3fc7658f7b37ddceba647c9986e0517" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
-        <td class="red">30.56 %</td>
+        <td class="red">52.78 %</td>
         <td>57</td>
         <td>36</td>
-        <td>11</td>
-        <td>25</td>
+        <td>19</td>
+        <td>17</td>
       </tr>
       
       <tr>
@@ -256,14 +256,14 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     Controllers
-    (<span class="red">68.13%</span>)
+    (<span class="red">76.92%</span>)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>10</b> files in total.
     <b>91</b> relevant lines. 
-    <span class="green"><b>62</b> lines covered</span> and
-    <span class="red"><b>29</b> lines missed </span>
+    <span class="green"><b>70</b> lines covered</span> and
+    <span class="red"><b>21</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -325,11 +325,11 @@
       
       <tr>
         <td><a href="#3e56c950b3fc7658f7b37ddceba647c9986e0517" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
-        <td class="red">30.56 %</td>
+        <td class="red">52.78 %</td>
         <td>57</td>
         <td>36</td>
-        <td>11</td>
-        <td>25</td>
+        <td>19</td>
+        <td>17</td>
       </tr>
       
       <tr>
@@ -1552,7 +1552,7 @@
     <tr>
       <td colspan="3">
         <h3>./app/controllers/dashboard/calendar/events_controller.rb</h3>
-        <h4><span class="red">30.56 %</span> covered</h4>
+        <h4><span class="red">52.78 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -1707,7 +1707,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -1715,7 +1715,7 @@
         <pre>    @event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -1785,7 +1785,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>18</pre>
       </td>
@@ -1793,12 +1793,12 @@
         <pre>    eventhash = Hash.new()</pre>
       </td>
       <td class="hits">
-        1
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>19</pre>
       </td>
@@ -1806,7 +1806,7 @@
         <pre>    startYear = params[:event]['start_at(1i)'].to_i</pre>
       </td>
       <td class="hits">
-        1
+        2
       </td>
     </tr>
   
@@ -2123,7 +2123,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>44</pre>
       </td>
@@ -2131,12 +2131,12 @@
         <pre>    @event = Event.find params[:id]</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>45</pre>
       </td>
@@ -2144,12 +2144,12 @@
         <pre>    @event.update_attributes!(params[:event])</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>46</pre>
       </td>
@@ -2157,12 +2157,12 @@
         <pre>    flash[:notice] = &quot;#{@event.name} was successfully updated.&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>47</pre>
       </td>
@@ -2170,7 +2170,7 @@
         <pre>    redirect_to dashboard_calendar_event_path(@event)</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -2227,7 +2227,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>52</pre>
       </td>
@@ -2235,12 +2235,12 @@
         <pre>    @event.destroy</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>53</pre>
       </td>
@@ -2248,12 +2248,12 @@
         <pre>    flash[:notice] = &quot;event '#{@event.name}' deleted.&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>54</pre>
       </td>
@@ -2261,7 +2261,7 @@
         <pre>    redirect_to dashboard_calendar_path</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -3784,7 +3784,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="17">
+    <tr class="hit" data-hits="20">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -3792,12 +3792,12 @@
         <pre>    @user = user</pre>
       </td>
       <td class="hits">
-        17
+        20
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="17">
+    <tr class="hit" data-hits="20">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -3805,7 +3805,7 @@
         <pre>    mail(to: @user.email, cc:'zealotjin@gmail.com', subject:&quot;Thank you for signing up to the Learning Shelter!&quot;)</pre>
       </td>
       <td class="hits">
-        17
+        20
       </td>
     </tr>
   
@@ -4271,7 +4271,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="16">
+    <tr class="hit" data-hits="19">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -4279,7 +4279,7 @@
         <pre>    UserMailer.welcome_email(self).deliver</pre>
       </td>
       <td class="hits">
-        16
+        19
       </td>
     </tr>
   

@@ -4,7 +4,7 @@ describe Dashboard::Calendar::EventsController do
   before(:each) do 
     @user = FactoryGirl.create(:user)
     sign_in @user
-    @event = mock('Event', :name => 'eventname', :description => 'mydes', :id => '11')
+    @event = FactoryGirl.create(:event)
   end
   describe 'get events_controller' do 
     it 'should render new page' do
@@ -32,13 +32,8 @@ describe Dashboard::Calendar::EventsController do
   end
   describe "#create" do 
      it 'should add event to database and redirect to home page' do
-      e = mock('Event')
       e2 = FactoryGirl.create(:event)
-      e.stub!(:name)
       Event.find(e2.id).should_not be_nil
-#      post :create, {:id => e}
-#      response.should be_success
-#Event.should_receive(:create!).and_return(e)
     end
   end 
 
@@ -51,10 +46,20 @@ describe Dashboard::Calendar::EventsController do
   end
   describe 'get dashboard/calendar/events#destroy' do 
     it 'should render the edit page for calendar event' do 
-      Event.should_receive(:destroy).with('11').and_return(@event)
-      get :destroy, {:id => '11'}
+      delete :destroy, {:id => @event.id}
+      response.should redirect_to '/dashboard/calendar'
+    end
+  end
+  describe 'get #show' do
+    it 'should render the show page' do
+      get :show, {:id => @event.id}
       response.should be_success
     end
   end
-
+  describe 'put #update' do 
+    it 'should redirect to the event path' do
+      put :update, {:id => @event.id}
+      response.should redirect_to "/dashboard/calendar/events/#{@event.id}"
+    end
+  end
 end
