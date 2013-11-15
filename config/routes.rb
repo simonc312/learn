@@ -3,7 +3,7 @@ LearningShelter::Application.routes.draw do
 
   devise_for :users
 	#namespace :dashboard
-
+  match 'dashboard' => 'dashboard#index'
 # calendar
   #match 'calendar/events/new' => 'events#new' # link
 
@@ -36,6 +36,10 @@ LearningShelter::Application.routes.draw do
       resources :volunteers
     end
   end	
+
+  #ERROR
+  match '*a', :to => 'errors#routing'
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

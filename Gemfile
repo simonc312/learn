@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
@@ -18,10 +19,12 @@ group :development, :test do
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
   gem 'factory_girl_rails'
+  gem 'mailcatcher'
 end
 group :production do 
   gem 'pg'
 end
+gem 'thin'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

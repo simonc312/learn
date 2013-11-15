@@ -4,11 +4,18 @@
 
 @font-face {
   font-family: myfont;
-  src:url('AmaticSC-Regular.ttf');
-  src: local("myfont"), url("/assets/fonts/AmaticSC-Regular.ttf");
+  /*src:url('AmaticSC-Regular.ttf');*/
+  /*src: local("myfont"), asset_path "AmaticSC-Regular.ttf" ;*/
+}
+#maininfohome {
+  margin:30px;
 }
 .maintitle {
+<<<<<<< HEAD
   font-family:myfont;
+=======
+  font-family:myfont,Arial;
+>>>>>>> 50b07be79bea169f7d737af408601b037ade9462
   background-color: white;
   border-radius: 8px;
 }

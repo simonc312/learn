@@ -14,8 +14,9 @@ class Dashboard::Calendar::EventsController < ApplicationController
 
   def create
     #render text: params[:event].inspect
-    puts "CREATE WAS CALLED-----------------------------------------------------------"
+    #puts "CREATE WAS CALLED-----------------------------------------------------------"
     eventhash = Hash.new()
+    puts params
     startYear = params[:event]['start_at(1i)'].to_i
     startMonth = params[:event]['start_at(2i)'].to_i
     startDay = params[:event]['start_at(3i)'].to_i
@@ -34,24 +35,24 @@ class Dashboard::Calendar::EventsController < ApplicationController
     
     eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)
     eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)
-    puts eventhash
-    @event = Event.create!(eventhash)
+    #puts eventhash
+    @event = Event.create!(params[:event])
     flash.keep[:notice] = "#{@event.name} was successfully created."
-    redirect_to calendar_path
+    redirect_to dashboard_calendar_path
   end
 
   def update
     @event = Event.find params[:id]
     @event.update_attributes!(params[:event])
     flash[:notice] = "#{@event.name} was successfully updated."
-    redirect_to calendar_event_path(@event)
+    redirect_to dashboard_calendar_event_path(@event)
   end
 
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
     flash[:notice] = "event '#{@event.name}' deleted."
-    redirect_to calendar_path
+    redirect_to dashboard_calendar_path
   end
 	
 end

@@ -19,7 +19,7 @@ describe HomeController do
     describe 'when logged in' do 
       it 'should redirect to dashboard#index' do 
         get :index
-        response.should redirect_to(dashboard_index_path)
+        response.should redirect_to('/dashboard')
       end
     end
   end

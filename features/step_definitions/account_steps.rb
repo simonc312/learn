@@ -10,7 +10,7 @@ And /I am logged in as "(.*)"/ do |email|
   visit '/users/sign_in'
   
   fill_in 'Email', :with => email
-  fill_in 'Password', :with => User.find_by_email(email).password
+  fill_in 'Password', :with => 12345678
   click_button 'Sign in'
   if page.respond_to? :should
     page.should have_content('Dashboard')

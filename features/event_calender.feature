@@ -1,50 +1,42 @@
 Feature:
 
-As an Admin 
-I want to be able to add events to an event calender,
-So I make sure Clients and Volunteers see important upcoming events and regular meeting times.
-
-As a User 
-I want to be able to click on events on my event calender 
-So I can see all the information neccessary: description, place, etc.
-
 As a User 
 I want to be able to add events to my event calender
 So I can make personal events others may not need.
 
+As a User 
+I want to be able to edit events on my event calender
+So I can make changes to events I already saved
+
+As a User
+I want to be able to delete events on my calendar
+So that I can remove events that have passed or been canceled
+
 Background:
-  Given there is the user with email "userone@gmail.com" in the database
+  When I am on the calendar page
+  And I press "Add New Event"
+  When I fill in "Event Name" with "my event"
+  And I press "Save Event"
+  Then I should be on the calendar page
 
-Given the following events exist:
-  |Title            |Date        |Duration      |Description    |Place             |
-  |Orientation      | 12/12/12   | 12:00 - 01:00|Meet and Greet |SF Chinatown      |
-  |Lunch            | 12/31/12   | 11:00 - 12:00|Have fun       |Fisherman's Wharf |
+Scenario: Add new event
+  And I should see "my event"
 
-Scenario: Admin adds event
-  Given I am logged in as admin
-  And I am on the dashboard page
-  When I click "New Event" button
-  When I fill in fields 
-  When I submit "Save"
-  Then  I should see new event on calender at right place and time
-  When I log out and sign in as "User"
-  When I am on the dashboard page 
-  Then I should see new event on calender 
+Scenario: Edit event
+  When I follow "my event"
+  When I follow "Edit"
+  And I fill in "Event Name" with "my new event"
+  And I press "Save Changes"
+  Then I should see "my new event"
+  And I follow "Back to calendar"
+  Then I should be on the calendar page
+  And I should see "my new event"
 
-Scenario: User clicks event
-  Given I am logged in as "userone@gmail.com"
-  And I am on the dashboard page
-  When I follow "Event Title" link on Calender
-  Then I should see a sidebar or pop up window with Event info
-  Then I should see "Event Title" description 
+Scenario: Delete event
+  When I follow "my event"
+  When I press "Delete"
+  Then I should be on the calendar page
+  And I should see "'my event' deleted"
 
-Scenario: User adds event
-  Given I am logged in as User
-  And I am on the dashboard page 
-  When I click "New Event" button
-  When I fill in fields 
-  When I submit "Save"
-  Then I should see new event on calender at right place and time
-  When I log out and sign in as "Admin"
-  When I am on the dashboard page 
-  Then I should not see new event on calender 
+
+

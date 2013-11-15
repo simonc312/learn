@@ -29,7 +29,16 @@ module NavigationHelpers
       '/users'
 
     when /^the signin page$/
-      '/sign_in'
+      '/users/sign_in'
+
+    when /^the calendar page$/
+      '/dashboard/calendar'
+
+    when /^the new event page$/
+      '/dashboard/calendar/events/new'
+
+    when /^the edit event page$/
+      edit_dashboard_calendar_event_path
 
     else
       begin

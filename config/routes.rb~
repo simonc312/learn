@@ -18,7 +18,7 @@ LearningShelter::Application.routes.draw do
   match "/about" => "basic#about"
   
   match 'dashboard/application/cl' => 'application#apply_client' # link
-  match 'dashboard/calendar' => 'calendar#index' # link
+  match 'dashboard/calendar' => 'dashboard/calendar#index' # link
   #CRUD
   namespace :dashboard do
     namespace :application do

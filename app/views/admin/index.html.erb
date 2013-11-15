@@ -1,12 +1,13 @@
+<%= stylesheet_link_tag "admin_page" %>
 
+<body id='admin_body'>
 <div id='maininfohome'>
 
-	<h1 class='maintitle'>Admin Page</h1>
-
 	
-	<div class="learningShelterLogo"> 
-  		<img src= "public/assets/images/logo_wrench_bed.png">
+	<div class="learningShelterLogo", align="right"> 
+		<%= image_tag("logo_wrench_bed.png") %>
   	</div>
+        <h1 class='maintitle'>Welcome to Admin Page</h1>
 	<ul id="tabs">
 		<li><a href="#about">About Us</a></li>
 		<li><a href="#users">Users</a></li>
@@ -34,7 +35,7 @@
 				<tr> 
 					<th> User ID </th>
 					<th> User E-mail </th>
-					<th> Applications </th>
+					<th> Application </th>
 				</tr>
 				<% @users.each do |user| %>
 				<tr>
@@ -50,7 +51,7 @@
 
 	<div class="tabContent" id="clients">
     <div class='tabtext'>
-    	<div id ="clientstable">
+    	<div id ="clienttable">
 			<table>
 				<tr> 
 					<th> First Name </th>
@@ -87,7 +88,7 @@
 	
   <div class="tabContent" id="volunteers">
     <div class='tabtext'>
-		  <div id ="volunteerstable">
+		  <div id ="volunteertable">
 			<table>
 				<tr> 
 					<th> First Name </th>
@@ -123,6 +124,6 @@
 
 
 </div>
-
+</body>
 
 

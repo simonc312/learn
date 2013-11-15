@@ -34,4 +34,14 @@ LearningShelter::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.action_mailer.default_url_options ={:host => '127.0.0.1', port:'5000', protocol:'http'}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {:address => "smtp.gmail.com", 
+                                        :port => 587,
+                                        :enable_starttls_auto => true,
+                                        :domain => 'learningshelter2013@gmail.com',
+                                        :authentication => :plain,
+                                        :user_name => 'learningshelter2013',
+                                        :password => '2013learningshelter'}
+
 end
