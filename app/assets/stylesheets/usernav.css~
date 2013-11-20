@@ -1,5 +1,10 @@
+
 #user_nav {
   float:right;
-  margin:60px;
-  display:block;
+}
+
+header {
+  background-color:black;
+  height:60px;
+  color:white;
 }

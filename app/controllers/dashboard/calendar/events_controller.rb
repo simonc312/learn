@@ -35,6 +35,9 @@ class Dashboard::Calendar::EventsController < ApplicationController
     
     eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)
     eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)
+
+    eventhash[:user_id] = current_user.id
+
     #puts eventhash
     @event = Event.create!(eventhash)
     flash.keep[:notice] = "#{@event.name} was successfully created."

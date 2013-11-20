@@ -11,7 +11,7 @@
   margin:30px;
 }
 .maintitle {
-  font-family:myfont,Arial;
+  font-family:Arial;
   background-color: white;
   border-radius: 8px;
 }
@@ -90,7 +90,8 @@ ul#tabs li a.selected {
 div.tabContent { 
 	border: 1px solid #c9c3ba;
 	padding: 0.5em; 
-	background-color: #f1f0ee; 
+  background-color:rgba(255,250,230,0.75);
+	//background-color: #f1f0ee;
   height: 100%;
 }
 div.tabContent.hide { 

@@ -1,6 +1,10 @@
+
 #user_nav {
   float:right;
-  margin:60px;
-  margin-right:120px;
-  display:block;
+}
+
+header {
+  background-color:white;
+  height:60px;
+  color:white;
 }

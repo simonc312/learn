@@ -1,4 +1,5 @@
 class Event < ActiveRecord::Base
-  attr_accessible :title, :end_at, :name, :start_at, :location, :description
+  attr_accessible :end_at, :name, :start_at, :location, :description
   has_event_calendar
+  belongs_to :user
 end

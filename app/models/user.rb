@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
   has_many :apps
+  has_many :events
   accepts_nested_attributes_for :apps
   after_create :send_confirmation_email
   protected
