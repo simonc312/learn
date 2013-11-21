@@ -1,4 +1,4 @@
-.mainform
+%.mainform
   %h1 Apply to be a Volunteer
 
   = form_tag dashboard_application_volunteers_path do

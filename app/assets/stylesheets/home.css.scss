@@ -8,7 +8,8 @@
   /*src: local("myfont"), asset_path "AmaticSC-Regular.ttf" ;*/
 }
 #maininfohome {
-  margin:30px;
+  margin-left:15%;
+  margin-right:15%;
 }
 .maintitle {
   font-family:Arial;
@@ -29,10 +30,21 @@
 .tabtext {
   margin-left:20px;
   margin-right:20px;
+  color:white;
 }
 h1 {
 	color:black;
-	font-size: 200%; 
+	font-size: 200%;
+  height: 30px; 
+}
+#headertitle {
+	color:gold;
+  margin-left:0px;
+  padding:30px
+}
+
+h2 {
+  color:black;
 }
 #maininfo {
 	margin-left: 200px;
@@ -46,49 +58,58 @@ body {
   bottom: 0px;
 	left:0px;
   right: 0px;
-	background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');
+	/*background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');*/
+  background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-attachment:fixed;
     background-size: cover;
 }
 ul#tabs { 
-	list-style-type: none; 
-	margin: 30px 0 0 0; 
+	list-style-type: none;
+  margin:0px; 
+  margin-right:30px;
 	padding: 0 0 0.3em 0; 
 	align:center;
+  float:right;
+	border-bottom: 2px solid gold;
 }
 ul#tabs li {
 	display: inline;
+  margin-right:20px;
 }
 ul#tabs li a { 
-	color: #42454a; 
-	background-color: #dedbde; 
-	border: 1px solid #c9c3ba; 
-	border-bottom: none; 
+	//color: #42454a; 
+  color: white;//new
+	background-color: rgba(255,250,230,0);
+	border: 1px solid rgba(255,250,230,0);//#c9c3ba;  
 	padding: 0.4em; 
 	text-decoration: none; 
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom: 0px solid white;//new
 }
 ul#tabs li a:hover { 
-	background-color: #f1f0ee; 
+	background-color: rgba(255,250,230,0.0);
+  color:gold;//new
 }
 ul#tabs li a.selected { 
-	color: #000; 
-	background-color: #f1f0ee; 
+	color: gold;
+	background-color: rgba(255,250,230,0);
 	font-weight: bold; 
 	padding: 0.8em 0.7em 0.38em 0.7em; 
+	border-bottom: 1px solid gold;//new
 }
 
 .tabContent {
 	height: 68%;
 }
 div.tabContent { 
-	border: 1px solid #c9c3ba;
+	border: 0px solid gold;//#c9c3ba;
 	padding: 0.5em; 
-  background-color:rgba(255,250,230,0.75);
+  //background-color:rgba(255,250,230,0.75); whitish
 	//background-color: #f1f0ee;
+  background-color:rgba(125,58,0,0.75);
   height: 100%;
 }
 div.tabContent.hide { 

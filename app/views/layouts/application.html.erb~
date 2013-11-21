@@ -10,8 +10,15 @@
 <body onload="init()">
 
   <header>
-	  <h1 class='maintitle'>The Learning Shelter</h1>
-    <div id='user_nav'>
+	  <h1><div id='headertitle'>The Learning Shelter</div></h1>
+	  <ul id="tabs">
+		  <li><a href="#about">About Us</a></li>
+		  <li><a href="#goals">Goals</a></li>
+		  <li><a href="#events">Events</a></li>
+		  <li><a href="#signup">Sign Up</a></li>
+		  <li><a href="#donate">Donate</a></li>
+	  </ul>
+    <div id='signinstatus'>
       <% if user_signed_in? %>
         Signed in as <%= current_user.email %>. Not You?
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
