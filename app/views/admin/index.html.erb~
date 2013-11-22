@@ -4,7 +4,7 @@
 <div id='maininfohome'>
 
 	
-	<div class="learningShelterLogo"> 
+	<div class="learningShelterLogo", align="right"> 
 		<%= image_tag("logo_wrench_bed.png") %>
   	</div>
         <h1 class='maintitle'>Welcome to Admin Page</h1>

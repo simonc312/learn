@@ -10,8 +10,11 @@ class Dashboard::CalendarController < ApplicationController
 
     @start_d, @end_d = Event.get_start_and_end_dates(@shown_month) # optionally pass in @first_day_of_week
     @events = Event.events_for_date_range(@start_d, @end_d)
-    #@event_strips = Event.create_event_strips(@start_d, @end_d, @events)
-    @event_strips = Event.event_strips_for_month(@shown_month, :conditions => ['user_id = ?', current_user.id ])
+    @events.reject! { |event|
+      not (User.find(event.user_id).admin or event.user_id == current_user.id)
+    }
+    @event_strips = Event.create_event_strips(@start_d, @end_d, @events)
+    #@event_strips = Event.event_strips_for_month(@shown_month, :conditions => ['user_id = ?', current_user.id ])
 
     #@events = Event.all
     

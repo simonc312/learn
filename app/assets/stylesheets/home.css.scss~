@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-  color:gold;
+  color:black;
 }
 #maininfo {
 	margin-left: 200px;
@@ -72,7 +72,7 @@ ul#tabs {
 	padding: 0 0 0.3em 0; 
 	align:center;
   float:right;
-	border-bottom: 2px solid gold;
+	//border-bottom: 2px solid gold;
 }
 ul#tabs li {
 	display: inline;
