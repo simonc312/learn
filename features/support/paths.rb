@@ -31,17 +31,25 @@ module NavigationHelpers
     when /^the signin page$/
       '/users/sign_in'
 
-    when /^the calendar page$/
-      '/dashboard/calendar'
+    when /^the (.*) calendar page$/
+      '/'+$1+'/calendar'
 
-    when /^the new event page$/
-      '/dashboard/calendar/events/new'
+    when /^the new (.*) event page$/
+      '/'+$1+'/calendar/events/new'
 
-    when /^the event details page$/
-      dashboard_calendar_event_path
+    when /^the (.*) event details page$/
+      if $1 == 'admin'
+        admin_calendar_event_path
+      elsif $1 == 'dashboard'
+        dashboard_calendar_event_path
+      end
 
     when /^the edit event page$/
-      edit_dashboard_calendar_event_path
+      if $1 == 'admin'
+        edit_admin_calendar_event_path
+      elsif $1 == 'dashboard'
+        edit_dashboard_calendar_event_path
+      end
 
     else
       begin

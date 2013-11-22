@@ -3,7 +3,7 @@
 <%= javascript_include_tag 'event_calendar' %>
 
 <div class="mainform">
-  <%= button_to "Add New Event", new_dashboard_calendar_event_path, :method => :get, :id => 'neweventbutton' %>
+  <%= button_to "Add New Event", new_admin_calendar_event_path, :method => :get, :id => 'neweventbutton' %>
   <%= raw(event_calendar) %>
 </div>
 
