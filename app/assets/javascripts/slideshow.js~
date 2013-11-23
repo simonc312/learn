@@ -1,0 +1,9 @@
+<!--
+//preload images
+var image1=new Image()
+image1.src="http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg?w=536"
+var image2=new Image()
+image2.src="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin_Prison-1566958_960x332.jpg"
+var image3=new Image()
+image3.src="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin-263896_960x332.jpg"
+//-->

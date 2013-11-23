@@ -1,5 +1,61 @@
 
-<div id='maininfohome'>
+
+<!-- slideshow stuff -->
+<div id='slideshow'>
+	<a id='leftarrow' href="javascript:slideitback()" class="arrows">&nbsp;&lt;&nbsp;</a>
+	
+	<a href="javascript:slidelink()">
+	<img src="firstcar.gif" id="i" name="slide" border="0" style='opacity:1.0'/></a>
+	
+	<a id='rightarrow' href="javascript:slideitfor()" class="arrows">&nbsp;&gt;&nbsp;</a>
+	
+	<script type="text/javascript">
+	<!--
+	var step=0
+	var whichimage=1
+	function slideitfor(){
+		if (!document.images)
+			return
+		if (step<3)
+			step++
+		else
+			step=1
+		document.images.slide.src=eval("image"+step+".src")
+		//document.getElementById('i').style.opacity = 0.2;
+		
+		whichimage=step
+
+		//setTimeout("slideit()",3000)//this sets a timer to automatically advance the image
+	}
+
+	function slideitback(){
+		if (!document.images)
+			return
+		if (step>1)
+			step--
+		else
+			step=3
+		document.images.slide.src=eval("image"+step+".src")
+		//document.getElementById('i').style.opacity = 0.2;
+
+		whichimage=step
+
+		//setTimeout("slideit()",3000)//this sets a timer to automatically advance the image
+	}
+
+	slideitfor()
+
+	function slidelink(){
+		if (whichimage==1)
+			window.location="http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg?w=536"
+		else if (whichimage==2)
+			window.location="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin_Prison-1566958_960x332.jpg"
+		else if (whichimage==3)
+			window.location="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin-263896_960x332.jpg"
+	}
+	//-->
+	</script>
+</div>
 
 	<div class="learningShelterLogo"> 
   		<%#= image_tag "logo_wrench_bed.png" %>
@@ -9,7 +65,7 @@
   	
     <div class='tabtext'>
 
-      <h2>About The Learning Shelter</h2>
+      <h3>About The Learning Shelter</h3>
 			  <p>The Vision of The Learning Shelter is to become a shelter system by example. As the first model we are testing the ideas which will become a live in/work in program built to allow individuals who seem to be qualified and have been skills tested to show an aptitude for making products both digital and tangible. Once qualified, cohorts will work as individuals among groups to find their own pace and channels then be guided through accelerated learning programs that teach skills which are currently relevant, less likely to be crowded by unemployed experts, and which have highly probable future viability.</p>
 			  <p>The Learning Shelter is currently planning out the due diligence process with some San Francisco based California 501(c)(3) non-profit corporations, in the hopes of finding a responsible and experienced home base that will sufficiently allow the project to grow into it's own non-profit in 2014.</p>
 			  <p><h3 style='display:inline'>Our Motto:</h3> Our job is to put ourselves out of jobs by creating graduates that don't come back.</p>
@@ -20,18 +76,18 @@
 
 	<div class="tabContent" id="events">
     <div class='tabtext'>
-		  <h2>Upcoming Events:</h2>
+		  <h3>Upcoming Events:</h3>
 		  <ul>
 			  <li>Project Showcase</li>
 			  <li>Learn-a-thon</li>
 		  </ul>
-		  <h2>Calendar:</h2>
+		  <h3>Calendar:</h3>
     </div>
 	</div>
 
 	<div class="tabContent" id="goals">
     <div class='tabtext'>
-      <h2>Our Goals</h2>
+      <h3>Our Goals</h3>
 		  <h3>The Learning Shelter will:</h3>
 		  <ul>
 			  <li>Expose learners to possibilities via hands on experience with various technologies including; 3D printing, laser cutting, welding, CAD Design, Web Design and Development</li>
@@ -45,7 +101,7 @@
 
   <div class="tabContent" id="signup">
     <div class='tabtext'>
-		  <h2>Sign up</h2>
+		  <h3>Sign up</h3>
 		  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 			  <%= devise_error_messages! %>
 			  <div class='left'><%= f.label :email %></div>
@@ -66,13 +122,11 @@
 
   <div class="tabContent" id="donate">
     <div class='tabtext'>
-      <h2>Donate</h2>
+      <h3>Donate</h3>
 		  <h3>Why Learning Shelter?</h3>
       <p>Info about donating to The Learning Shelter...</p>
     </div>
   </div>
-
-</div>
 
 
 

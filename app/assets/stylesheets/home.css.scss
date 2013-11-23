@@ -7,10 +7,6 @@
   /*src:url('AmaticSC-Regular.ttf');*/
   /*src: local("myfont"), asset_path "AmaticSC-Regular.ttf" ;*/
 }
-#maininfohome {
-  margin-left:15%;
-  margin-right:15%;
-}
 .maintitle {
   font-family:Arial;
   background-color: white;
@@ -52,6 +48,8 @@ h2 {
 	background-color: #E0B547;
 }
 body { 
+  margin-left:12%;
+  margin-right:12%;
 	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
   position: absolute;
 	top:0px;
@@ -59,7 +57,8 @@ body {
 	left:0px;
   right: 0px;
 	/*background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');*/
-  background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg');
+  //background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg');
+  background-image:url("http://www.johnsusek.com/projects/textures/lawdogs/woodwall4.jpg");
     background-repeat:no-repeat;
     background-position:center;
     background-attachment:fixed;

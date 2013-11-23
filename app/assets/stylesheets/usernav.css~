@@ -3,8 +3,6 @@ header {
   background-color:rgba(168,79,15,0.70);
   height:90px;
   color:white;
-  margin-left:15%;
-  margin-right:15%;
   margin-top:-20px;
   margin-bottom:10px;
   border-radius:5px;
@@ -13,8 +11,8 @@ header {
 div#signinstatus{
   float:right;
   margin-top:-30px;
-  margin-left:30px;
-  padding-left:20px;
+  margin-right:30px;
+
 }
 .mainform {
   background-color:rgba(255,234,196,0.75);
