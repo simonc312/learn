@@ -1,12 +1,19 @@
 FactoryGirl.define do
   factory :user do
+    email      "user@yahoo.com"
+    password   "userpassword"
+    password_confirmation "userpassword"
+  end
+  factory :admin do
     email      "Mark@yahoo.com"
-    password   "asdfasdfasdfasdf"
-    password_confirmation "asdfasdfasdfasdf"
+    password   "adminpassword"
+    password_confirmation "adminpassword"
+    admin true
   end
   factory :event do
     name       "my event"
     location   "my location"
-    id 76
+    description "this is the description"
+    user_id 1
   end
 end

@@ -666,7 +666,7 @@ RSpec:
   :created_at: 2013-11-11 20:59:55.030045009 -08:00
 ! '/home/saasbook/.rvm/gems/ruby-1.9.3-p448/bin/rspec ':
   :original_result:
-    /home/saasbook/learn/app/models/user.rb:
+    /home/saasbook/Learning/app/models/user.rb:
     - 1
     - 
     - 
@@ -681,37 +681,38 @@ RSpec:
     - 1
     - 1
     - 1
-    - 18
-    - 
-    - 
     - 1
-    - 0
-    - 
-    - 
-    /home/saasbook/learn/app/controllers/application_controller.rb:
-    - 1
-    - 1
-    - 
-    /home/saasbook/learn/app/helpers/application_helper.rb:
-    - 1
-    - 
-    - 1
-    - 0
+    - 27
     - 
     - 
     - 1
     - 0
     - 
     - 
+    /home/saasbook/Learning/app/controllers/application_controller.rb:
+    - 1
+    - 1
+    - 
+    /home/saasbook/Learning/app/helpers/application_helper.rb:
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
     - 1
     - 0
     - 
     - 
     - 
-    /home/saasbook/learn/app/helpers/basic_helper.rb:
+    /home/saasbook/Learning/app/helpers/basic_helper.rb:
     - 1
     - 
-    /home/saasbook/learn/app/helpers/calendar_helper.rb:
+    /home/saasbook/Learning/app/helpers/calendar_helper.rb:
     - 1
     - 1
     - 0
@@ -736,16 +737,103 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/learn/app/helpers/dashboard_helper.rb:
+    /home/saasbook/Learning/app/helpers/dashboard_helper.rb:
     - 1
     - 
-    /home/saasbook/learn/app/helpers/events_helper.rb:
+    /home/saasbook/Learning/app/helpers/events_helper.rb:
     - 1
     - 
-    /home/saasbook/learn/app/helpers/home_helper.rb:
+    /home/saasbook/Learning/app/helpers/home_helper.rb:
     - 1
     - 
-    /home/saasbook/learn/app/controllers/admin_controller.rb:
+    /home/saasbook/Learning/app/controllers/admin/calendar/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    /home/saasbook/Learning/app/models/event.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    /home/saasbook/Learning/app/controllers/admin/calendar_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/Learning/app/controllers/admin_controller.rb:
     - 1
     - 
     - 
@@ -767,40 +855,12 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/learn/app/controllers/basic_controller.rb:
+    /home/saasbook/Learning/app/controllers/basic_controller.rb:
     - 1
     - 1
     - 
     - 
-    /home/saasbook/learn/app/controllers/dashboard/application/clients_controller.rb:
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/learn/app/models/client.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/learn/app/models/app.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/learn/app/controllers/dashboard/application/volunteers_controller.rb:
+    /home/saasbook/Learning/app/controllers/dashboard/application/clients_controller.rb:
     - 1
     - 1
     - 1
@@ -818,28 +878,17 @@ RSpec:
     - 1
     - 
     - 
-    /home/saasbook/learn/app/models/volunteer.rb:
+    /home/saasbook/Learning/app/models/client.rb:
     - 1
     - 
     - 
-    /home/saasbook/learn/app/controllers/dashboard/calendar/events_controller.rb:
+    /home/saasbook/Learning/app/models/app.rb:
     - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
     - 1
     - 1
     - 
     - 
-    - 1
-    - 
-    - 
+    /home/saasbook/Learning/app/controllers/dashboard/application/volunteers_controller.rb:
     - 1
     - 1
     - 1
@@ -848,6 +897,45 @@ RSpec:
     - 1
     - 1
     - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/Learning/app/models/volunteer.rb:
+    - 1
+    - 
+    - 
+    /home/saasbook/Learning/app/controllers/dashboard/calendar/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
     - 1
     - 1
     - 1
@@ -862,6 +950,9 @@ RSpec:
     - 1
     - 
     - 1
+    - 
+    - 
+    - 1
     - 1
     - 1
     - 
@@ -881,12 +972,7 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/learn/app/models/event.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    /home/saasbook/learn/app/controllers/dashboard/calendar_controller.rb:
+    /home/saasbook/Learning/app/controllers/dashboard/calendar_controller.rb:
     - 1
     - 
     - 1
@@ -900,13 +986,17 @@ RSpec:
     - 1
     - 1
     - 1
+    - 0
+    - 
+    - 1
     - 
     - 
     - 
     - 
     - 
     - 
-    /home/saasbook/learn/app/controllers/dashboard_controller.rb:
+    - 
+    /home/saasbook/Learning/app/controllers/dashboard_controller.rb:
     - 1
     - 
     - 1
@@ -920,13 +1010,13 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/learn/app/controllers/errors_controller.rb:
+    /home/saasbook/Learning/app/controllers/errors_controller.rb:
     - 1
     - 1
     - 1
     - 
     - 
-    /home/saasbook/learn/app/controllers/home_controller.rb:
+    /home/saasbook/Learning/app/controllers/home_controller.rb:
     - 1
     - 
     - 1
@@ -936,13 +1026,24 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/learn/app/mailers/user_mailer.rb:
+    /home/saasbook/Learning/app/controllers/user_controller.rb:
+    - 1
+    - 
     - 1
     - 1
-    - 1
-    - 19
-    - 19
+    - 0
+    - 0
     - 
     - 
     - 
-  :created_at: 2013-11-11 20:49:59.330273857 -08:00
+    - 
+    /home/saasbook/Learning/app/mailers/user_mailer.rb:
+    - 1
+    - 1
+    - 1
+    - 28
+    - 28
+    - 
+    - 
+    - 
+  :created_at: 2013-11-24 12:23:00.009348594 -08:00
