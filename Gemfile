@@ -41,6 +41,9 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
 gem 'event-calendar', :require => 'event_calendar'
+group :test do
+  gem 'email_spec'
+end
 #gem 'factory_girl'
 #gem 'launchy'
 #gem 'simplecov'

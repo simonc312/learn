@@ -1,0 +1,15 @@
+.mainform
+  %h1 Send mass emails
+
+  = form_tag admin_mailer_path do
+
+    = label :mail, :subject, 'Subject'
+    = text_field :mail, 'subject'
+    %br
+
+    = label :mail, :body, 'Body'
+    = text_field :mail, 'body'
+    %br
+
+
+    = submit_tag 'Send'

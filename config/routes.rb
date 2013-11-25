@@ -9,6 +9,8 @@ LearningShelter::Application.routes.draw do
 
 
 # /admin
+  get '/admin/mailer' => 'admin/mailer#send'
+  post '/admin/mailer' => 'admin/mailer#send_mail'
   match '/admin' => 'admin#index'
   match 'admin/calendar' => 'admin/calendar#index' # link
   namespace :admin do
