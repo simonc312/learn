@@ -11,6 +11,11 @@ LearningShelter::Application.routes.draw do
 # /admin
   match '/admin/mailer' => 'admin/mailer#send'
   match '/admin' => 'admin#index'
+<<<<<<< HEAD
+=======
+  namespace :admin do
+    resources :apps
+>>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
   match 'admin/calendar' => 'admin/calendar#index' # link
   namespace :admin do
     namespace :calendar do

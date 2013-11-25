@@ -24,12 +24,14 @@ table, th, td
 {
 border: 1px solid black;
 font-family: Georgia;
+color: black;
 margin: auto
 }
 
 body#admin_body
 {
 background-image: none;
+background-color: white;
 }
 
 div#usertable
@@ -38,6 +40,24 @@ text-align: center;
 
 }
 
+ul#list{
+color: black;
+}
+
+li{
+color: black;
+}
+
+.content:target{
+display: block;
+}
+.content:target span{
+display: block;
+}
+
+.content{
+display: none;
+}
 .learningShelterLogo
 {
 
