@@ -1,0 +1,5 @@
+class Admin::AppsController < ApplicationController
+  def show
+    @app = app.find_by_id(params[:id])
+  end
+end
