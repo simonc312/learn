@@ -1,68 +1,23 @@
-
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.camera_wrap').camera(
+	{
+	height: '41%', pagination: true, thumbnails: false
+	}
+	);
+  });
+</script>
 
 <!-- slideshow stuff -->
-<div id='slideshow'>
-	<a id='leftarrow' href="javascript:slideitback()" class="arrows">&nbsp;&lt;&nbsp;</a>
-	
-	<a href="javascript:slidelink()">
-	<img src="firstcar.gif" id="i" name="slide" border="0" style='opacity:1.0'/></a>
-	
-	<a id='rightarrow' href="javascript:slideitfor()" class="arrows">&nbsp;&gt;&nbsp;</a>
-	
-	<script type="text/javascript">
-	<!--
-	var step=0
-	var whichimage=1
-	function slideitfor(){
-		if (!document.images)
-			return
-		if (step<3)
-			step++
-		else
-			step=1
-		document.images.slide.src=eval("image"+step+".src")
-		//document.getElementById('i').style.opacity = 0.2;
-		
-		whichimage=step
-
-		//setTimeout("slideit()",3000)//this sets a timer to automatically advance the image
-	}
-
-	function slideitback(){
-		if (!document.images)
-			return
-		if (step>1)
-			step--
-		else
-			step=3
-		document.images.slide.src=eval("image"+step+".src")
-		//document.getElementById('i').style.opacity = 0.2;
-
-		whichimage=step
-
-		//setTimeout("slideit()",3000)//this sets a timer to automatically advance the image
-	}
-
-	slideitfor()
-
-	function slidelink(){
-		if (whichimage==1)
-			window.location="http://thelastmile.org/wp-content/uploads/Banner/00c-Group-Large3-1567338_960x332.png"
-		else if (whichimage==2)
-			window.location="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin_Prison-1566958_960x332.jpg"
-		else if (whichimage==3)
-			window.location="http://thelastmile.org/wp-content/uploads/Banner/San_Quentin-263896_960x332.jpg"
-	}
-	//-->
-	</script>
+<div class="camera_wrap">
+      <div data-src= image_tag "logo_wrench_bed.png"></div>
+      <div data-src= image_tag "logo_wrench_bed.png"></div>
+      <div data-src= image_tag "logo_wrench_bed.png"></div>
+      <div data-src= image_tag "logo_wrench_bed.png"></div>
 </div>
 
 <a class="twitter-timeline"  href="https://twitter.com/Simonchen312"  data-widget-id="404838744454221824">Tweets by @Simonchen312</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-	<div class="learningShelterLogo"> 
-  		<%#= image_tag "logo_wrench_bed.png" %>
-  </div>
 
   <div class="tabContent" id="about">
   	

@@ -11,7 +11,5 @@
  *= require_self
  *= require_tree .
  */
-.mainform {
-  background-color:yellow;
-}
+
 
