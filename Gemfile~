@@ -41,6 +41,13 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'devise'
 gem 'event-calendar', :require => 'event_calendar'
+<<<<<<< HEAD
+gem 'flexslider'
+=======
+group :test do
+  gem 'email_spec'
+end
+>>>>>>> b7b9bf607b1b984d82e0b4b6bfa34875590a6b1a
 #gem 'factory_girl'
 #gem 'launchy'
 #gem 'simplecov'

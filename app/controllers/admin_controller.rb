@@ -16,6 +16,12 @@ class AdminController < ApplicationController
       redirect_to '/dashboard'
     end
   end
+
+  def send_email(subject, message)
+    mass_email(User.all, subject, message)
+    flash[:notice] = "Email sent"
+    redirect_to '/dashboard'
+  end
   
 
 end

@@ -8,6 +8,7 @@
   </div>
   <h1 class='maintitle'>Welcome to Admin Page</h1>
   <h3><%= link_to "Admin Calendar", admin_calendar_path %></h3>
+  <h4><%= link_to "Send email", admin_mailer_path %></h4>
 
 
   <ul id="list">
@@ -31,7 +32,9 @@
   	  <td><%= user.id %> </td>
 	  <td><%= user.email %></td>
           <td></td>
-	  <td><%= link_to "Application", admin_app_path(user.apps.find(user_id=user.id)) %></td>
+	<% if user.apps.find_by_user_id(user_id=user.id) %>
+	<td><%= link_to "Application", admin_app_path(user.apps.find_by_user_id(user_id=user.id)) %></td>  
+	<% end %>
 	</tr>
         <% end %>
       </table>
