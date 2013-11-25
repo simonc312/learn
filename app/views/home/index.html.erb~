@@ -1,13 +1,3 @@
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.camera_wrap').camera(
-	{
-	height: '41%', pagination: true, thumbnails: false
-	}
-	);
-  });
-</script>
-
 <!-- slideshow stuff -->
 <div class="camera_wrap">
       <div data-src= image_tag "logo_wrench_bed.png"></div>
