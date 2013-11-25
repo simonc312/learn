@@ -1,830 +1,7 @@
 ---
-Cucumber Features:
-  :original_result:
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/models/user.rb:
-=======
-    /home/saasbook/Learning/app/models/user.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-<<<<<<< HEAD
-    - 31
-=======
-    - 2
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/application_controller.rb:
-    - 1
-    - 1
-    - 
-    /home/saasbook/learningshelter/app/helpers/application_helper.rb:
-    - 1
-    - 
-    - 1
-    - 36
-    - 
-    - 
-    - 1
-    - 36
-=======
-    /home/saasbook/Learning/app/controllers/application_controller.rb:
-    - 1
-    - 1
-    - 
-    /home/saasbook/Learning/app/helpers/application_helper.rb:
-    - 1
-    - 
-    - 1
-    - 2
-    - 
-    - 
-    - 1
-    - 2
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/helpers/basic_helper.rb:
-    - 1
-    - 
-    /home/saasbook/learningshelter/app/helpers/calendar_helper.rb:
-=======
-    /home/saasbook/Learning/app/helpers/basic_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Learning/app/helpers/calendar_helper.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/helpers/dashboard_helper.rb:
-    - 1
-    - 
-    /home/saasbook/learningshelter/app/helpers/events_helper.rb:
-    - 1
-    - 
-    /home/saasbook/learningshelter/app/helpers/home_helper.rb:
-    - 1
-    - 
-    /home/saasbook/learningshelter/app/controllers/admin/calendar/events_controller.rb:
-=======
-    /home/saasbook/Learning/app/helpers/dashboard_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Learning/app/helpers/events_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Learning/app/helpers/home_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Learning/app/controllers/admin/calendar/events_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/models/event.rb:
-=======
-    /home/saasbook/Learning/app/models/event.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/admin/calendar_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/admin/calendar_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/admin/mailer_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/admin_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    /home/saasbook/learningshelter/app/controllers/admin_controller.rb:
-    - 1
-<<<<<<< HEAD
-    - 
-    - 
-    - 1
-    - 1
-    - 2
-    - 2
-    - 2
-    - 
-    - 
-    - 1
-    - 3
-=======
-    - 0
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-<<<<<<< HEAD
-    - 
-    - 
-    /home/saasbook/learningshelter/app/controllers/basic_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/basic_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/dashboard/application/clients_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/dashboard/application/clients_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/models/client.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/learningshelter/app/models/app.rb:
-=======
-    /home/saasbook/Learning/app/models/client.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/Learning/app/models/app.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/dashboard/application/volunteers_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/dashboard/application/volunteers_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/models/volunteer.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/learningshelter/app/controllers/dashboard/calendar/events_controller.rb:
-=======
-    /home/saasbook/Learning/app/models/volunteer.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/Learning/app/controllers/dashboard/calendar/events_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/dashboard/calendar_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/dashboard/calendar_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/dashboard_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/dashboard_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/errors_controller.rb:
-    - 1
-=======
-    /home/saasbook/Learning/app/controllers/errors_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 0
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/home_controller.rb:
-    - 1
-    - 
-    - 1
-    - 38
-    - 20
-=======
-    /home/saasbook/Learning/app/controllers/home_controller.rb:
-    - 1
-    - 
-    - 1
-    - 4
-    - 3
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/controllers/user_controller.rb:
-=======
-    /home/saasbook/Learning/app/controllers/user_controller.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 
-    - 1
-    - 1
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 
-<<<<<<< HEAD
-    /home/saasbook/learningshelter/app/mailers/mass_mailer.rb:
-=======
-    /home/saasbook/Learning/app/mailers/user_mailer.rb:
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 2
-    - 
-    - 1
-<<<<<<< HEAD
-=======
-    - 2
-    - 2
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
-    - 
-    - 
-    /home/saasbook/learningshelter/app/mailers/user_mailer.rb:
-    - 1
-    - 1
-    - 1
-    - 31
-    - 31
-    - 
-    - 
-<<<<<<< HEAD
-  :created_at: 2013-11-24 22:23:40.025618037 -08:00
-=======
-  :created_at: 2013-11-24 21:00:13.574568752 -08:00
->>>>>>> 18c006d3b34d39352fc2883d2887031912aa7025
 RSpec:
   :original_result:
-    /home/saasbook/Desktop/project/learning_shelter/app/models/user.rb:
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 18
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/application_controller.rb:
-    - 1
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/application_helper.rb:
-    - 1
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/basic_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/calendar_helper.rb:
-    - 1
-    - 1
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 0
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/dashboard_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/events_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/helpers/home_helper.rb:
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/admin_controller.rb:
-    - 1
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 2
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/basic_controller.rb:
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/application/clients_controller.rb:
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/models/client.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/models/app.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/application/volunteers_controller.rb:
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/models/volunteer.rb:
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/calendar/events_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/models/event.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard/calendar_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/dashboard_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/errors_controller.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/controllers/home_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    /home/saasbook/Desktop/project/learning_shelter/app/mailers/user_mailer.rb:
-    - 1
-    - 1
-    - 1
-    - 19
-    - 19
-    - 
-    - 
-    - 
-  :created_at: 2013-11-11 20:59:55.030045009 -08:00
-! '/home/saasbook/.rvm/gems/ruby-1.9.3-p448/bin/rspec ':
-  :original_result:
-    /home/saasbook/Learning/app/models/user.rb:
+    /home/saasbook/learn/app/models/user.rb:
     - 1
     - 
     - 
@@ -847,16 +24,12 @@ RSpec:
     - 0
     - 
     - 
-    /home/saasbook/Learning/app/controllers/application_controller.rb:
+    /home/saasbook/learn/app/controllers/application_controller.rb:
     - 1
     - 1
     - 
-    /home/saasbook/Learning/app/helpers/application_helper.rb:
+    /home/saasbook/learn/app/helpers/application_helper.rb:
     - 1
-    - 
-    - 1
-    - 0
-    - 
     - 
     - 1
     - 0
@@ -866,11 +39,15 @@ RSpec:
     - 0
     - 
     - 
+    - 1
+    - 0
     - 
-    /home/saasbook/Learning/app/helpers/basic_helper.rb:
+    - 
+    - 
+    /home/saasbook/learn/app/helpers/basic_helper.rb:
     - 1
     - 
-    /home/saasbook/Learning/app/helpers/calendar_helper.rb:
+    /home/saasbook/learn/app/helpers/calendar_helper.rb:
     - 1
     - 1
     - 0
@@ -895,59 +72,42 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/Learning/app/helpers/dashboard_helper.rb:
+    /home/saasbook/learn/app/helpers/dashboard_helper.rb:
     - 1
     - 
-    /home/saasbook/Learning/app/helpers/events_helper.rb:
+    /home/saasbook/learn/app/helpers/events_helper.rb:
     - 1
     - 
-    /home/saasbook/Learning/app/helpers/home_helper.rb:
+    /home/saasbook/learn/app/helpers/home_helper.rb:
     - 1
     - 
-    /home/saasbook/Learning/app/controllers/admin/calendar/events_controller.rb:
-    - 1
-    - 
+    /home/saasbook/learn/app/controllers/admin/apps_controller.rb:
     - 1
     - 1
+    - 0
     - 
     - 
+    /home/saasbook/learn/app/models/app.rb:
     - 1
-    - 
-    - 
-    - 
     - 1
     - 1
     - 
     - 
-    - 1
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
+    /home/saasbook/learn/app/controllers/admin/calendar/events_controller.rb:
     - 1
     - 
     - 1
     - 1
     - 
+    - 
     - 1
     - 
     - 
+    - 
     - 1
     - 1
+    - 
+    - 
     - 1
     - 
     - 
@@ -956,6 +116,28 @@ RSpec:
     - 1
     - 1
     - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
     - 
     - 
     - 1
@@ -965,33 +147,52 @@ RSpec:
     - 1
     - 
     - 
-    - 
-    /home/saasbook/Learning/app/models/event.rb:
     - 1
     - 1
-    - 1
-    - 1
-    - 
-    /home/saasbook/Learning/app/controllers/admin/calendar_controller.rb:
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 
-    - 
-    - 
     - 1
     - 1
     - 1
     - 
     - 
     - 
+    /home/saasbook/learn/app/models/event.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    /home/saasbook/learn/app/controllers/admin/calendar_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
     - 
     - 
-    /home/saasbook/Learning/app/controllers/admin_controller.rb:
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/admin/mailer_controller.rb:
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/admin_controller.rb:
     - 1
     - 
     - 
@@ -1011,14 +212,20 @@ RSpec:
     - 
     - 
     - 
+    - 1
+    - 0
+    - 0
+    - 0
     - 
     - 
-    /home/saasbook/Learning/app/controllers/basic_controller.rb:
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/basic_controller.rb:
     - 1
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/controllers/dashboard/application/clients_controller.rb:
+    /home/saasbook/learn/app/controllers/dashboard/application/clients_controller.rb:
     - 1
     - 1
     - 1
@@ -1036,17 +243,11 @@ RSpec:
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/models/client.rb:
+    /home/saasbook/learn/app/models/client.rb:
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/models/app.rb:
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    /home/saasbook/Learning/app/controllers/dashboard/application/volunteers_controller.rb:
+    /home/saasbook/learn/app/controllers/dashboard/application/volunteers_controller.rb:
     - 1
     - 1
     - 1
@@ -1064,20 +265,12 @@ RSpec:
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/models/volunteer.rb:
+    /home/saasbook/learn/app/models/volunteer.rb:
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/controllers/dashboard/calendar/events_controller.rb:
+    /home/saasbook/learn/app/controllers/dashboard/calendar/events_controller.rb:
     - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
     - 
     - 1
     - 1
@@ -1086,14 +279,16 @@ RSpec:
     - 1
     - 
     - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
+    - 
     - 1
     - 1
     - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
     - 1
     - 1
     - 1
@@ -1103,6 +298,12 @@ RSpec:
     - 1
     - 1
     - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
     - 
     - 1
     - 1
@@ -1110,13 +311,6 @@ RSpec:
     - 1
     - 
     - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 1
     - 1
     - 1
     - 1
@@ -1129,8 +323,15 @@ RSpec:
     - 1
     - 
     - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
     - 
-    /home/saasbook/Learning/app/controllers/dashboard/calendar_controller.rb:
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/calendar_controller.rb:
     - 1
     - 
     - 1
@@ -1154,7 +355,7 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/Learning/app/controllers/dashboard_controller.rb:
+    /home/saasbook/learn/app/controllers/dashboard_controller.rb:
     - 1
     - 
     - 1
@@ -1168,13 +369,13 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/Learning/app/controllers/errors_controller.rb:
+    /home/saasbook/learn/app/controllers/errors_controller.rb:
     - 1
     - 1
     - 1
     - 
     - 
-    /home/saasbook/Learning/app/controllers/home_controller.rb:
+    /home/saasbook/learn/app/controllers/home_controller.rb:
     - 1
     - 
     - 1
@@ -1184,7 +385,7 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/Learning/app/controllers/user_controller.rb:
+    /home/saasbook/learn/app/controllers/user_controller.rb:
     - 1
     - 
     - 1
@@ -1195,7 +396,21 @@ RSpec:
     - 
     - 
     - 
-    /home/saasbook/Learning/app/mailers/user_mailer.rb:
+    /home/saasbook/learn/app/mailers/mass_mailer.rb:
+    - 1
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/mailers/user_mailer.rb:
     - 1
     - 1
     - 1
@@ -1203,5 +418,424 @@ RSpec:
     - 28
     - 
     - 
+  :created_at: 2013-11-25 01:16:59.167808309 -08:00
+Cucumber Features:
+  :original_result:
+    /home/saasbook/learn/app/models/user.rb:
+    - 1
     - 
-  :created_at: 2013-11-24 12:23:00.009348594 -08:00
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 34
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/application_controller.rb:
+    - 1
+    - 1
+    - 
+    /home/saasbook/learn/app/helpers/application_helper.rb:
+    - 1
+    - 
+    - 1
+    - 38
+    - 
+    - 
+    - 1
+    - 38
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/helpers/basic_helper.rb:
+    - 1
+    - 
+    /home/saasbook/learn/app/helpers/calendar_helper.rb:
+    - 1
+    - 1
+    - 28
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 14
+    - 
+    - 
+    - 1
+    - 
+    - 14
+    - 21
+    - 21
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/helpers/dashboard_helper.rb:
+    - 1
+    - 
+    /home/saasbook/learn/app/helpers/events_helper.rb:
+    - 1
+    - 
+    /home/saasbook/learn/app/helpers/home_helper.rb:
+    - 1
+    - 
+    /home/saasbook/learn/app/controllers/admin/apps_controller.rb:
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/models/app.rb:
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/admin/calendar/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/models/event.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    /home/saasbook/learn/app/controllers/admin/calendar_controller.rb:
+    - 1
+    - 
+    - 1
+    - 4
+    - 4
+    - 
+    - 4
+    - 
+    - 
+    - 
+    - 4
+    - 4
+    - 4
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/admin/mailer_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/admin_controller.rb:
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 2
+    - 2
+    - 2
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/basic_controller.rb:
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/application/clients_controller.rb:
+    - 1
+    - 1
+    - 3
+    - 3
+    - 2
+    - 2
+    - 2
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/models/client.rb:
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/application/volunteers_controller.rb:
+    - 1
+    - 1
+    - 3
+    - 3
+    - 2
+    - 2
+    - 2
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/learn/app/models/volunteer.rb:
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/calendar/events_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 
+    - 3
+    - 3
+    - 3
+    - 
+    - 3
+    - 3
+    - 
+    - 3
+    - 
+    - 
+    - 3
+    - 3
+    - 3
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard/calendar_controller.rb:
+    - 1
+    - 
+    - 1
+    - 10
+    - 10
+    - 
+    - 10
+    - 
+    - 
+    - 
+    - 10
+    - 10
+    - 10
+    - 10
+    - 
+    - 10
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/dashboard_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/errors_controller.rb:
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/home_controller.rb:
+    - 1
+    - 
+    - 1
+    - 43
+    - 24
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/controllers/user_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/learn/app/mailers/mass_mailer.rb:
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 
+    - 1
+    - 
+    - 
+    /home/saasbook/learn/app/mailers/user_mailer.rb:
+    - 1
+    - 1
+    - 1
+    - 34
+    - 34
+    - 
+    - 
+  :created_at: 2013-11-25 01:19:08.112618284 -08:00
