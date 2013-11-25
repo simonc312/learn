@@ -17,26 +17,28 @@
   </ul>
 
   <div class="contents">
-  <div class="content" id="users">
+  <div class="content", id="users">
     <div id ="usertable">
       <table>
         <tr> 
 	  <th> User ID </th>
 	  <th> User E-mail </th>
-	  <th> Application </th>
+          <th> Status </th>
+	  <th> User Application </th>
 	</tr>
 	<% @users.each do |user| %>
 	<tr>
   	  <td><%= user.id %> </td>
 	  <td><%= user.email %></td>
-	  <td><%= user.apps %></td>
+          <td></td>
+	  <td><%= link_to "Application", admin_app_path(user.apps.find(user_id=user.id)) %></td>
 	</tr>
         <% end %>
       </table>
     </div>
   </div>
 
-  <div class="content" id="clients">
+  <div class="content", id="clients">
     <div id ="clienttable">
       <table>
         <tr> 
@@ -69,7 +71,7 @@
     </div>
   </div>
 
-  <div class="content" id="volunteers">
+  <div class="content", id="volunteers">
     <div id ="volunteertable">
       <table>
         <tr> 

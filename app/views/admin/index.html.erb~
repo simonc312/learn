@@ -17,26 +17,26 @@
   </ul>
 
   <div class="contents">
-  <div class="content" id="users">
+  <div class="content", id="users">
     <div id ="usertable">
       <table>
         <tr> 
 	  <th> User ID </th>
 	  <th> User E-mail </th>
-	  <th> Application </th>
+	  <th> User Application </th>
 	</tr>
 	<% @users.each do |user| %>
 	<tr>
   	  <td><%= user.id %> </td>
 	  <td><%= user.email %></td>
-	  <td><%= user.apps %></td>
+	  <td><%= link_to "Application", admin_app_path(user.apps.find(user_id=user.id)) %></td>
 	</tr>
         <% end %>
       </table>
     </div>
   </div>
 
-  <div class="content" id="clients">
+  <div class="content", id="clients">
     <div id ="clienttable">
       <table>
         <tr> 
@@ -63,6 +63,38 @@
 	  <td><%= client.state %></td>
 	  <td><%= client.user_id %></td>
 	  <td><%= client.created_at %></td>
+	</tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+  <div class="content", id="volunteers">
+    <div id ="volunteertable">
+      <table>
+        <tr> 
+	  <th> First Name </th>
+          <th> Last Name </th>
+	  <th> Gender </th>
+	  <th> Birthday </th>
+	  <th> Phone Number </th>
+	  <th> Street Address </th>
+	  <th> City </th>
+	  <th> State </th>
+	  <th> User ID </th>
+	  <th> Submission Time </th>
+	</tr>
+	<% @volunteers.each do |volunteer| %>
+	<tr>
+	  <td><%= volunteer.last_name %></td>
+	  <td><%= volunteer.gender %></td>
+	  <td><%= volunteer.birthday %></td>
+	  <td><%= volunteer.phone %> </td>
+	  <td><%= volunteer.street_address %></td>
+          <td><%= volunteer.city %> </td>
+	  <td><%= volunteer.state %></td>
+	  <td><%= volunteer.user_id %></td>
+	  <td><%= volunteer.created_at %></td>
 	</tr>
         <% end %>
       </table>
