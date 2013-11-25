@@ -32,8 +32,8 @@
   	  <td><%= user.id %> </td>
 	  <td><%= user.email %></td>
           <td></td>
-	<% if false %>
-	<td><%= link_to "Application", admin_app_path(user.apps.find(user_id=user.id)) %></td>  
+	<% if user.apps.find_by_user_id(user_id=user.id) %>
+	<td><%= link_to "Application", admin_app_path(user.apps.find_by_user_id(user_id=user.id)) %></td>  
 	<% end %>
 	</tr>
         <% end %>
