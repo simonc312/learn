@@ -1,5 +1,11 @@
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
+$(function(){
+
+	function slider () {
+  		jQuery('.flexslider').flexslider({
+    		animation: "slide"
+  		});
+	};
+
+$(slider());
+
 });

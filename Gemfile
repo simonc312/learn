@@ -16,7 +16,6 @@ group :development, :test do
   gem 'simplecov'
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
   gem 'factory_girl_rails'
   gem 'mailcatcher'
@@ -43,6 +42,7 @@ gem 'devise'
 gem 'event-calendar', :require => 'event_calendar'
 gem 'flexslider'
 group :test do
+  gem 'cucumber-rails', :require => false
   gem 'email_spec'
 end
 #gem 'factory_girl'

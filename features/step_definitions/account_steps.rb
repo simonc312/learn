@@ -19,7 +19,7 @@ And /I am logged in as "(.*)"/ do |email|
   end
 end
 And /I log out/ do
-    And 'I follow "Sign out"'
+    step 'I follow "Sign out"'
 end
 
 Given /the following users exist/ do |users_table|

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Learn</title>
+    <title>Code coverage for Learning</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.4.5/jquery-1.4.2.min.js' type='text/javascript'></script>
     <script src='./assets/0.4.5/jquery.dataTables.min.js' type='text/javascript'></script>   
@@ -21,20 +21,302 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-25T01:19:08-08:00">2013-11-25T01:19:08-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-26T00:47:57-08:00">2013-11-26T00:47:57-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="green">96.3%</span>)
+    (<span class="green">95.37%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>28</b> files in total.
     <b>216</b> relevant lines. 
-    <span class="green"><b>208</b> lines covered</span> and
+    <span class="green"><b>206</b> lines covered</span> and
+    <span class="red"><b>10</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><a href="#939f86340010653725ff91db571a604911348fdf" class="src_link" title="./app/controllers/admin/apps_controller.rb">./app/controllers/admin/apps_controller.rb</a></td>
+        <td class="red">66.67 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#6efaba9b1e3e872a31e4b9e695a9e27b86cf911f" class="src_link" title="./app/controllers/admin/calendar/events_controller.rb">./app/controllers/admin/calendar/events_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>61</td>
+        <td>38</td>
+        <td>38</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#6e62022ad46e53037a1fa521be7ba4abd8d632c4" class="src_link" title="./app/controllers/admin/calendar_controller.rb">./app/controllers/admin/calendar_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>18</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#e93dd0ce1d80348263a1b0b7bae67a5d26b3fe74" class="src_link" title="./app/controllers/admin/mailer_controller.rb">./app/controllers/admin/mailer_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#6d728341876c68dcb78ca1c7b1a6722cb45fcd24" class="src_link" title="./app/controllers/admin_controller.rb">./app/controllers/admin_controller.rb</a></td>
+        <td class="red">78.57 %</td>
+        <td>27</td>
+        <td>14</td>
+        <td>11</td>
+        <td>3</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#900ce0e6139333a7a89d89b27fb958a252efe451" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#3a5c85f46907f14d202ea7e778922d815a82fb5d" class="src_link" title="./app/controllers/basic_controller.rb">./app/controllers/basic_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#72522140057b0ec90228e41389ca7d6417aedac4" class="src_link" title="./app/controllers/dashboard/application/clients_controller.rb">./app/controllers/dashboard/application/clients_controller.rb</a></td>
+        <td class="green">90.91 %</td>
+        <td>17</td>
+        <td>11</td>
+        <td>10</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#e5b273f70dce60e2ab6d342d926bbee6c3a8231d" class="src_link" title="./app/controllers/dashboard/application/volunteers_controller.rb">./app/controllers/dashboard/application/volunteers_controller.rb</a></td>
+        <td class="green">90.91 %</td>
+        <td>17</td>
+        <td>11</td>
+        <td>10</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#df951ddc12465765d1b8e11db3cf79a803382279" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>61</td>
+        <td>38</td>
+        <td>38</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#30af90fd2f762c9d7cf7c376097e7e34b6bb0d88" class="src_link" title="./app/controllers/dashboard/calendar_controller.rb">./app/controllers/dashboard/calendar_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>23</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#e46afc8f4b94694fc261db49002983328aac51dd" class="src_link" title="./app/controllers/dashboard_controller.rb">./app/controllers/dashboard_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>13</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#9a2cd0d230752404c8d33cc54068692ce0f96ffb" class="src_link" title="./app/controllers/errors_controller.rb">./app/controllers/errors_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#ad9943852c1e2e3d73803b4b77f1a78620228537" class="src_link" title="./app/controllers/home_controller.rb">./app/controllers/home_controller.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>9</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#6f621b8d07e8fefc9e5b8a3c09254157905d5426" class="src_link" title="./app/controllers/user_controller.rb">./app/controllers/user_controller.rb</a></td>
+        <td class="red">60.0 %</td>
+        <td>10</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#81ccfae5d5d57b19fac311f3b29936b95468f14f" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
+        <td class="yellow">85.71 %</td>
+        <td>15</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#0a0b7b46bb866c4c726dfab65b79dcc8fcb1b70a" class="src_link" title="./app/helpers/basic_helper.rb">./app/helpers/basic_helper.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#cb3050b458aed2794756ca46b623917a5e756040" class="src_link" title="./app/helpers/calendar_helper.rb">./app/helpers/calendar_helper.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>24</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#f99b84336820da801832b0e38197e6cd8a489925" class="src_link" title="./app/helpers/dashboard_helper.rb">./app/helpers/dashboard_helper.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#eed4bb109d517ca6f3376f72ac98c4f01ec5f4b1" class="src_link" title="./app/helpers/events_helper.rb">./app/helpers/events_helper.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#c633e9c43bf14cbf574904386a28e7fbbc91ea9d" class="src_link" title="./app/helpers/home_helper.rb">./app/helpers/home_helper.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#c213010350ff15064e39256414b65b8dba79c4c8" class="src_link" title="./app/mailers/mass_mailer.rb">./app/mailers/mass_mailer.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>13</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#defdc4c5c8f7211650cdd66cc8ab17a690fae0d4" class="src_link" title="./app/mailers/user_mailer.rb">./app/mailers/user_mailer.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#cbc23aa8f442ee1af567972f91576fb981f203ee" class="src_link" title="./app/models/app.rb">./app/models/app.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#12dd6067d8a142bd6d06b11960810dc6413d44a8" class="src_link" title="./app/models/client.rb">./app/models/client.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#2d322aa80556684e702dc1d7c0be847f4d2e20ac" class="src_link" title="./app/models/event.rb">./app/models/event.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#bf5f5a49ad7855d5c4ecad20fa4f4122e4dec2d7" class="src_link" title="./app/models/user.rb">./app/models/user.rb</a></td>
+        <td class="green">91.67 %</td>
+        <td>22</td>
+        <td>12</td>
+        <td>11</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#1168b49aabbf805dbbe5d5bcdc2f780ad4b24699" class="src_link" title="./app/models/volunteer.rb">./app/models/volunteer.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    Controllers
+    (<span class="green">95.03%</span>)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>15</b> files in total.
+    <b>161</b> relevant lines. 
+    <span class="green"><b>153</b> lines covered</span> and
     <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,7 +333,7 @@
     <tbody>
       
       <tr>
-        <td><a href="#7deb575554b8b36a16eaa0f2a577c7022da8dfee" class="src_link" title="./app/controllers/admin/apps_controller.rb">./app/controllers/admin/apps_controller.rb</a></td>
+        <td><a href="#939f86340010653725ff91db571a604911348fdf" class="src_link" title="./app/controllers/admin/apps_controller.rb">./app/controllers/admin/apps_controller.rb</a></td>
         <td class="red">66.67 %</td>
         <td>5</td>
         <td>3</td>
@@ -60,7 +342,7 @@
       </tr>
       
       <tr>
-        <td><a href="#ddb5ba19b68b5b4ad8e0c9738d1f0cc830d12437" class="src_link" title="./app/controllers/admin/calendar/events_controller.rb">./app/controllers/admin/calendar/events_controller.rb</a></td>
+        <td><a href="#6efaba9b1e3e872a31e4b9e695a9e27b86cf911f" class="src_link" title="./app/controllers/admin/calendar/events_controller.rb">./app/controllers/admin/calendar/events_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>61</td>
         <td>38</td>
@@ -69,7 +351,7 @@
       </tr>
       
       <tr>
-        <td><a href="#b11a40dce0c82f201698aaf01235e1bea4cfdd92" class="src_link" title="./app/controllers/admin/calendar_controller.rb">./app/controllers/admin/calendar_controller.rb</a></td>
+        <td><a href="#6e62022ad46e53037a1fa521be7ba4abd8d632c4" class="src_link" title="./app/controllers/admin/calendar_controller.rb">./app/controllers/admin/calendar_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>18</td>
         <td>8</td>
@@ -78,7 +360,7 @@
       </tr>
       
       <tr>
-        <td><a href="#2a97ba6a77cbcdf746cba72c06b0a19ecdb5b8f1" class="src_link" title="./app/controllers/admin/mailer_controller.rb">./app/controllers/admin/mailer_controller.rb</a></td>
+        <td><a href="#e93dd0ce1d80348263a1b0b7bae67a5d26b3fe74" class="src_link" title="./app/controllers/admin/mailer_controller.rb">./app/controllers/admin/mailer_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>11</td>
         <td>8</td>
@@ -87,7 +369,7 @@
       </tr>
       
       <tr>
-        <td><a href="#64993d830a55d534f399bb354ac116a46604ce17" class="src_link" title="./app/controllers/admin_controller.rb">./app/controllers/admin_controller.rb</a></td>
+        <td><a href="#6d728341876c68dcb78ca1c7b1a6722cb45fcd24" class="src_link" title="./app/controllers/admin_controller.rb">./app/controllers/admin_controller.rb</a></td>
         <td class="red">78.57 %</td>
         <td>27</td>
         <td>14</td>
@@ -96,7 +378,7 @@
       </tr>
       
       <tr>
-        <td><a href="#3f198e31538d27f2b80215719279b1c1bc3ad4fd" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
+        <td><a href="#900ce0e6139333a7a89d89b27fb958a252efe451" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -105,7 +387,7 @@
       </tr>
       
       <tr>
-        <td><a href="#d19ef60437ddfce6152a36479ecdad3ba9fd8259" class="src_link" title="./app/controllers/basic_controller.rb">./app/controllers/basic_controller.rb</a></td>
+        <td><a href="#3a5c85f46907f14d202ea7e778922d815a82fb5d" class="src_link" title="./app/controllers/basic_controller.rb">./app/controllers/basic_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -114,25 +396,25 @@
       </tr>
       
       <tr>
-        <td><a href="#1cb3a2742385c0bafbda17bea7dd8c162e0592f6" class="src_link" title="./app/controllers/dashboard/application/clients_controller.rb">./app/controllers/dashboard/application/clients_controller.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td><a href="#72522140057b0ec90228e41389ca7d6417aedac4" class="src_link" title="./app/controllers/dashboard/application/clients_controller.rb">./app/controllers/dashboard/application/clients_controller.rb</a></td>
+        <td class="green">90.91 %</td>
         <td>17</td>
         <td>11</td>
-        <td>11</td>
-        <td>0</td>
+        <td>10</td>
+        <td>1</td>
       </tr>
       
       <tr>
-        <td><a href="#1d1c9c369bc0a1d35862350bf736b86fadc2b680" class="src_link" title="./app/controllers/dashboard/application/volunteers_controller.rb">./app/controllers/dashboard/application/volunteers_controller.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td><a href="#e5b273f70dce60e2ab6d342d926bbee6c3a8231d" class="src_link" title="./app/controllers/dashboard/application/volunteers_controller.rb">./app/controllers/dashboard/application/volunteers_controller.rb</a></td>
+        <td class="green">90.91 %</td>
         <td>17</td>
         <td>11</td>
-        <td>11</td>
-        <td>0</td>
+        <td>10</td>
+        <td>1</td>
       </tr>
       
       <tr>
-        <td><a href="#586835a96fd835bdc4cc2d8435a2f8ee7d058682" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
+        <td><a href="#df951ddc12465765d1b8e11db3cf79a803382279" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>61</td>
         <td>38</td>
@@ -141,7 +423,7 @@
       </tr>
       
       <tr>
-        <td><a href="#55acbaf25c629e77ac869dfae5cdeaccf565bccc" class="src_link" title="./app/controllers/dashboard/calendar_controller.rb">./app/controllers/dashboard/calendar_controller.rb</a></td>
+        <td><a href="#30af90fd2f762c9d7cf7c376097e7e34b6bb0d88" class="src_link" title="./app/controllers/dashboard/calendar_controller.rb">./app/controllers/dashboard/calendar_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>23</td>
         <td>10</td>
@@ -150,7 +432,7 @@
       </tr>
       
       <tr>
-        <td><a href="#9aae910254266cce211e8217a4cea2f366aaef87" class="src_link" title="./app/controllers/dashboard_controller.rb">./app/controllers/dashboard_controller.rb</a></td>
+        <td><a href="#e46afc8f4b94694fc261db49002983328aac51dd" class="src_link" title="./app/controllers/dashboard_controller.rb">./app/controllers/dashboard_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>13</td>
         <td>4</td>
@@ -159,7 +441,7 @@
       </tr>
       
       <tr>
-        <td><a href="#35c82bd035b4e9957a0bec7b1583b14d7824066e" class="src_link" title="./app/controllers/errors_controller.rb">./app/controllers/errors_controller.rb</a></td>
+        <td><a href="#9a2cd0d230752404c8d33cc54068692ce0f96ffb" class="src_link" title="./app/controllers/errors_controller.rb">./app/controllers/errors_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>5</td>
         <td>3</td>
@@ -168,7 +450,7 @@
       </tr>
       
       <tr>
-        <td><a href="#2e76d73a7292f84ddd40e4dc1961a272e1c20564" class="src_link" title="./app/controllers/home_controller.rb">./app/controllers/home_controller.rb</a></td>
+        <td><a href="#ad9943852c1e2e3d73803b4b77f1a78620228537" class="src_link" title="./app/controllers/home_controller.rb">./app/controllers/home_controller.rb</a></td>
         <td class="green">100.0 %</td>
         <td>9</td>
         <td>4</td>
@@ -177,289 +459,7 @@
       </tr>
       
       <tr>
-        <td><a href="#79103a2654fcf98ee1befc8908ba6b5742b62013" class="src_link" title="./app/controllers/user_controller.rb">./app/controllers/user_controller.rb</a></td>
-        <td class="red">60.0 %</td>
-        <td>10</td>
-        <td>5</td>
-        <td>3</td>
-        <td>2</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#806bdb06a21e95b348cf90d38eb27a5259338502" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
-        <td class="yellow">85.71 %</td>
-        <td>15</td>
-        <td>7</td>
-        <td>6</td>
-        <td>1</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#5ff4a019e260ee6187a8f654d2d1f38ca532cd75" class="src_link" title="./app/helpers/basic_helper.rb">./app/helpers/basic_helper.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#037ded3cad082e63ce0f7786c51317654bdc58ce" class="src_link" title="./app/helpers/calendar_helper.rb">./app/helpers/calendar_helper.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>24</td>
-        <td>9</td>
-        <td>9</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#77aca638d66da1e35f1ba0f7cdf095dac95fd9b3" class="src_link" title="./app/helpers/dashboard_helper.rb">./app/helpers/dashboard_helper.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#1fc50aece81f10136e180d93e8bcac53c64b6fda" class="src_link" title="./app/helpers/events_helper.rb">./app/helpers/events_helper.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#2f9c358aeb21c8d792028019ab3a9fa91af2128a" class="src_link" title="./app/helpers/home_helper.rb">./app/helpers/home_helper.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#06e70ce812d82250558e6c730538e87cac954319" class="src_link" title="./app/mailers/mass_mailer.rb">./app/mailers/mass_mailer.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>13</td>
-        <td>9</td>
-        <td>9</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#4968801e27f7aacbc0128829a1ce42df51bc7ae3" class="src_link" title="./app/mailers/user_mailer.rb">./app/mailers/user_mailer.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#2d2ca237dfaafc96199e81ba0492fee8b7b55a40" class="src_link" title="./app/models/app.rb">./app/models/app.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#e0a06f1e31e8dfa0dcbcf2d797513ebfd7ff3698" class="src_link" title="./app/models/client.rb">./app/models/client.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>3</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#3918696f0b978b8d7f787bc50111d527cc2f5399" class="src_link" title="./app/models/event.rb">./app/models/event.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#6be9889e3bb343acf7c85f085c29b4aee010ef50" class="src_link" title="./app/models/user.rb">./app/models/user.rb</a></td>
-        <td class="green">91.67 %</td>
-        <td>22</td>
-        <td>12</td>
-        <td>11</td>
-        <td>1</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#0f46b3a95298efc077648518662dd31796bdfcd1" class="src_link" title="./app/models/volunteer.rb">./app/models/volunteer.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>3</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
-
-        
-          <div class="file_list_container" id="Controllers">
-  <h2>
-    Controllers
-    (<span class="green">96.27%</span>)
-  </h2>
-  <a name="Controllers"></a>
-  <div>
-    <b>15</b> files in total.
-    <b>161</b> relevant lines. 
-    <span class="green"><b>155</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td><a href="#7deb575554b8b36a16eaa0f2a577c7022da8dfee" class="src_link" title="./app/controllers/admin/apps_controller.rb">./app/controllers/admin/apps_controller.rb</a></td>
-        <td class="red">66.67 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>2</td>
-        <td>1</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#ddb5ba19b68b5b4ad8e0c9738d1f0cc830d12437" class="src_link" title="./app/controllers/admin/calendar/events_controller.rb">./app/controllers/admin/calendar/events_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>61</td>
-        <td>38</td>
-        <td>38</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#b11a40dce0c82f201698aaf01235e1bea4cfdd92" class="src_link" title="./app/controllers/admin/calendar_controller.rb">./app/controllers/admin/calendar_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>18</td>
-        <td>8</td>
-        <td>8</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#2a97ba6a77cbcdf746cba72c06b0a19ecdb5b8f1" class="src_link" title="./app/controllers/admin/mailer_controller.rb">./app/controllers/admin/mailer_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>11</td>
-        <td>8</td>
-        <td>8</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#64993d830a55d534f399bb354ac116a46604ce17" class="src_link" title="./app/controllers/admin_controller.rb">./app/controllers/admin_controller.rb</a></td>
-        <td class="red">78.57 %</td>
-        <td>27</td>
-        <td>14</td>
-        <td>11</td>
-        <td>3</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#3f198e31538d27f2b80215719279b1c1bc3ad4fd" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#d19ef60437ddfce6152a36479ecdad3ba9fd8259" class="src_link" title="./app/controllers/basic_controller.rb">./app/controllers/basic_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>4</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#1cb3a2742385c0bafbda17bea7dd8c162e0592f6" class="src_link" title="./app/controllers/dashboard/application/clients_controller.rb">./app/controllers/dashboard/application/clients_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>17</td>
-        <td>11</td>
-        <td>11</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#1d1c9c369bc0a1d35862350bf736b86fadc2b680" class="src_link" title="./app/controllers/dashboard/application/volunteers_controller.rb">./app/controllers/dashboard/application/volunteers_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>17</td>
-        <td>11</td>
-        <td>11</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#586835a96fd835bdc4cc2d8435a2f8ee7d058682" class="src_link" title="./app/controllers/dashboard/calendar/events_controller.rb">./app/controllers/dashboard/calendar/events_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>61</td>
-        <td>38</td>
-        <td>38</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#55acbaf25c629e77ac869dfae5cdeaccf565bccc" class="src_link" title="./app/controllers/dashboard/calendar_controller.rb">./app/controllers/dashboard/calendar_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>23</td>
-        <td>10</td>
-        <td>10</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#9aae910254266cce211e8217a4cea2f366aaef87" class="src_link" title="./app/controllers/dashboard_controller.rb">./app/controllers/dashboard_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>13</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#35c82bd035b4e9957a0bec7b1583b14d7824066e" class="src_link" title="./app/controllers/errors_controller.rb">./app/controllers/errors_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#2e76d73a7292f84ddd40e4dc1961a272e1c20564" class="src_link" title="./app/controllers/home_controller.rb">./app/controllers/home_controller.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>9</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#79103a2654fcf98ee1befc8908ba6b5742b62013" class="src_link" title="./app/controllers/user_controller.rb">./app/controllers/user_controller.rb</a></td>
+        <td><a href="#6f621b8d07e8fefc9e5b8a3c09254157905d5426" class="src_link" title="./app/controllers/user_controller.rb">./app/controllers/user_controller.rb</a></td>
         <td class="red">60.0 %</td>
         <td>10</td>
         <td>5</td>
@@ -497,7 +497,7 @@
     <tbody>
       
       <tr>
-        <td><a href="#2d2ca237dfaafc96199e81ba0492fee8b7b55a40" class="src_link" title="./app/models/app.rb">./app/models/app.rb</a></td>
+        <td><a href="#cbc23aa8f442ee1af567972f91576fb981f203ee" class="src_link" title="./app/models/app.rb">./app/models/app.rb</a></td>
         <td class="green">100.0 %</td>
         <td>5</td>
         <td>3</td>
@@ -506,7 +506,7 @@
       </tr>
       
       <tr>
-        <td><a href="#e0a06f1e31e8dfa0dcbcf2d797513ebfd7ff3698" class="src_link" title="./app/models/client.rb">./app/models/client.rb</a></td>
+        <td><a href="#12dd6067d8a142bd6d06b11960810dc6413d44a8" class="src_link" title="./app/models/client.rb">./app/models/client.rb</a></td>
         <td class="green">100.0 %</td>
         <td>3</td>
         <td>1</td>
@@ -515,7 +515,7 @@
       </tr>
       
       <tr>
-        <td><a href="#3918696f0b978b8d7f787bc50111d527cc2f5399" class="src_link" title="./app/models/event.rb">./app/models/event.rb</a></td>
+        <td><a href="#2d322aa80556684e702dc1d7c0be847f4d2e20ac" class="src_link" title="./app/models/event.rb">./app/models/event.rb</a></td>
         <td class="green">100.0 %</td>
         <td>5</td>
         <td>4</td>
@@ -524,7 +524,7 @@
       </tr>
       
       <tr>
-        <td><a href="#6be9889e3bb343acf7c85f085c29b4aee010ef50" class="src_link" title="./app/models/user.rb">./app/models/user.rb</a></td>
+        <td><a href="#bf5f5a49ad7855d5c4ecad20fa4f4122e4dec2d7" class="src_link" title="./app/models/user.rb">./app/models/user.rb</a></td>
         <td class="green">91.67 %</td>
         <td>22</td>
         <td>12</td>
@@ -533,7 +533,7 @@
       </tr>
       
       <tr>
-        <td><a href="#0f46b3a95298efc077648518662dd31796bdfcd1" class="src_link" title="./app/models/volunteer.rb">./app/models/volunteer.rb</a></td>
+        <td><a href="#1168b49aabbf805dbbe5d5bcdc2f780ad4b24699" class="src_link" title="./app/models/volunteer.rb">./app/models/volunteer.rb</a></td>
         <td class="green">100.0 %</td>
         <td>3</td>
         <td>1</td>
@@ -571,7 +571,7 @@
     <tbody>
       
       <tr>
-        <td><a href="#806bdb06a21e95b348cf90d38eb27a5259338502" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
+        <td><a href="#81ccfae5d5d57b19fac311f3b29936b95468f14f" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
         <td class="yellow">85.71 %</td>
         <td>15</td>
         <td>7</td>
@@ -580,7 +580,7 @@
       </tr>
       
       <tr>
-        <td><a href="#5ff4a019e260ee6187a8f654d2d1f38ca532cd75" class="src_link" title="./app/helpers/basic_helper.rb">./app/helpers/basic_helper.rb</a></td>
+        <td><a href="#0a0b7b46bb866c4c726dfab65b79dcc8fcb1b70a" class="src_link" title="./app/helpers/basic_helper.rb">./app/helpers/basic_helper.rb</a></td>
         <td class="green">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -589,7 +589,7 @@
       </tr>
       
       <tr>
-        <td><a href="#037ded3cad082e63ce0f7786c51317654bdc58ce" class="src_link" title="./app/helpers/calendar_helper.rb">./app/helpers/calendar_helper.rb</a></td>
+        <td><a href="#cb3050b458aed2794756ca46b623917a5e756040" class="src_link" title="./app/helpers/calendar_helper.rb">./app/helpers/calendar_helper.rb</a></td>
         <td class="green">100.0 %</td>
         <td>24</td>
         <td>9</td>
@@ -598,7 +598,7 @@
       </tr>
       
       <tr>
-        <td><a href="#77aca638d66da1e35f1ba0f7cdf095dac95fd9b3" class="src_link" title="./app/helpers/dashboard_helper.rb">./app/helpers/dashboard_helper.rb</a></td>
+        <td><a href="#f99b84336820da801832b0e38197e6cd8a489925" class="src_link" title="./app/helpers/dashboard_helper.rb">./app/helpers/dashboard_helper.rb</a></td>
         <td class="green">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -607,7 +607,7 @@
       </tr>
       
       <tr>
-        <td><a href="#1fc50aece81f10136e180d93e8bcac53c64b6fda" class="src_link" title="./app/helpers/events_helper.rb">./app/helpers/events_helper.rb</a></td>
+        <td><a href="#eed4bb109d517ca6f3376f72ac98c4f01ec5f4b1" class="src_link" title="./app/helpers/events_helper.rb">./app/helpers/events_helper.rb</a></td>
         <td class="green">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -616,7 +616,7 @@
       </tr>
       
       <tr>
-        <td><a href="#2f9c358aeb21c8d792028019ab3a9fa91af2128a" class="src_link" title="./app/helpers/home_helper.rb">./app/helpers/home_helper.rb</a></td>
+        <td><a href="#c633e9c43bf14cbf574904386a28e7fbbc91ea9d" class="src_link" title="./app/helpers/home_helper.rb">./app/helpers/home_helper.rb</a></td>
         <td class="green">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -712,7 +712,7 @@
     <tbody>
       
       <tr>
-        <td><a href="#06e70ce812d82250558e6c730538e87cac954319" class="src_link" title="./app/mailers/mass_mailer.rb">./app/mailers/mass_mailer.rb</a></td>
+        <td><a href="#c213010350ff15064e39256414b65b8dba79c4c8" class="src_link" title="./app/mailers/mass_mailer.rb">./app/mailers/mass_mailer.rb</a></td>
         <td class="green">100.0 %</td>
         <td>13</td>
         <td>9</td>
@@ -721,7 +721,7 @@
       </tr>
       
       <tr>
-        <td><a href="#4968801e27f7aacbc0128829a1ce42df51bc7ae3" class="src_link" title="./app/mailers/user_mailer.rb">./app/mailers/user_mailer.rb</a></td>
+        <td><a href="#defdc4c5c8f7211650cdd66cc8ab17a690fae0d4" class="src_link" title="./app/mailers/user_mailer.rb">./app/mailers/user_mailer.rb</a></td>
         <td class="green">100.0 %</td>
         <td>7</td>
         <td>5</td>
@@ -738,12 +738,12 @@
       <div id="footer">
         Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.4.2 
         and simplecov-html v0.4.5<br/>
-        using RSpec, Cucumber Features
+        using Cucumber Features
       </div>
     
       <div class="source_files">
       
-        <div class="source_table" id="7deb575554b8b36a16eaa0f2a577c7022da8dfee">
+        <div class="source_table" id="939f86340010653725ff91db571a604911348fdf">
   <table>
     <thead>
     <tr>
@@ -761,7 +761,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -769,12 +769,12 @@
         <pre>class Admin::AppsController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -782,7 +782,7 @@
         <pre>  def show</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -829,7 +829,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="ddb5ba19b68b5b4ad8e0c9738d1f0cc830d12437">
+        <div class="source_table" id="6efaba9b1e3e872a31e4b9e695a9e27b86cf911f">
   <table>
     <thead>
     <tr>
@@ -847,7 +847,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -855,7 +855,7 @@
         <pre>class Admin::Calendar::EventsController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -873,7 +873,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -881,12 +881,12 @@
         <pre>	def edit</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -894,7 +894,7 @@
         <pre>		@event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -925,7 +925,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -933,7 +933,7 @@
         <pre>	def new</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -977,7 +977,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -985,12 +985,12 @@
         <pre>  def show</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -998,7 +998,7 @@
         <pre>    @event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
@@ -1029,7 +1029,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -1037,7 +1037,7 @@
         <pre>  def create</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1068,7 +1068,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>18</pre>
       </td>
@@ -1076,12 +1076,12 @@
         <pre>    eventhash = Hash.new()</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>19</pre>
       </td>
@@ -1089,12 +1089,12 @@
         <pre>    puts params</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>20</pre>
       </td>
@@ -1102,12 +1102,12 @@
         <pre>    startYear = params[:event]['start_at(1i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>21</pre>
       </td>
@@ -1115,12 +1115,12 @@
         <pre>    startMonth = params[:event]['start_at(2i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>22</pre>
       </td>
@@ -1128,12 +1128,12 @@
         <pre>    startDay = params[:event]['start_at(3i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>23</pre>
       </td>
@@ -1141,12 +1141,12 @@
         <pre>    startHour = params[:event]['start_at(4i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>24</pre>
       </td>
@@ -1154,7 +1154,7 @@
         <pre>    startMin = params[:event]['start_at(5i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1172,7 +1172,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>26</pre>
       </td>
@@ -1180,12 +1180,12 @@
         <pre>    endYear = params[:event]['end_at(1i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>27</pre>
       </td>
@@ -1193,12 +1193,12 @@
         <pre>    endMonth = params[:event]['end_at(2i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>28</pre>
       </td>
@@ -1206,12 +1206,12 @@
         <pre>    endDay = params[:event]['end_at(3i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>29</pre>
       </td>
@@ -1219,12 +1219,12 @@
         <pre>    endHour = params[:event]['end_at(4i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>30</pre>
       </td>
@@ -1232,7 +1232,7 @@
         <pre>    endMin = params[:event]['end_at(5i)'].to_i</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1250,7 +1250,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>32</pre>
       </td>
@@ -1258,12 +1258,12 @@
         <pre>    eventhash[:name] = params[:event][:name]</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>33</pre>
       </td>
@@ -1271,12 +1271,12 @@
         <pre>    eventhash[:description] = params[:event][:description]</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>34</pre>
       </td>
@@ -1284,7 +1284,7 @@
         <pre>    eventhash[:location] = params[:event][:location]</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1302,7 +1302,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>36</pre>
       </td>
@@ -1310,12 +1310,12 @@
         <pre>    eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>37</pre>
       </td>
@@ -1323,7 +1323,7 @@
         <pre>    eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1341,7 +1341,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>39</pre>
       </td>
@@ -1349,7 +1349,7 @@
         <pre>    eventhash[:user_id] = current_user.id</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1380,7 +1380,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>42</pre>
       </td>
@@ -1388,12 +1388,12 @@
         <pre>    @event = Event.create!(eventhash)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>43</pre>
       </td>
@@ -1401,12 +1401,12 @@
         <pre>    flash.keep[:notice] = &quot;#{@event.name} was successfully created.&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>44</pre>
       </td>
@@ -1414,7 +1414,7 @@
         <pre>    redirect_to admin_calendar_path</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1445,7 +1445,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>47</pre>
       </td>
@@ -1453,12 +1453,12 @@
         <pre>  def update</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>48</pre>
       </td>
@@ -1466,12 +1466,12 @@
         <pre>    @event = Event.find params[:id]</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>49</pre>
       </td>
@@ -1479,12 +1479,12 @@
         <pre>    @event.update_attributes!(params[:event])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>50</pre>
       </td>
@@ -1492,12 +1492,12 @@
         <pre>    flash[:notice] = &quot;#{@event.name} was successfully updated.&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>51</pre>
       </td>
@@ -1505,7 +1505,7 @@
         <pre>    redirect_to admin_calendar_event_path(@event)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1536,7 +1536,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>54</pre>
       </td>
@@ -1544,12 +1544,12 @@
         <pre>  def destroy</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>55</pre>
       </td>
@@ -1557,12 +1557,12 @@
         <pre>    @event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>56</pre>
       </td>
@@ -1570,12 +1570,12 @@
         <pre>    @event.destroy</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>57</pre>
       </td>
@@ -1583,12 +1583,12 @@
         <pre>    flash[:notice] = &quot;event '#{@event.name}' deleted.&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>58</pre>
       </td>
@@ -1596,7 +1596,7 @@
         <pre>    redirect_to admin_calendar_path</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1643,7 +1643,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="b11a40dce0c82f201698aaf01235e1bea4cfdd92">
+        <div class="source_table" id="6e62022ad46e53037a1fa521be7ba4abd8d632c4">
   <table>
     <thead>
     <tr>
@@ -1661,7 +1661,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -1669,7 +1669,7 @@
         <pre>class Admin::CalendarController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1687,7 +1687,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -1695,12 +1695,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -1708,12 +1708,12 @@
         <pre>    @month = (params[:month] || (Time.zone || Time).now.month).to_i</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -1721,7 +1721,7 @@
         <pre>    @year = (params[:year] || (Time.zone || Time).now.year).to_i</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
@@ -1739,7 +1739,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -1747,7 +1747,7 @@
         <pre>    @shown_month = Date.civil(@year, @month)</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
@@ -1791,7 +1791,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -1799,12 +1799,12 @@
         <pre>    @start_d, @end_d = Event.get_start_and_end_dates(@shown_month) # optionally pass in @first_day_of_week</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -1812,12 +1812,12 @@
         <pre>    @events = Event.events_for_date_range(@start_d, @end_d)</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>13</pre>
       </td>
@@ -1825,7 +1825,7 @@
         <pre>    @event_strips = Event.create_event_strips(@start_d, @end_d, @events)</pre>
       </td>
       <td class="hits">
-        5
+        4
       </td>
     </tr>
   
@@ -1898,7 +1898,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="2a97ba6a77cbcdf746cba72c06b0a19ecdb5b8f1">
+        <div class="source_table" id="e93dd0ce1d80348263a1b0b7bae67a5d26b3fe74">
   <table>
     <thead>
     <tr>
@@ -1916,7 +1916,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -1924,7 +1924,7 @@
         <pre>class Admin::MailerController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -1942,7 +1942,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -1950,7 +1950,7 @@
         <pre>  def send_mail</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2062,7 +2062,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="64993d830a55d534f399bb354ac116a46604ce17">
+        <div class="source_table" id="6d728341876c68dcb78ca1c7b1a6722cb45fcd24">
   <table>
     <thead>
     <tr>
@@ -2080,7 +2080,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -2088,7 +2088,7 @@
         <pre>class AdminController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2119,7 +2119,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -2127,12 +2127,12 @@
         <pre>	before_filter :authenticate_admin!</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -2140,12 +2140,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>6</pre>
       </td>
@@ -2153,12 +2153,12 @@
         <pre>  	@users = User.all</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -2166,12 +2166,12 @@
         <pre>  	@clients = Client.all</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>8</pre>
       </td>
@@ -2179,7 +2179,7 @@
         <pre>  	@volunteers = Volunteer.all</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
@@ -2210,7 +2210,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -2218,12 +2218,12 @@
         <pre>  def authenticate_admin!</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="5">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -2231,7 +2231,7 @@
         <pre>  	if current_user.try(:admin?)</pre>
       </td>
       <td class="hits">
-        5
+        3
       </td>
     </tr>
   
@@ -2262,7 +2262,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -2270,12 +2270,12 @@
         <pre>      flash[:notice] = &quot;You do not have the authorization to access this page&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>16</pre>
       </td>
@@ -2283,7 +2283,7 @@
         <pre>      redirect_to '/dashboard'</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2327,7 +2327,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>20</pre>
       </td>
@@ -2335,7 +2335,7 @@
         <pre>  def send_email(subject, message)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2434,7 +2434,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="3f198e31538d27f2b80215719279b1c1bc3ad4fd">
+        <div class="source_table" id="900ce0e6139333a7a89d89b27fb958a252efe451">
   <table>
     <thead>
     <tr>
@@ -2452,7 +2452,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -2460,12 +2460,12 @@
         <pre>class ApplicationController &lt; ActionController::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -2473,7 +2473,7 @@
         <pre>  protect_from_forgery</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2494,7 +2494,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="d19ef60437ddfce6152a36479ecdad3ba9fd8259">
+        <div class="source_table" id="3a5c85f46907f14d202ea7e778922d815a82fb5d">
   <table>
     <thead>
     <tr>
@@ -2512,7 +2512,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -2520,12 +2520,12 @@
         <pre>class BasicController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -2533,7 +2533,7 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -2567,13 +2567,13 @@
   </table>
 </div>
       
-        <div class="source_table" id="1cb3a2742385c0bafbda17bea7dd8c162e0592f6">
+        <div class="source_table" id="72522140057b0ec90228e41389ca7d6417aedac4">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./app/controllers/dashboard/application/clients_controller.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
+        <h4><span class="green">90.91 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -2585,7 +2585,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -2593,12 +2593,12 @@
         <pre>class Dashboard::Application::ClientsController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -2606,12 +2606,12 @@
         <pre>  def create</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -2619,12 +2619,12 @@
         <pre>    client_app = Client.create!(params[:client])</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -2632,12 +2632,12 @@
         <pre>    if current_user.apps.none?</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -2645,12 +2645,12 @@
         <pre>    	current_user.apps &lt;&lt; client_app</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>6</pre>
       </td>
@@ -2658,12 +2658,12 @@
         <pre>      flash[:notice] = &quot;A new Client Application has been submitted!&quot;</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -2671,7 +2671,7 @@
         <pre>      redirect_to '/dashboard'</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
@@ -2754,7 +2754,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>14</pre>
       </td>
@@ -2762,12 +2762,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="miss" data-hits="0">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -2775,7 +2775,7 @@
         <pre>  	@clients = Client.all</pre>
       </td>
       <td class="hits">
-        1
+        0
       </td>
     </tr>
   
@@ -2809,13 +2809,13 @@
   </table>
 </div>
       
-        <div class="source_table" id="1d1c9c369bc0a1d35862350bf736b86fadc2b680">
+        <div class="source_table" id="e5b273f70dce60e2ab6d342d926bbee6c3a8231d">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./app/controllers/dashboard/application/volunteers_controller.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
+        <h4><span class="green">90.91 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -2827,7 +2827,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -2835,12 +2835,12 @@
         <pre>class Dashboard::Application::VolunteersController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -2848,12 +2848,12 @@
         <pre>  def create</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -2861,12 +2861,12 @@
         <pre>    volunteer_app = Volunteer.create!(params[:volunteer])</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -2874,12 +2874,12 @@
         <pre>    if current_user.apps.none?</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -2887,12 +2887,12 @@
         <pre>    	current_user.apps &lt;&lt; volunteer_app</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>6</pre>
       </td>
@@ -2900,12 +2900,12 @@
         <pre>      flash[:notice] = &quot;A new Volunteer Application has been submitted!&quot;</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -2913,7 +2913,7 @@
         <pre>      redirect_to '/dashboard'</pre>
       </td>
       <td class="hits">
-        3
+        2
       </td>
     </tr>
   
@@ -2996,7 +2996,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>14</pre>
       </td>
@@ -3004,12 +3004,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="miss" data-hits="0">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -3017,7 +3017,7 @@
         <pre>  	@volunteers = Volunteer.all</pre>
       </td>
       <td class="hits">
-        1
+        0
       </td>
     </tr>
   
@@ -3051,7 +3051,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="586835a96fd835bdc4cc2d8435a2f8ee7d058682">
+        <div class="source_table" id="df951ddc12465765d1b8e11db3cf79a803382279">
   <table>
     <thead>
     <tr>
@@ -3069,7 +3069,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -3077,7 +3077,7 @@
         <pre>class Dashboard::Calendar::EventsController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3095,7 +3095,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -3103,12 +3103,12 @@
         <pre>	def edit</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -3116,7 +3116,7 @@
         <pre>		@event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3147,7 +3147,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -3155,7 +3155,7 @@
         <pre>	def new</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3199,7 +3199,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -3207,12 +3207,12 @@
         <pre>  def show</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -3220,7 +3220,7 @@
         <pre>    @event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3251,7 +3251,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -3259,7 +3259,7 @@
         <pre>  def create</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3290,7 +3290,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>18</pre>
       </td>
@@ -3298,12 +3298,12 @@
         <pre>    eventhash = Hash.new()</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>19</pre>
       </td>
@@ -3311,12 +3311,12 @@
         <pre>    puts params</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>20</pre>
       </td>
@@ -3324,12 +3324,12 @@
         <pre>    startYear = params[:event]['start_at(1i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>21</pre>
       </td>
@@ -3337,12 +3337,12 @@
         <pre>    startMonth = params[:event]['start_at(2i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>22</pre>
       </td>
@@ -3350,12 +3350,12 @@
         <pre>    startDay = params[:event]['start_at(3i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>23</pre>
       </td>
@@ -3363,12 +3363,12 @@
         <pre>    startHour = params[:event]['start_at(4i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>24</pre>
       </td>
@@ -3376,7 +3376,7 @@
         <pre>    startMin = params[:event]['start_at(5i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3394,7 +3394,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>26</pre>
       </td>
@@ -3402,12 +3402,12 @@
         <pre>    endYear = params[:event]['end_at(1i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>27</pre>
       </td>
@@ -3415,12 +3415,12 @@
         <pre>    endMonth = params[:event]['end_at(2i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>28</pre>
       </td>
@@ -3428,12 +3428,12 @@
         <pre>    endDay = params[:event]['end_at(3i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>29</pre>
       </td>
@@ -3441,12 +3441,12 @@
         <pre>    endHour = params[:event]['end_at(4i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>30</pre>
       </td>
@@ -3454,7 +3454,7 @@
         <pre>    endMin = params[:event]['end_at(5i)'].to_i</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3472,7 +3472,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>32</pre>
       </td>
@@ -3480,12 +3480,12 @@
         <pre>    eventhash[:name] = params[:event][:name]</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>33</pre>
       </td>
@@ -3493,12 +3493,12 @@
         <pre>    eventhash[:description] = params[:event][:description]</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>34</pre>
       </td>
@@ -3506,7 +3506,7 @@
         <pre>    eventhash[:location] = params[:event][:location]</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3524,7 +3524,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>36</pre>
       </td>
@@ -3532,12 +3532,12 @@
         <pre>    eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>37</pre>
       </td>
@@ -3545,7 +3545,7 @@
         <pre>    eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3563,7 +3563,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>39</pre>
       </td>
@@ -3571,7 +3571,7 @@
         <pre>    eventhash[:user_id] = current_user.id</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3602,7 +3602,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>42</pre>
       </td>
@@ -3610,12 +3610,12 @@
         <pre>    @event = Event.create!(eventhash)</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>43</pre>
       </td>
@@ -3623,12 +3623,12 @@
         <pre>    flash.keep[:notice] = &quot;#{@event.name} was successfully created.&quot;</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="4">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>44</pre>
       </td>
@@ -3636,7 +3636,7 @@
         <pre>    redirect_to dashboard_calendar_path</pre>
       </td>
       <td class="hits">
-        4
+        3
       </td>
     </tr>
   
@@ -3667,7 +3667,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>47</pre>
       </td>
@@ -3675,12 +3675,12 @@
         <pre>  def update</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>48</pre>
       </td>
@@ -3688,12 +3688,12 @@
         <pre>    @event = Event.find params[:id]</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>49</pre>
       </td>
@@ -3701,12 +3701,12 @@
         <pre>    @event.update_attributes!(params[:event])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>50</pre>
       </td>
@@ -3714,12 +3714,12 @@
         <pre>    flash[:notice] = &quot;#{@event.name} was successfully updated.&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>51</pre>
       </td>
@@ -3727,7 +3727,7 @@
         <pre>    redirect_to dashboard_calendar_event_path(@event)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3758,7 +3758,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>54</pre>
       </td>
@@ -3766,12 +3766,12 @@
         <pre>  def destroy</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>55</pre>
       </td>
@@ -3779,12 +3779,12 @@
         <pre>    @event = Event.find(params[:id])</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>56</pre>
       </td>
@@ -3792,12 +3792,12 @@
         <pre>    @event.destroy</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>57</pre>
       </td>
@@ -3805,12 +3805,12 @@
         <pre>    flash[:notice] = &quot;event '#{@event.name}' deleted.&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>58</pre>
       </td>
@@ -3818,7 +3818,7 @@
         <pre>    redirect_to dashboard_calendar_path</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3865,7 +3865,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="55acbaf25c629e77ac869dfae5cdeaccf565bccc">
+        <div class="source_table" id="30af90fd2f762c9d7cf7c376097e7e34b6bb0d88">
   <table>
     <thead>
     <tr>
@@ -3883,7 +3883,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -3891,7 +3891,7 @@
         <pre>class Dashboard::CalendarController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -3909,7 +3909,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -3917,12 +3917,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -3930,12 +3930,12 @@
         <pre>    @month = (params[:month] || (Time.zone || Time).now.month).to_i</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -3943,7 +3943,7 @@
         <pre>    @year = (params[:year] || (Time.zone || Time).now.year).to_i</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
@@ -3961,7 +3961,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -3969,7 +3969,7 @@
         <pre>    @shown_month = Date.civil(@year, @month)</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
@@ -4013,7 +4013,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -4021,12 +4021,12 @@
         <pre>    @start_d, @end_d = Event.get_start_and_end_dates(@shown_month) # optionally pass in @first_day_of_week</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -4034,12 +4034,12 @@
         <pre>    @events = Event.events_for_date_range(@start_d, @end_d)</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>13</pre>
       </td>
@@ -4047,7 +4047,7 @@
         <pre>    @events.reject! { |event|</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
@@ -4078,7 +4078,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="11">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>16</pre>
       </td>
@@ -4086,7 +4086,7 @@
         <pre>    @event_strips = Event.create_event_strips(@start_d, @end_d, @events)</pre>
       </td>
       <td class="hits">
-        11
+        10
       </td>
     </tr>
   
@@ -4185,7 +4185,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="9aae910254266cce211e8217a4cea2f366aaef87">
+        <div class="source_table" id="e46afc8f4b94694fc261db49002983328aac51dd">
   <table>
     <thead>
     <tr>
@@ -4203,7 +4203,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4211,7 +4211,7 @@
         <pre>class DashboardController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4229,7 +4229,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -4237,12 +4237,12 @@
         <pre>	before_filter :authenticate_user!</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -4250,7 +4250,7 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4294,7 +4294,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>8</pre>
       </td>
@@ -4302,7 +4302,7 @@
         <pre>  def show</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4375,7 +4375,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="35c82bd035b4e9957a0bec7b1583b14d7824066e">
+        <div class="source_table" id="9a2cd0d230752404c8d33cc54068692ce0f96ffb">
   <table>
     <thead>
     <tr>
@@ -4393,7 +4393,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4401,12 +4401,12 @@
         <pre>class ErrorsController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -4414,12 +4414,12 @@
         <pre>  def routing</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -4427,7 +4427,7 @@
         <pre>  	render :file =&gt; &quot;#{Rails.root}/public/404.html&quot;, :status =&gt; 404, :layout =&gt; false</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4461,7 +4461,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="2e76d73a7292f84ddd40e4dc1961a272e1c20564">
+        <div class="source_table" id="ad9943852c1e2e3d73803b4b77f1a78620228537">
   <table>
     <thead>
     <tr>
@@ -4479,7 +4479,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4487,7 +4487,7 @@
         <pre>class HomeController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4505,7 +4505,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -4513,12 +4513,12 @@
         <pre>  def index</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="44">
+    <tr class="hit" data-hits="43">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -4526,12 +4526,12 @@
         <pre>		if user_signed_in?</pre>
       </td>
       <td class="hits">
-        44
+        43
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="25">
+    <tr class="hit" data-hits="24">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -4539,7 +4539,7 @@
         <pre>			redirect_to :controller=&gt;'dashboard', :action =&gt; 'index'</pre>
       </td>
       <td class="hits">
-        25
+        24
       </td>
     </tr>
   
@@ -4599,7 +4599,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="79103a2654fcf98ee1befc8908ba6b5742b62013">
+        <div class="source_table" id="6f621b8d07e8fefc9e5b8a3c09254157905d5426">
   <table>
     <thead>
     <tr>
@@ -4617,7 +4617,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4625,7 +4625,7 @@
         <pre>class UserController &lt; ApplicationController</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4643,7 +4643,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -4651,12 +4651,12 @@
         <pre>  before_filter :authenticate_user!</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -4664,7 +4664,7 @@
         <pre>  def edit</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4750,7 +4750,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="806bdb06a21e95b348cf90d38eb27a5259338502">
+        <div class="source_table" id="81ccfae5d5d57b19fac311f3b29936b95468f14f">
   <table>
     <thead>
     <tr>
@@ -4768,7 +4768,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4776,7 +4776,7 @@
         <pre>module ApplicationHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4794,7 +4794,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -4802,7 +4802,7 @@
         <pre> def resource_name</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4846,7 +4846,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -4854,7 +4854,7 @@
         <pre>  def resource</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4898,7 +4898,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -4906,7 +4906,7 @@
         <pre>  def devise_mapping</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -4966,7 +4966,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="5ff4a019e260ee6187a8f654d2d1f38ca532cd75">
+        <div class="source_table" id="0a0b7b46bb866c4c726dfab65b79dcc8fcb1b70a">
   <table>
     <thead>
     <tr>
@@ -4984,7 +4984,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -4992,7 +4992,7 @@
         <pre>module BasicHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5013,7 +5013,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="037ded3cad082e63ce0f7786c51317654bdc58ce">
+        <div class="source_table" id="cb3050b458aed2794756ca46b623917a5e756040">
   <table>
     <thead>
     <tr>
@@ -5031,7 +5031,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5039,12 +5039,12 @@
         <pre>module CalendarHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -5052,7 +5052,7 @@
         <pre>  def month_link(month_date)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5109,7 +5109,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>7</pre>
       </td>
@@ -5117,7 +5117,7 @@
         <pre>  def event_calendar_opts</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5239,7 +5239,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>17</pre>
       </td>
@@ -5247,7 +5247,7 @@
         <pre>  def event_calendar</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5346,7 +5346,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="77aca638d66da1e35f1ba0f7cdf095dac95fd9b3">
+        <div class="source_table" id="f99b84336820da801832b0e38197e6cd8a489925">
   <table>
     <thead>
     <tr>
@@ -5364,7 +5364,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5372,7 +5372,7 @@
         <pre>module DashboardHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5393,7 +5393,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="1fc50aece81f10136e180d93e8bcac53c64b6fda">
+        <div class="source_table" id="eed4bb109d517ca6f3376f72ac98c4f01ec5f4b1">
   <table>
     <thead>
     <tr>
@@ -5411,7 +5411,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5419,7 +5419,7 @@
         <pre>module EventsHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5440,7 +5440,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="2f9c358aeb21c8d792028019ab3a9fa91af2128a">
+        <div class="source_table" id="c633e9c43bf14cbf574904386a28e7fbbc91ea9d">
   <table>
     <thead>
     <tr>
@@ -5458,7 +5458,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5466,7 +5466,7 @@
         <pre>module HomeHelper</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5487,7 +5487,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="06e70ce812d82250558e6c730538e87cac954319">
+        <div class="source_table" id="c213010350ff15064e39256414b65b8dba79c4c8">
   <table>
     <thead>
     <tr>
@@ -5505,7 +5505,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5513,12 +5513,12 @@
         <pre>class MassMailer &lt; ActionMailer::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -5526,7 +5526,7 @@
         <pre>  default from: &quot;learningshelter2013@sandbox6192.mailgun.org&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5544,7 +5544,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -5552,7 +5552,7 @@
         <pre>  def mass_email(users, subject, message)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5677,7 +5677,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="4968801e27f7aacbc0128829a1ce42df51bc7ae3">
+        <div class="source_table" id="defdc4c5c8f7211650cdd66cc8ab17a690fae0d4">
   <table>
     <thead>
     <tr>
@@ -5695,7 +5695,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5703,12 +5703,12 @@
         <pre>class UserMailer &lt; ActionMailer::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -5716,12 +5716,12 @@
         <pre>  default from: &quot;learningshelter2013@sandbox6192.mailgun.org&quot;</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -5729,12 +5729,12 @@
         <pre>  def welcome_email(user)</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="62">
+    <tr class="hit" data-hits="34">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -5742,12 +5742,12 @@
         <pre>    @user = user</pre>
       </td>
       <td class="hits">
-        62
+        34
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="62">
+    <tr class="hit" data-hits="34">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -5755,7 +5755,7 @@
         <pre>    mail(to: @user.email, subject:&quot;Thank you for signing up to the Learning Shelter!&quot;)</pre>
       </td>
       <td class="hits">
-        62
+        34
       </td>
     </tr>
   
@@ -5789,7 +5789,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="2d2ca237dfaafc96199e81ba0492fee8b7b55a40">
+        <div class="source_table" id="cbc23aa8f442ee1af567972f91576fb981f203ee">
   <table>
     <thead>
     <tr>
@@ -5807,7 +5807,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5815,12 +5815,12 @@
         <pre>class App &lt; ActiveRecord::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -5828,12 +5828,12 @@
         <pre>  attr_accessible :first_name, :last_name, :gender, :birthday, :city, :state, :street_address, :phone, :resume, :cover_letter</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -5841,7 +5841,7 @@
         <pre>  belongs_to :user</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5875,7 +5875,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="e0a06f1e31e8dfa0dcbcf2d797513ebfd7ff3698">
+        <div class="source_table" id="12dd6067d8a142bd6d06b11960810dc6413d44a8">
   <table>
     <thead>
     <tr>
@@ -5893,7 +5893,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5901,7 +5901,7 @@
         <pre>class Client &lt; App</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -5935,7 +5935,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="3918696f0b978b8d7f787bc50111d527cc2f5399">
+        <div class="source_table" id="2d322aa80556684e702dc1d7c0be847f4d2e20ac">
   <table>
     <thead>
     <tr>
@@ -5953,7 +5953,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -5961,12 +5961,12 @@
         <pre>class Event &lt; ActiveRecord::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
       </td>
@@ -5974,12 +5974,12 @@
         <pre>  attr_accessible :end_at, :name, :start_at, :location, :description, :user_id</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -5987,12 +5987,12 @@
         <pre>  has_event_calendar</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -6000,7 +6000,7 @@
         <pre>  belongs_to :user</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -6021,7 +6021,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="6be9889e3bb343acf7c85f085c29b4aee010ef50">
+        <div class="source_table" id="bf5f5a49ad7855d5c4ecad20fa4f4122e4dec2d7">
   <table>
     <thead>
     <tr>
@@ -6039,7 +6039,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -6047,7 +6047,7 @@
         <pre>class User &lt; ActiveRecord::Base</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -6078,7 +6078,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>4</pre>
       </td>
@@ -6086,7 +6086,7 @@
         <pre>  devise :database_authenticatable, :registerable,</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -6130,7 +6130,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>8</pre>
       </td>
@@ -6138,7 +6138,7 @@
         <pre>  attr_accessible :email, :password, :password_confirmation, :remember_me, :admin, :id</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -6156,7 +6156,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>10</pre>
       </td>
@@ -6164,12 +6164,12 @@
         <pre>  has_many :apps</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -6177,12 +6177,12 @@
         <pre>  has_many :events</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -6190,12 +6190,12 @@
         <pre>  accepts_nested_attributes_for :apps</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>13</pre>
       </td>
@@ -6203,12 +6203,12 @@
         <pre>  after_create :send_confirmation_email</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>14</pre>
       </td>
@@ -6216,12 +6216,12 @@
         <pre>  protected</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -6229,12 +6229,12 @@
         <pre>  def send_confirmation_email</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="61">
+    <tr class="hit" data-hits="34">
       <td class="line_number">
         <pre>16</pre>
       </td>
@@ -6242,7 +6242,7 @@
         <pre>    UserMailer.welcome_email(self).deliver</pre>
       </td>
       <td class="hits">
-        61
+        34
       </td>
     </tr>
   
@@ -6273,7 +6273,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>19</pre>
       </td>
@@ -6281,7 +6281,7 @@
         <pre>  def confirmation_required?</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
@@ -6328,7 +6328,7 @@
   </table>
 </div>
       
-        <div class="source_table" id="0f46b3a95298efc077648518662dd31796bdfcd1">
+        <div class="source_table" id="1168b49aabbf805dbbe5d5bcdc2f780ad4b24699">
   <table>
     <thead>
     <tr>
@@ -6346,7 +6346,7 @@
     <tbody>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>1</pre>
       </td>
@@ -6354,7 +6354,7 @@
         <pre>class Volunteer &lt; App</pre>
       </td>
       <td class="hits">
-        2
+        1
       </td>
     </tr>
   
