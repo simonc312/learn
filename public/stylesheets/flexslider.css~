@@ -95,3 +95,4 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
 
+.flexslider .flex-prev{opacity: 0.8; left: 5px;}

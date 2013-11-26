@@ -2,7 +2,7 @@ $(function(){
 
 	function slider () {
   		jQuery('.flexslider').flexslider({
-    		animation: "slide"
+    		animation: "fade", animationLoop: true, prevText: "", nextText: "", directionNav: true, controlsContainer: ".flex-container"
   		});
 	};
 
