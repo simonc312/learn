@@ -11,6 +11,7 @@ group :development, :test do
 #  gem 'simplecov'
 #  gem 'rspec-rails'
   gem 'jasmine'
+  gem 'bullet'
   gem 'capybara'
   gem 'rspec-rails'
   gem 'simplecov'

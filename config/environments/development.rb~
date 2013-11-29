@@ -4,6 +4,16 @@ LearningShelter::Application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+  config.after_initialize do
+  Bullet.enable = true
+  Bullet.alert = true
+  Bullet.bullet_logger = true
+  Bullet.console = true
+#  Bullet.growl = true
+  Bullet.rails_logger = true
+  Bullet.add_footer = true
+end
+
   config.cache_classes = false
 
   # Log error messages when you accidentally call methods on nil.
@@ -41,7 +51,7 @@ LearningShelter::Application.configure do
                                         :enable_starttls_auto => true,
                                         :domain => 'sandbox6192.mailgun.org',
                                         :authentication => :plain,
-                                        :user_name => 'learningshelter2013@sandbox6192.mailgun.org',
-                                        :password => 'lshelter13'}
+                                        :user_name => 'postmaster@sandbox6192.mailgun.org',
+                                        :password => '6r-g7th8j2m0'}
 
 end
