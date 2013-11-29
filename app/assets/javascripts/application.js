@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require jquery.flexslider
 //= require imageslideshow.js
+//= require script.js
 //= require_tree .
