@@ -24,7 +24,9 @@ var EventPopup = {
 		alert("Success");
 		var oneFourth = Math.ceil($(window).width() / 4);
 		$('#eventInfo').css({'left': oneFourth, 'width': 2*oneFourth, 'top': 250}).html(data).show();
-	$('#closeLink').click(EventPopup.hideEventInfo);
+var hideButton = $('<button id="hideInfo">Close</button>');
+		hideButton.appendTo($('#eventInfo .body .mainform'));
+	$('#hideInfo').click(EventPopup.hideEventInfo);
 	}	
 
 	,hideEventInfo: function() {
