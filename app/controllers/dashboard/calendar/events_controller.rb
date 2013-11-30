@@ -9,7 +9,10 @@ class Dashboard::Calendar::EventsController < ApplicationController
 	end
 
   def show
-    @event = Event.find(params[:id])
+     @event = Event.find(params[:id])
+     if request.xhr?
+     render :partial => 'show', :object=> @event 
+    end
   end
 
   def create

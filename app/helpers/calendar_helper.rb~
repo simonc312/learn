@@ -14,11 +14,12 @@ module CalendarHelper
       :next_month_text => month_link(@shown_month.next_month) + " >>"    }
   end
 
-  def event_calndar
+  def event_calendar
     # args is an argument hash containing :event, :day, and :options
     calendar event_calendar_opts do |args|
       event = args[:event]
-      %(<a href="calendar/events/#{event.id}" title="#{h(event.name)}">#{h(event.name)}</a>)
+      link_to "#{event.name}", "calendar/events/#{event.id}", :remote => true
+     # %(<a href="calendar/events/#{event.id}" title="#{h(event.name)}">#{h(event.name)}</a>)
     end
   end
 end
