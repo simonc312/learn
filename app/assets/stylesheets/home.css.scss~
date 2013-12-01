@@ -48,8 +48,8 @@ h2 {
 	background-color: #E0B547;
 }
 body { 
-  margin-left:15%;
-  margin-right:15%;
+  margin-left:12%;
+  margin-right:12%;
 	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
   position: absolute;
 	top:0px;
@@ -79,26 +79,27 @@ ul#tabs li {
 }
 ul#tabs li a { 
 	//color: #42454a; 
-  color: white;//new
+  //color: white;//new
 	background-color: rgba(255,250,230,0);
 	border: 1px solid rgba(255,250,230,0);//#c9c3ba;  
 	padding: 0.4em; 
 	text-decoration: none; 
 	border-top-left-radius:0px;
 	border-top-right-radius:0px;
-	border-bottom: 0px solid white;//new
 }
 ul#tabs li a:hover { 
 	background-color: rgba(255,250,230,0.0);
   color:gold;//new
+	border-bottom: 1px solid gold;
 }
+/* not used
 ul#tabs li a.selected { 
-	color: gold;
+	//color: white;
 	background-color: rgba(255,250,230,0);
-	font-weight: bold; 
+	font-weight: normal; 
 	padding: 0.8em 0.7em 0.38em 0.7em; 
-	border-bottom: 1px solid gold;//new
-}
+	border-bottom: 0px solid gold;//new
+}*/
 
 .tabContent {
 	height: 68%;

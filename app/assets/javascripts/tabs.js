@@ -1,4 +1,4 @@
-
+/* //not used since the tabs now point to different pages 11-30-13
 var tabLinks = new Array();
 var contentDivs = new Array();
 
@@ -64,6 +64,18 @@ function getHash( url ) {
   var hashPos = url.lastIndexOf ( '#' );
   return url.substring( hashPos + 1 );
 }
+*/
+
+$(document).ready(function () {
+  var tabnames = ["home","dashboard","about","events","signup","donate"];
+  for (var i = 0; i < tabnames.length; i++) {
+    if(window.location.href.indexOf(tabnames[i]) > -1) {
+        //alert(tabnames[i]);
+        var id = "#"+tabnames[i];
+        $(id).css({"color":"gold","font-weight":"bold","border-bottom":"1px solid gold"});
+    }
+  }
+});
 
 function validateSignUpForm()
 {

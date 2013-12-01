@@ -1,4 +1,5 @@
-
+	<div class="tabContent" id="events">
+    <div class='tabtext'>
 
       <h3>About The Learning Shelter</h3>
 			  <p>The Vision of The Learning Shelter is to become a shelter system by example. As the first model we are testing the ideas which will become a live in/work in program built to allow individuals who seem to be qualified and have been skills tested to show an aptitude for making products both digital and tangible. Once qualified, cohorts will work as individuals among groups to find their own pace and channels then be guided through accelerated learning programs that teach skills which are currently relevant, less likely to be crowded by unemployed experts, and which have highly probable future viability.</p>
@@ -9,14 +10,13 @@
 
 
       <h3>Our Goals</h3>
-		  <h3>The Learning Shelter will:</h3>
-		  <ul>
-			  <li>Expose learners to possibilities via hands on experience with various technologies including; 3D printing, laser cutting, welding, CAD Design, Web Design and Development</li>
-			  <li>Empower learners to develop a physical and digital identity</li>
-			  <li>Provide a daily structure for learners to develop technical and interpersonal skills</li>
-			  <li>Enable learners to build and present hardware or software prototypes</li>
-			  <li>Assist learners with setting goals for personal and professional development</li>
-		  </ul>
+		  <h4>The Learning Shelter will:</h4>
+			  <p>Expose learners to possibilities via hands on experience with various technologies including; 3D printing, laser cutting, welding, CAD Design, Web Design and Development</p>
+			  <p>Empower learners to develop a physical and digital identity</p>
+			  <p>Provide a daily structure for learners to develop technical and interpersonal skills</p>
+			  <p>Enable learners to build and present hardware or software prototypes</p>
+			  <p>Assist learners with setting goals for personal and professional development</p>
 
-
+    </div>
+	</div>
 
