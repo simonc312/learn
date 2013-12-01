@@ -5,7 +5,6 @@
   <%= javascript_include_tag "application" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
-  <!-- the flexslider site doesn't seem to work http://www.woothemes.com/flexslider/ -->
 </head>
 
 <body onload="init()">
@@ -22,11 +21,11 @@
       <% end %>
     </div>
 	  <ul id="tabs">
-		  <li><a href="#about">About Us</a></li>
-		  <li><a href="#goals">Goals</a></li>
-		  <li><a href="#events">Events</a></li>
-		  <li><a href="#signup">Sign Up</a></li>
-		  <li><a href="#donate">Donate</a></li>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="about">About Us</a></li>
+		  <li><a href="events">Events</a></li>
+		  <li><a href="signup">Sign Up</a></li>
+		  <li><a href="donate">Donate</a></li>
 	  </ul>
 
   </header>
