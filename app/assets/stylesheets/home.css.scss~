@@ -48,6 +48,8 @@ h2 {
 	background-color: #E0B547;
 }
 body { 
+  font: 14px;
+  color:white;
   margin-left:12%;
   margin-right:12%;
 	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
@@ -68,6 +70,7 @@ ul#tabs {
 	list-style-type: none;
   margin:0px; 
   margin-right:30px;
+  margin-top:10px;
 	padding: 0 0 0.3em 0; 
 	align:center;
   float:right;
@@ -92,14 +95,14 @@ ul#tabs li a:hover {
   color:gold;//new
 	border-bottom: 1px solid gold;
 }
-/* not used
+
 ul#tabs li a.selected { 
-	//color: white;
+	color: white;
 	background-color: rgba(255,250,230,0);
 	font-weight: normal; 
 	padding: 0.8em 0.7em 0.38em 0.7em; 
 	border-bottom: 0px solid gold;//new
-}*/
+}
 
 .tabContent {
 	height: 68%;
