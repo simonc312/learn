@@ -32,39 +32,12 @@ body {font:11px Verdana,Arial; margin:25px; background:#fff url(table/bg.gif) re
 .page {margin-top:2px; font-style:italic}
 #selectedrow td {background:#c6d5e1}
 
+body {
 
+}
 
 
 h3 {font-size: 20pt;}
-
-table
-{
-border-collapse: collapse;
-}
-
-th
-{
-background-color: red;
-font-size: 10pt;
-padding-right: 10px;
-padding-left: 10px;
-text-align: center;
-}
-
-td
-{
-padding-right: 10px;
-padding-left: 10px;
-text-align: center;
-}
-
-table, th, td
-{
-border: 1px solid black;
-font-family: Georgia;
-color: black;
-margin: auto
-}
 
 body#admin_body
 {
@@ -72,7 +45,9 @@ background-image: none;
 background-color: white;
 }
 
-
+#adminpage a {
+  color:black;
+}
 
 ul#list{
 color: black;
