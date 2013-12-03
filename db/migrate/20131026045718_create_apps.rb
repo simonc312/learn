@@ -10,7 +10,7 @@ class CreateApps < ActiveRecord::Migration
       t.text :street_address
       t.string :phone
       t.string :type
-      t.string :user_id
+      t.integer :user_id #### HUGE ERROR WAS CAUSED BY THIS being a string instead of integer!!!!!!
       t.text :resume
       t.text :cover_letter
       t.timestamps 
