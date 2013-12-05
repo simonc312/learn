@@ -14,6 +14,7 @@ module CalendarHelper
       :next_month_text => month_link(@shown_month.next_month) + " >>"    }
   end
 
+
   def event_calendar
     # args is an argument hash containing :event, :day, and :options
     calendar event_calendar_opts do |args|

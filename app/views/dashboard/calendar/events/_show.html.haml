@@ -13,9 +13,7 @@
         = @event.location
 
     %h3 Description:
-
     %p#description= @event.description
-
-    = link_to 'Edit', edit_dashboard_calendar_event_path(@event)
-    = button_to 'Delete', dashboard_calendar_event_path(@event), :method => :delete, :confirm => 'Are you sure?'
+    - if isOwner?
+      = render :partial => 'delete', :object => @event
     = link_to 'Back to calendar', dashboard_calendar_path
