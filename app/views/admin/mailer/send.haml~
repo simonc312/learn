@@ -2,14 +2,17 @@
   %h1 Send mass emails
 
   = form_tag admin_mailer_path do
-
+    - User.all_status.each do |status|
+      = check_box_tag "statuses[#{status}]", 1, true
+      = label :statuses, status
+    %br
     = label :mail, :subject, 'Subject'
     = text_field :mail, 'subject'
     %br
 
     = label :mail, :body, 'Body'
-    = text_field :mail, 'body'
+    = text_field :mail, 'body', :width => 60 px
     %br
 
 
-    = submit_tag 'Send'
+    = submit_tag 'Send Mail'
