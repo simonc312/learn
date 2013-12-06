@@ -21,7 +21,6 @@ var EventPopup = {
 	},
 	
 	showEventInfo: function(data, requestStatus, xhrObject){
-		alert("Success");
 		var oneFourth = Math.ceil($(window).width() / 4);
 		$('#eventInfo').css({'left': oneFourth, 'width': 2*oneFourth, 'top': 250}).html(data).show();
 var hideButton = $('<button id="hideInfo">Close</button>');
