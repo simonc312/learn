@@ -203,16 +203,16 @@
         <tbody>
           <% @volunteers.each do |volunteer| %>
           <tr>
-	    <td><%= client.first_name %> </td>
-	    <td><%= client.last_name %></td>
-	    <td><%= client.gender %></td>
-	    <td><%= client.birthday %></td>
-	    <td><%= client.phone %> </td>
-	    <td><%= client.street_address %></td>
-            <td><%= client.city %> </td>
-	    <td><%= client.state %></td>
-	    <td><%= client.user_id %></td>
-	    <td><%= client.created_at %></td>
+	    <td><%= volunteer.first_name %> </td>
+	    <td><%= volunteer.last_name %></td>
+	    <td><%= volunteer.gender %></td>
+	    <td><%= volunteer.birthday %></td>
+	    <td><%= volunteer.phone %> </td>
+	    <td><%= volunteer.street_address %></td>
+            <td><%= volunteer.city %> </td>
+	    <td><%= volunteer.state %></td>
+	    <td><%= volunteer.user_id %></td>
+	    <td><%= volunteer.created_at %></td>
 	  </tr>
           <% end %>
         </tbody>
@@ -254,7 +254,11 @@
 
 
 
-	<script type="text/javascript" src="script.js"></script>
+	
+
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript">
 	var sorter = new TINY.table.sorter('sorter','table',{
 		headclass:'head',
@@ -282,9 +286,6 @@
 		init:true
 	});
   </script>	
-
-  </div>
-</body>
 
   
 
