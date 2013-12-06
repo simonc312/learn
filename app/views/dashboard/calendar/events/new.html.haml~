@@ -1,7 +1,7 @@
 .body
   .mainform
     %h1 Add New Event
-    = form_tag calendar_events_path, :method => :post do
+    = form_tag dashboard_calendar_events_path, :method => :post do
       .below
         = label :event, :name, 'Event Name'
       = text_field :event, 'name', :value => 'Untitled'
@@ -22,5 +22,12 @@
         .below
           = label :event, :end_at, 'End Time'
           = datetime_select :event, :end_at
+      %p
+        .below
+          = label :event, :color, 'Event Color'
+          - [ 'red', 'green' ].each do |color|
+            = radio_button :event, :color, @color = color, true
+
+
       %p
         = submit_tag 'Save Event'

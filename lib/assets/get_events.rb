@@ -1,8 +1,8 @@
 module EventGetter
 
-  def getEventInfo(m, y)
-    @month = (m || (Time.zone || Time).now.month).to_i
-    @year = (y || (Time.zone || Time).now.year).to_i
+  def getEventInfo
+    @month = (params[:month] || (Time.zone || Time).now.month).to_i
+    @year = (params[:year] || (Time.zone || Time).now.year).to_i
 
     @shown_month = Date.civil(@year, @month)
 

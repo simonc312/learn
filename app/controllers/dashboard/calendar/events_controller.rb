@@ -40,11 +40,13 @@ class Dashboard::Calendar::EventsController < ApplicationController
     eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)
 
     eventhash[:user_id] = current_user.id
+    eventhash[:color] = params[:event][:color]
+    
 
     if eventhash[:end_at] <= eventhash[:start_at]
-	flash[:notice] = "Invalid End Date selected."	
-	redirect_to new_dashboard_calendar_event_path
-	return
+	    flash[:notice] = "Invalid End Date selected."	
+	    redirect_to new_dashboard_calendar_event_path
+	    return
     end
     #puts eventhash
     @event = Event.create!(eventhash)

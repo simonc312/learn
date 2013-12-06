@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131128234633) do
+ActiveRecord::Schema.define(:version => 20131206053051) do
 
   create_table "apps", :force => true do |t|
     t.string   "first_name"
@@ -23,11 +23,11 @@ ActiveRecord::Schema.define(:version => 20131128234633) do
     t.text     "street_address"
     t.string   "phone"
     t.string   "type"
-    t.integer  "user_id"
+    t.integer  "user_id",        :limit => 255
     t.text     "resume"
     t.text     "cover_letter"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "clients", :force => true do |t|
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20131128234633) do
     t.string   "description"
     t.string   "location"
     t.integer  "user_id",     :null => false
+    t.string   "color"
   end
 
   create_table "users", :force => true do |t|
