@@ -12,7 +12,6 @@ class Dashboard::Calendar::EventsController < ApplicationController
      @event = Event.find(params[:id])
      if request.xhr?
      render :partial => 'show', :object=> @event 
-     end
     end
   end
 
@@ -42,6 +41,11 @@ class Dashboard::Calendar::EventsController < ApplicationController
 
     eventhash[:user_id] = current_user.id
 
+    if eventhash[:end_at] < eventhash[:start_at]
+	flash[:notice] = "Invalid End Date selected."	
+	redirect_to new_dashboard_calendar_event_path
+	return
+    end
     #puts eventhash
     @event = Event.create!(eventhash)
     flash.keep[:notice] = "#{@event.name} was successfully created."

@@ -39,9 +39,17 @@ class Admin::Calendar::EventsController < ApplicationController
     eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)
     eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)
 
+ if eventhash[:end_at] <= eventhash[:start_at]
+	flash[:notice] = "Invalid End Date selected."	
+	redirect_to new_admin_calendar_event_path
+	return
+    end
+
+
     eventhash[:user_id] = current_user.id
 
     #puts eventhash
+
     @event = Event.create!(eventhash)
     flash.keep[:notice] = "#{@event.name} was successfully created."
     redirect_to admin_calendar_path

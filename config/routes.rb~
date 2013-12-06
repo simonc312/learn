@@ -27,6 +27,9 @@ LearningShelter::Application.routes.draw do
   root :to => "home#index"
   get '/index' => "home#index", :as => 'index'
   match "/about" => "basic#about"
+  match "/events" => "basic#events"
+  match "/signup" => "basic#signup"
+  match "/donate" => "basic#donate"
   
   match 'dashboard/application/cl' => 'application#apply_client' # link
   match 'dashboard/calendar' => 'dashboard/calendar#index' # link
