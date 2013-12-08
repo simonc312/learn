@@ -3,5 +3,13 @@ width: 74px;
 }
 
 .datepair > .time {
-width: 60px;
+width: 60px;}
+
+.below .color {
+       	width: 25px;
+	height: 25px;
+	display: inline;
 }
+
+
+

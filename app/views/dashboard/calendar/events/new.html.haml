@@ -27,7 +27,10 @@
         .below
           = label :event, :color, 'Event Color'
           - [ 'red', 'green', 'orange', 'blue' ].each do |color|
-            = radio_button :event, :color, @color = color
+            %div{:id => color, :class => "color"} 
+              = color 
+              = radio_button :event, :color, @color = color
+    
 
 
       %p
