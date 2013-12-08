@@ -21,7 +21,7 @@ var EventPopup = {
 	},
 	
 	showEventInfo: function(data, requestStatus, xhrObject){
-    $('#eventInfo').html(data).show().dialog({modal:true, draggable: false, autoOpen:false});
+    $('#eventInfo').html(data).show().dialog({modal:true, draggable: false, autoOpen:true});
 		//var oneFourth = Math.ceil($(window).width() / 4);
 		//$('#eventInfo');
     //var hideButton = $('<button id="hideInfo">Close</button>');

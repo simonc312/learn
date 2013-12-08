@@ -43,6 +43,7 @@ gem 'devise'
 gem 'event-calendar', :require => 'event_calendar'
 gem 'flexslider'
 gem 'jquery-ui-rails'
+gem 'jquery-timepicker-rails'
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'email_spec'
