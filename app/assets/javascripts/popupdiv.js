@@ -21,18 +21,19 @@ var EventPopup = {
 	},
 	
 	showEventInfo: function(data, requestStatus, xhrObject){
-		var oneFourth = Math.ceil($(window).width() / 4);
-		$('#eventInfo').css({'left': oneFourth, 'width': 2*oneFourth, 'top': 250}).html(data).show();
-var hideButton = $('<button id="hideInfo">Close</button>');
-		hideButton.appendTo($('#eventInfo .body .mainform'));
-	$('#hideInfo').click(EventPopup.hideEventInfo);
+    $('#eventInfo').html(data).show().dialog({modal:true, draggable: false, autoOpen:false});
+		//var oneFourth = Math.ceil($(window).width() / 4);
+		//$('#eventInfo');
+    //var hideButton = $('<button id="hideInfo">Close</button>');
+		//hideButton.appendTo($('#eventInfo .body .mainform'));
+	  //$('#hideInfo').click(EventPopup.hideEventInfo);
 	}	
-
+/*
 	,hideEventInfo: function() {
 	$('#eventInfo').hide();
 	return(false);
 
-	}
+	}*/
 };
 
 EventPopup.setup();

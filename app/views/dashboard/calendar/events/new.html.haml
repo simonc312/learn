@@ -22,6 +22,14 @@
         .below
           = label :event, :end_at, 'End Time'
           = datetime_select :event, :end_at
+
+      %p
+        = label :event, :start_date, 'Start Date'
+        = text_field :event, 'start_date'
+      %p
+        = label :event, :end_date, 'End Date'
+        = text_field :event, 'end_date'
+
       %p
         .below
           = label :event, :color, 'Event Color'

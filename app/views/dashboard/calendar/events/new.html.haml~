@@ -22,11 +22,19 @@
         .below
           = label :event, :end_at, 'End Time'
           = datetime_select :event, :end_at
+
+      %p
+        = label :event, :start_date, 'Start Date'
+        = text_field :event, 'startdate'
+      %p
+        = label :event, :end_date, 'End Date'
+        = text_field :event, 'enddate'
+
       %p
         .below
           = label :event, :color, 'Event Color'
           - [ 'red', 'green' ].each do |color|
-            = radio_button :event, :color, @color = color, true
+            = radio_button :event, :color, @color = color
 
 
       %p
