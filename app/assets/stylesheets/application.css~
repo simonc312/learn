@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require jquery.ui.all
+ *= require jquery.timepicker.css
  *= require flexslider.css
  *= require_tree .
  */

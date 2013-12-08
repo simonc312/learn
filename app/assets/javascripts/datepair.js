@@ -1,5 +1,5 @@
 $(function() {
-	var DATEPICKER_FORMAT = 'dd-mm-yy';
+	var DATEPICKER_FORMAT = 'mm-dd-yy';
 	var TIMEPICKER_FORMAT = 'g:i a';
 	var DATE_FORMAT = 'Y-n-j'; // for this format see http://php.net/manual/function.date.php
 

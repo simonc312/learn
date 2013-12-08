@@ -1,0 +1,3 @@
+.datepair > .date {
+width: 74px;
+}

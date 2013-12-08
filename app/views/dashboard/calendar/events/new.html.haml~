@@ -4,7 +4,7 @@
     = form_tag dashboard_calendar_events_path, :method => :post do
       .below
         = label :event, :name, 'Event Name'
-      = text_field :event, 'name', :value => 'Untitled'
+      = text_field :event, 'name'
       %p
       .below
         = label :event, :location, 'Location'
@@ -12,21 +12,11 @@
       %p
       .below
         = label :event, :description, 'Description'
-      = text_field :event, 'description'
-
-      %p
-        .below
-          = label :event, :start_at, 'Start Time'
-          = datetime_select :event, :start_at
-      %p
-        .below
-          = label :event, :end_at, 'End Time'
-          = datetime_select :event, :end_at
-
+      = text_area :event, 'description'
       %p
         .datepair
           = label :event, :start_date, 'From'
-          = text_field :event, 'start_date', class: "date start"
+          = text_field :event, 'start_date', class: "date start", value: "mm/dd/yyyy"
           = text_field :event, 'start_time', class: "time start"
 
           = label :event, :end_date, '- To'
