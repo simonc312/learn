@@ -1,8 +1,12 @@
-Feature:
+Features:
 
 As an Admin
 I want to create events that everyone sees
 So that everyone can stay up to date
+
+As an Admin 
+I want to create events with different colors
+So that I can differeniate importance of events
 
 Background:
   Given the following users exist:
@@ -21,13 +25,13 @@ Scenario: Admin creates, edits, and deletes event
   And I am logged in as "admin@blahh.com"
   And I am on the admin calendar page
   And I press "Add New Event"
-  And I fill New Event Form 
+  And I fill New Event Form with "the admin event" 
   And I press "Save Event"
   Then I should be on the admin calendar page
   And I should see "the admin event"
   When I follow "the admin event"
   When I follow "Edit"
-  And I fill in "Event Name" with "new admin event"
+  And I fill in "Event Name" for "new admin event"
   And I press "Save Changes"
   Then I should see "new admin event"
   When I press "Delete"
