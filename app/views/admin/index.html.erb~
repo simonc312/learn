@@ -1,9 +1,9 @@
 
 <%= stylesheet_link_tag "admin_style" %>
 
-<body>
+<body id='admin_body'>
 
-<div id='admin_body'>
+<div id='adminpage'>
 
 
   <div class="learningShelterLogo", align="right"> 
@@ -93,7 +93,7 @@
 
 
   <div class="content", id="clients">
-    <div id="tablewrapper">
+   <!--  <div id="tablewrapper">
       <div id="tableheader">
         <div class="search">
           <select id="columns" onchange="sorter.search('query')"></select>
@@ -103,7 +103,7 @@
 	  <div>Records <span id="startrecord"></span>-<span id="endrecord"></span> of <span id="totalrecords"></span></div>
           <div><a href="javascript:sorter.reset()">reset</a></div>
         </span>
-      </div>
+      </div> -->
 
       <table cellpadding="0" cellspacing="0" border="0" id="table" class="tinytable">
         <thead>
@@ -118,6 +118,7 @@
 	    <th><h3>State</h3></th>
 	    <th><h3>User ID</h3></th>
 	    <th><h3>Submission Time</h3></th>
+            <th><h3>Accepted?</h3></th>   
           </tr>
         </thead>
         <tbody>
@@ -133,12 +134,13 @@
 	    <td><%= client.state %></td>
 	    <td><%= client.user_id %></td>
 	    <td><%= client.created_at %></td>
+	    <td><%= client.accepted %></td>
 	  </tr>
           <% end %>
         </tbody>
       </table>
 
-      <div id="tablefooter"> 
+      <!-- <div id="tablefooter"> 
         <div id="tablenav">
           <div> 
             <%= link_to image_tag("table/first.gif"), :onclick => "sorter.move(-1,true)" %>
@@ -167,13 +169,13 @@
           <div class="page">Page <span id="currentpage"></span> of <span id="totalpages"></span></div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
 
   <div class="content", id="volunteers">
-    <div id="tablewrapper">
+    <!-- <div id="tablewrapper">
       <div id="tableheader">
         <div class="search">
           <select id="columns" onchange="sorter.search('query')"></select>
@@ -183,7 +185,7 @@
 	  <div>Records <span id="startrecord"></span>-<span id="endrecord"></span> of <span id="totalrecords"></span></div>
           <div><a href="javascript:sorter.reset()">reset</a></div>
         </span>
-      </div>
+      </div> -->
 
       <table cellpadding="0" cellspacing="0" border="0" id="table" class="tinytable">
         <thead>
@@ -203,22 +205,22 @@
         <tbody>
           <% @volunteers.each do |volunteer| %>
           <tr>
-	    <td><%= client.first_name %> </td>
-	    <td><%= client.last_name %></td>
-	    <td><%= client.gender %></td>
-	    <td><%= client.birthday %></td>
-	    <td><%= client.phone %> </td>
-	    <td><%= client.street_address %></td>
-            <td><%= client.city %> </td>
-	    <td><%= client.state %></td>
-	    <td><%= client.user_id %></td>
-	    <td><%= client.created_at %></td>
+	    <td><%= volunteer.first_name %> </td>
+	    <td><%= volunteer.last_name %></td>
+	    <td><%= volunteer.gender %></td>
+	    <td><%= volunteer.birthday %></td>
+	    <td><%= volunteer.phone %> </td>
+	    <td><%= volunteer.street_address %></td>
+            <td><%= volunteer.city %> </td>
+	    <td><%= volunteer.state %></td>
+	    <td><%= volunteer.user_id %></td>
+	    <td><%= volunteer.created_at %></td>
 	  </tr>
           <% end %>
         </tbody>
       </table>
 
-      <div id="tablefooter"> 
+      <!-- <div id="tablefooter"> 
         <div id="tablenav">
           <div> 
             <%= link_to image_tag("table/first.gif"), :onclick => "sorter.move(-1,true)" %>
@@ -247,14 +249,18 @@
           <div class="page">Page <span id="currentpage"></span> of <span id="totalpages"></span></div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
 
 
 
-	<script type="text/javascript" src="script.js"></script>
+	
+
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript">
 	var sorter = new TINY.table.sorter('sorter','table',{
 		headclass:'head',
@@ -282,9 +288,6 @@
 		init:true
 	});
   </script>	
-
-  </div>
-</body>
 
   
 
