@@ -4,10 +4,10 @@
     %ul#details
       %li
         From:
-        = prettyifyEventDate(@event.start_at)
+        = prettifyEventDate(@event.start_at)
       %li
         To:
-        = prettyifyEventDate(@event.end_at)
+        = prettifyEventDate(@event.end_at)
       %li
         Location:
         = @event.location

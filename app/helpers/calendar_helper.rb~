@@ -14,19 +14,17 @@ module CalendarHelper
       :next_month_text => month_link(@shown_month.next_month) + " >>"    }
   end
 
- def isOwner?(event) 
-   event.user_id == current_user.id
- end
-
- def isAdminEvent?(event)
-   User.find(event.user_id).admin
- end
 
   def event_calendar
     # args is an argument hash containing :event, :day, and :options
     calendar event_calendar_opts do |args|
       event = args[:event]
-      link_to "#{event.name}",  dashboard_calendar_event_path(event.id), :remote => true
+      if(current_user.try(:admin?))
+      	link_to "#{event.name}",  admin_calendar_event_path(event.id), :remote => true
+     else
+	link_to "#{event.name}",  dashboard_calendar_event_path(event.id), :remote => true
+     
+     end
      # %(<a href="calendar/events/#{event.id}" title="#{h(event.name)}">#{h(event.name)}</a>)
     end
   end
