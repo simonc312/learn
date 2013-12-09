@@ -34,6 +34,9 @@ module NavigationHelpers
     when /^the signin page$/
       '/users/sign_in'
 
+    when /^the signup page$/
+      '/users/sign_up'
+
     when /^the (.*) calendar page$/
       '/'+$1+'/calendar'
 

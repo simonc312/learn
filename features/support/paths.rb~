@@ -28,6 +28,9 @@ module NavigationHelpers
     when /^the users page$/
       '/users'
 
+    when /^the edit users page$/
+      '/users/edit'
+
     when /^the signin page$/
       '/users/sign_in'
 

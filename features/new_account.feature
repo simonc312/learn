@@ -4,10 +4,11 @@ As an interested Person
 I want to sign up and enter my purpose
 So that I can get involved with the program
 
+Background: On the sign up page
+  Given I am on the signup page
 
 Scenario: Successful sign up
-  Given I am on the home page
-
+  And I follow "Sign Up"
   When I fill in the following:
     | Email          				| success@gmail.com  |
     | Password      			  | successpwd   			 |
@@ -22,8 +23,6 @@ Scenario: Successful sign up
 
 
 Scenario: Password length too short
-  Given I am on the home page
-
   When I fill in the following:
     | Email          				| short@gmail.com  |
     | Password      			  | short     			 |
@@ -34,8 +33,6 @@ Scenario: Password length too short
 	And I should see "Password is too short (minimum is 8 characters)"
 
 Scenario: Password does not match
-  Given I am on the home page
-
   When I fill in the following:
     | Email          				| failure@gmail.com  |
     | Password      			  | failurepwd   			 |
@@ -48,7 +45,7 @@ Scenario: Password does not match
 
 
 Scenario: Email is already taken
-  Given I am on the home page
+  Given I am on the signup page
 	And there is the user with email "success@gmail.com" in the database 
 
   When I fill in the following:
@@ -63,7 +60,7 @@ Scenario: Email is already taken
 
 
 Scenario: Try to navigate to home page after creating account
-  Given I am on the home page
+  Given I am on the signup page
   When I fill in the following:
     | Email          				| success@gmail.com  |
     | Password      			  | successpwd   			 |
