@@ -13,13 +13,13 @@ Given /^the following events exist/ do |events_table|
   end
 end
 
-And /^I fill New Event Form$/ do 
+And /^I fill New Event Form for "(.*)"/ do |eventname| 
   sd = $start_dt.strftime('%m/%d/%Y')
   st = $start_dt.strftime('%l:%M %P')
   ed = $end_dt.strftime('%m/%d/%Y')
   et = $end_dt.strftime('%l:%M %P')
   steps %Q{
-  When I fill in "Event Name" with "the admin event"
+  When I fill in "Event Name" with "#{eventname}"
   And I fill in "event[start_date]" with "#{sd}"
   And I fill in "event[start_time]" with "#{st}"
   And I fill in "event[end_date]" with "#{ed}"
