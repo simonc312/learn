@@ -12,6 +12,6 @@ module EventsHelper
  end
 
  def prettifyEventDate(event)
-   event.strftime('%b/%A/%Y %l:%M %P')
+   event.strftime('%A %d, %B at %l:%M %P')
  end
 end

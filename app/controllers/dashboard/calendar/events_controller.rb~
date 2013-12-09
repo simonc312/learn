@@ -27,13 +27,11 @@ class Dashboard::Calendar::EventsController < ApplicationController
     eventhash[:name] = params[:event][:name]
     eventhash[:description] = params[:event][:description]
     eventhash[:location] = params[:event][:location]
-
+    eventhash[:user_id] = current_user.id
+    eventhash[:color] = params[:event][:color] || "grey"
+    begin
     eventhash[:start_at] = DateTime.strptime(startDate+startTime,'%m/%d/%Y%l:%M %P')
     eventhash[:end_at] = DateTime.strptime(endDate+endTime,'%m/%d/%Y%l:%M %P')
-
-    eventhash[:user_id] = current_user.id
-    eventhash[:color] = params[:event][:color]
-    
     rescue ArgumentError
             flash[:notice] = "Invalid Date selected."	
 	    redirect_to new_dashboard_calendar_event_path
