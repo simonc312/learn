@@ -3,11 +3,11 @@
     %h2 Details about #{@event.name}
     %ul#details
       %li
-        Start Time:
-        = @event.start_at
+        From:
+        = prettifyEventDate(@event.start_at)
       %li
-        End Time:
-        = @event.end_at
+        To:
+        = prettifyEventDate(@event.end_at)
       %li
         Location:
         = @event.location

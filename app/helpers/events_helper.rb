@@ -10,4 +10,8 @@ module EventsHelper
   def isLoggedIn?
    user_signed_in?
  end
+
+ def prettifyEventDate(event)
+   event.strftime('%A %d, %B at %l:%M %P')
+ end
 end

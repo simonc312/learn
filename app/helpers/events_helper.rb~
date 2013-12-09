@@ -6,4 +6,12 @@ module EventsHelper
  def isAdminEvent?
    User.find(@event.user_id).admin
  end
+ 
+  def isLoggedIn?
+   user_signed_in?
+ end
+
+ def prettifyEventDate(event)
+   event.strftime('%b/%A/%Y %l:%M %P')
+ end
 end

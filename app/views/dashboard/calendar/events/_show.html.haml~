@@ -3,17 +3,18 @@
     %h2 Details about #{@event.name}
     %ul#details
       %li
-        Start Time:
-        = @event.start_at
+        From:
+        = prettyifyEventDate(@event.start_at)
       %li
-        End Time:
-        = @event.end_at
+        To:
+        = prettyifyEventDate(@event.end_at)
       %li
         Location:
         = @event.location
 
     %h3 Description:
     %p#description= @event.description
-    - if isLoggedIn? 
-      = render :partial => 'delete', :object => @event
+    - if isLoggedIn?
+      - if isOwner?
+        = render :partial => 'delete', :object => @event
     = link_to 'Back to calendar', dashboard_calendar_path
