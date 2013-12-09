@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Admin::Calendar::EventsController do
   before(:each) do 
-    @admin = FactoryGirl.create(:admin)
+    @admin = FactoryGirl.create(:user, :is_admin)
     sign_in @admin
     @event = FactoryGirl.create(:event)
   end
@@ -23,19 +23,36 @@ describe Admin::Calendar::EventsController do
       #puts response
       response.should be_success
     end
-    it 'describe create path' do
+    it 'calls create' do
       new_event = FactoryGirl.build(:event)
       Event.should_receive(:new).and_return(new_event)
-      post :create, :event => {'start_at(1i)' => '2003',
-                                'start_at(2i)' => '11',
-                                'start_at(3i)' => '12',
-                                'start_at(4i)' => '7',
-                                'start_at(5i)' => '59',
-                                'end_at(1i)' => '2003',
-                                'end_at(2i)' => '11',
-                                'end_at(3i)' => '14',
-                                'end_at(4i)' => '7',
-                                'end_at(5i)' => '45'}
+      post :create, :event => { 'start_date' => '12/10/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '12/11/2013',
+                                'end_time' => '11:10 am'
+                              }
+      assigns[:event].should eq(new_event)
+    end
+    it 'calls create with badly formatted date' do
+      # tests the date format of dd/mm/yyyy instead of mm/dd/yyyy
+      new_event = FactoryGirl.build(:event)
+      Event.should_receive(:new).and_return(new_event)
+      post :create, :event => { 'start_date' => '24/12/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '25/12/2013',
+                                'end_time' => '11:10 am'
+                              }
+      assigns[:event].should eq(new_event)
+    end
+    it 'calls create with end date before start date' do
+      # tests the date format of dd/mm/yyyy instead of mm/dd/yyyy
+      new_event = FactoryGirl.build(:event)
+      Event.should_receive(:new).and_return(new_event)
+      post :create, :event => { 'start_date' => '12/10/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '12/09/2013',
+                                'end_time' => '11:10 am'
+                              }
       assigns[:event].should eq(new_event)
     end
   end

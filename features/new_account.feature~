@@ -45,7 +45,7 @@ Scenario: Password does not match
 
 
 Scenario: Email is already taken
-  Given I am on the signin page
+  Given I am on the signup page
 	And there is the user with email "success@gmail.com" in the database 
 
   When I fill in the following:
@@ -73,7 +73,7 @@ Scenario: Try to navigate to home page after creating account
 
 Scenario: Successful signin
   Given there is the user with email "blah1@gmail.com" in the database
-  When I am on the signup page
+  When I am on the signin page
   When I fill in the following:
     | Email          				| blah1@gmail.com  |
     | Password      			  | password123 		 |

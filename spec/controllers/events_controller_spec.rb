@@ -26,10 +26,32 @@ describe Dashboard::Calendar::EventsController do
     it 'calls create' do
       new_event = FactoryGirl.build(:event)
       Event.should_receive(:new).and_return(new_event)
-      post :create, :event => { 'event[start_date]' => '12/10/2013',
-                                'event[start_time]' => '9:00 am',
-                                'event[end_time]' => '12/11/2013',
-                                'event[end_time]' => '11:10 am'
+      post :create, :event => { 'start_date' => '12/10/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '12/11/2013',
+                                'end_time' => '11:10 am'
+                              }
+      assigns[:event].should eq(new_event)
+    end
+    it 'calls create with badly formatted date' do
+      # tests the date format of dd/mm/yyyy instead of mm/dd/yyyy
+      new_event = FactoryGirl.build(:event)
+      Event.should_receive(:new).and_return(new_event)
+      post :create, :event => { 'start_date' => '24/12/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '25/12/2013',
+                                'end_time' => '11:10 am'
+                              }
+      assigns[:event].should eq(new_event)
+    end
+    it 'calls create with end date before start date' do
+      # tests the date format of dd/mm/yyyy instead of mm/dd/yyyy
+      new_event = FactoryGirl.build(:event)
+      Event.should_receive(:new).and_return(new_event)
+      post :create, :event => { 'start_date' => '12/10/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '12/09/2013',
+                                'end_time' => '11:10 am'
                               }
       assigns[:event].should eq(new_event)
     end
