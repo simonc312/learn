@@ -135,6 +135,8 @@
 	    <td><%= client.user_id %></td>
 	    <td><%= client.created_at %></td>
 	    <td><%= client.accepted %></td>
+	    <td><%= button_to "Accept this app", :action=>"accepted" %></td>
+            <td><%= link_to "Accept this application", '/admin#clientt', :id => client %></td>
 	  </tr>
           <% end %>
         </tbody>
@@ -200,6 +202,7 @@
 	    <th><h3>State</h3></th>
 	    <th><h3>User ID</h3></th>
 	    <th><h3>Submission Time</h3></th>
+            <th><h3>Accepted?</h3></th>
           </tr>
         </thead>
         <tbody>
@@ -215,6 +218,7 @@
 	    <td><%= volunteer.state %></td>
 	    <td><%= volunteer.user_id %></td>
 	    <td><%= volunteer.created_at %></td>
+            <td><%= volunteer.accepted %></td>
 	  </tr>
           <% end %>
         </tbody>
