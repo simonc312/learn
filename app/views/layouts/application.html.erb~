@@ -26,9 +26,14 @@
       <% else %>
 		    <li><a href="/" id="home">Home</a></li>
       <% end %>
+      <% if current_user.admin? %>
+        <li><%= link_to "Admin Page", admin_path, :id => 'admin'%></li>
+      <% end %>
 		  <li><a href="/about" id="about">About Us</a></li>
 		  <li><a href="/events" id="events">Events</a></li>
-		  <li><a href="/users/sign_up" id="signup">Sign Up</a></li>
+      <% if not user_signed_in? %>
+		    <li><a href="/users/sign_up" id="sign_up">Sign Up</a></li>
+      <% end %>
 		  <li><a href="/donate" id="donate">Donate</a></li>
 	  </ul>
 

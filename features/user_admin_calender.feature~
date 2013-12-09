@@ -1,8 +1,12 @@
-Feature:
+Features:
 
 As an Admin
 I want to create events that everyone sees
 So that everyone can stay up to date
+
+As an Admin 
+I want to create events with different colors
+So that I can differeniate importance of events
 
 Background:
   Given the following users exist:

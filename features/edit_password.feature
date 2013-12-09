@@ -24,7 +24,6 @@ Scenario: Successful Password Change
   |Current password| password123     |
   And I press "Update" 
   Then I should be on the dashboard page
-  And I should see "Password Updated Successfully." 
 
 Scenario: Failed Password Change
   When I fill in the following:
@@ -32,7 +31,7 @@ Scenario: Failed Password Change
   |Password confirmation|newpassword|
   |Current password| notpassword     |
   And I press "Update" 
-  Then I should be on the edit users page
+  Then I should be on the users page
   And I should see "Current password is invalid" 
 
 Scenario: Successful Cancel Account

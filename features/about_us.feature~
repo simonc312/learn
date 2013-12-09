@@ -6,9 +6,9 @@ Feature: About us
 Scenario: Just visiting the website
   Given I am not authenticated
   When I am on the about page
-  Then I should see "About The Learning Shelter"
+  Then I should see general_information
 
 Scenario: Logged on and visiting the website
   Given I am a new, authenticated user
   When I am on the about page
-  Then I should see "About The Learning Shelter"
+  Then I should see general_information

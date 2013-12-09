@@ -67,7 +67,7 @@ function getHash( url ) {
 */
 
 $(document).ready(function () {
-  var tabnames = ["home","dashboard","about","events","signup","donate"];
+  var tabnames = ["home","dashboard","about","events","sign_up","donate"];
   for (var i = 0; i < tabnames.length; i++) {
     if(window.location.href.indexOf(tabnames[i]) > -1) {
         //alert(tabnames[i]);
