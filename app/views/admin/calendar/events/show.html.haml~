@@ -1,6 +1,6 @@
 .body
   .mainform
-    %h2 Details about #{@event.name}
+    %h2 Admin Details about #{@event.name}
     %ul#details
       %li
         Start Time:
@@ -16,6 +16,6 @@
 
     %p#description= @event.description
 
-    = link_to 'Edit', edit_dashboard_calendar_event_path(@event)
-    = button_to 'Delete', dashboard_calendar_event_path(@event), :method => :delete, :confirm => 'Are you sure?'
-    = link_to 'Back to calendar', dashboard_calendar_path
+    = link_to 'Edit', edit_admin_calendar_event_path(@event)
+    = button_to 'Delete', admin_calendar_event_path(@event), :method => :delete, :confirm => 'Are you sure?'
+    = link_to 'Back to calendar', admin_calendar_path

@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
  def isAdminEvent?(event)
    User.find(event.user_id).admin
  end
+
+ def isLoggedIn?
+   user_signed_in?
+ end
 end

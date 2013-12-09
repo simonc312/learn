@@ -14,6 +14,7 @@
 
     %h3 Description:
     %p#description= @event.description
-    - if isOwner?
-      = render :partial => 'delete', :object => @event
+    - if isLoggedIn?
+      - if isOwner?
+        = render :partial => 'delete', :object => @event
     = link_to 'Back to calendar', dashboard_calendar_path

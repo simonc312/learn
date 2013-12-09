@@ -6,4 +6,8 @@ module EventsHelper
  def isAdminEvent?
    User.find(@event.user_id).admin
  end
+ 
+  def isLoggedIn?
+   user_signed_in?
+ end
 end

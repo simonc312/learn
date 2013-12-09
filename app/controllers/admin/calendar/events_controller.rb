@@ -19,36 +19,31 @@ class Admin::Calendar::EventsController < ApplicationController
     #render text: params[:event].inspect
     #puts "CREATE WAS CALLED-----------------------------------------------------------"
     eventhash = Hash.new()
-    puts params
-    startYear = params[:event]['start_at(1i)'].to_i
-    startMonth = params[:event]['start_at(2i)'].to_i
-    startDay = params[:event]['start_at(3i)'].to_i
-    startHour = params[:event]['start_at(4i)'].to_i
-    startMin = params[:event]['start_at(5i)'].to_i
+    
+     startDate = params[:event]['start_date']
+    startTime = params[:event]['start_time']
 
-    endYear = params[:event]['end_at(1i)'].to_i
-    endMonth = params[:event]['end_at(2i)'].to_i
-    endDay = params[:event]['end_at(3i)'].to_i
-    endHour = params[:event]['end_at(4i)'].to_i
-    endMin = params[:event]['end_at(5i)'].to_i
-
+    endDate = params[:event]['end_date']
+    endTime = params[:event]['end_time']
     eventhash[:name] = params[:event][:name]
     eventhash[:description] = params[:event][:description]
     eventhash[:location] = params[:event][:location]
-    
-    eventhash[:start_at] = DateTime.new(startYear, startMonth, startDay, startHour, startMin)
-    eventhash[:end_at] = DateTime.new(endYear, endMonth, endDay, endHour, endMin)
-
- if eventhash[:end_at] <= eventhash[:start_at]
-	flash[:notice] = "Invalid End Date selected."	
-	redirect_to new_admin_calendar_event_path
-	return
+    eventhash[:user_id] = current_user.id
+    eventhash[:color] = params[:event][:color]
+    begin
+    eventhash[:start_at] = DateTime.strptime(startDate+startTime,'%m/%d/%Y%l:%M %P')
+    eventhash[:end_at] = DateTime.strptime(endDate+endTime,'%m/%d/%Y%l:%M %P')
+    rescue ArgumentError
+            flash[:notice] = "Invalid Date selected."	
+	    redirect_to new_dashboard_calendar_event_path
+	    return
     end
 
-
-    eventhash[:user_id] = current_user.id
-
-    #puts eventhash
+    if eventhash[:end_at] <= eventhash[:start_at]
+	    flash[:notice] = "Invalid End Date selected."	
+	    redirect_to new_admin_calendar_event_path
+	    return
+    end
 
     @event = Event.create!(eventhash)
     flash.keep[:notice] = "#{@event.name} was successfully created."
