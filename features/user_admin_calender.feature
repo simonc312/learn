@@ -19,9 +19,9 @@ Background:
 
 Scenario: Admin creates, edits, and deletes event
   And I am logged in as "admin@blahh.com"
-  When I am on the admin calendar page
+  And I am on the admin calendar page
   And I press "Add New Event"
-  When I fill in "Event Name" with "the admin event"
+  And I fill New Event Form 
   And I press "Save Event"
   Then I should be on the admin calendar page
   And I should see "the admin event"
