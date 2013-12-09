@@ -1,8 +1,6 @@
-$(document).ready( function(){
-
+$(document).ready(function(){
 $('.color').each(function(){
-        color = $(this).id;
-        alert(color);
-	$(this).css('background-color',color);
+	
+	$(this).css('background-color',$(this).attr('id'),'font-size',0);
      });
 });

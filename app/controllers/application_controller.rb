@@ -12,4 +12,13 @@ class ApplicationController < ActionController::Base
  def isLoggedIn?
    user_signed_in?
  end
+
+ def authenticate_admin!
+   if current_user.try(:admin?)
+     #do nothing
+   else
+     flash[:notice] = "You do not have the authorization to access this page"
+     redirect_to '/dashboard'
+   end
+ end
 end

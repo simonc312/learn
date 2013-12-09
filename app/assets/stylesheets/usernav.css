@@ -25,7 +25,15 @@ div#signinstatus{
 }
 
 #admincalendarwrapper {
-  background-color:rgba(169,245,122,0.75);
+     background-color: #ADE6D8;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #ADE6D8 -webkit-gradient(linear, left top, left bottom, from(#ADCEE6), to(#ADE6D8)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #ADE6D8 -moz-linear-gradient(top, #ADCEE6, #ADE6D8) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ADCEE6, endColorstr=#ADE6D8) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ADCEE6, endColorstr=#ADCEE6)" no-repeat;
   padding:35px;
   border-radius:5px;
 }

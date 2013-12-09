@@ -1,5 +1,5 @@
 class Dashboard::CalendarController < ApplicationController
-    
+  before_filter :authenticate_user!  
   #include EventGetter
   def index
     

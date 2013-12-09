@@ -1,12 +1,12 @@
 class Dashboard::CalendarController < ApplicationController
-    
+  before-filter :authenticate_user!  
   #include EventGetter
   def index
     
-    @moth = (params[:month] || (Time.zone || Time).now.month).to_i
+    @month = (params[:month] || (Time.zone || Time).now.month).to_i
     @year = (params[:year] || (Time.zone || Time).now.year).to_i
 
-    @shown_month = Date.civil(@year, @moth)
+    @shown_month = Date.civil(@year, @month)
 
     #@event_strips = Event.event_strips_for_month(@shown_month)
 
