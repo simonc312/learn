@@ -70,8 +70,7 @@ ul#tabs {
   font:13px;
 	list-style-type: none;
   margin:0px; 
-  margin-right:30px;
-  margin-top:10px;
+  margin-top:25px;
 	padding: 0 0 0.3em 0; 
 	align:center;
   float:right;
@@ -81,6 +80,11 @@ ul#tabs li {
 	display: inline;
   margin-right:20px;
 }
+
+a{text-decoration: none; }
+
+.mainform a{margin: 5px; color: black; border-style: solid; padding: 10px;}
+.mainform a:hover{border-color: white;}
 ul#tabs li a { 
 	//color: #42454a; 
   //color: white;//new
