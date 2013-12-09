@@ -35,7 +35,7 @@ class Admin::Calendar::EventsController < ApplicationController
     eventhash[:end_at] = DateTime.strptime(endDate+endTime,'%m/%d/%Y%l:%M %P')
     rescue ArgumentError
             flash[:notice] = "Invalid Date selected."	
-	    redirect_to new_dashboard_calendar_event_path
+	    redirect_to new_admin_calendar_event_path
 	    return
     end
 
