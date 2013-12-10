@@ -1,6 +1,7 @@
 
 %h3
-  Welcome, prospective client!
+  Welcome, 
+  =App.find_by_user_id(current_user.id).first_name + '!'
 
 %p.prospectivemsg
   Thank you for expressing interest in becoming a Learning Shelter client.

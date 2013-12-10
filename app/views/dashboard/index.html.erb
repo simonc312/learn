@@ -10,6 +10,10 @@
   <%= render partial: "prospective_clientmessage.html.haml" %>
 <% elsif current_user.status == "volunteer_candidate" %>
   <%= render partial: "prospective_volmessage" %>
+<% elsif current_user.status == "client" %>
+  <%= render partial: "clientmessage" %>
+<% elsif current_user.status == "volunteer" %>
+  <%= render partial: "volmessage" %>
 <% else %>
   <% if App.find_by_user_id(current_user.id) != nil %>
     <h1>Welcome, <%= App.find_by_user_id(current_user.id).first_name %></h1>

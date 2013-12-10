@@ -41,5 +41,11 @@ Scenario: Delete event
   Then I should be on the dashboard calendar page
   And I should see "'my event' deleted"
 
+Scenario: Invalid date for event
+  When I press "Add New Event"
+  And I fill in "Event Name" with "test event"
+  And I press "Save Event"
+  Then I should see "Invalid Date selected"
+
 
 

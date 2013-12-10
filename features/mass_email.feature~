@@ -6,9 +6,9 @@ Feature: Mass email sending system for admin
 Scenario: Sending mass email
 
   Given there are the following users:
-  | email          | admin | password    |
-  | admin@mail.com | true  | adminpasswd |
-  | user@mail.com  | false | userpasswd  |
+  | email          | admin | password    | status           |
+  | admin@mail.com | true  | adminpasswd | admin            |
+  | user@mail.com  | false | userpasswd  | client_candidate |
 
   And a clear email queue
   And I am on the homepage
@@ -23,5 +23,5 @@ Scenario: Sending mass email
   | Subject       | Test subject   |
   | Body          | Test body      |
 
-  And I press "Send"
-  Then I should see flash_notice
+  And I press "Send Mail"
+  Then I should see "Email sent successfully"
