@@ -17,11 +17,6 @@ class User < ActiveRecord::Base
   
   def choose_status(input)
   end
-  def is_valid_status?
-    valid_status = ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate', 'donor', 'other']
-    return valid_status.include?(self.status)
-  end  
-
 
   protected
 
