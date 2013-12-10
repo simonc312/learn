@@ -1,5 +1,5 @@
 class Admin::Calendar::EventsController < ApplicationController
-
+  include EventHashHelper
 	def edit
 		@event = Event.find(params[:id])
 	end
@@ -16,38 +16,8 @@ class Admin::Calendar::EventsController < ApplicationController
   end
 
   def create
-    #render text: params[:event].inspect
-    #puts "CREATE WAS CALLED-----------------------------------------------------------"
-    eventhash = Hash.new()
-    
-     startDate = params[:event]['start_date']
-    startTime = params[:event]['start_time']
-
-    endDate = params[:event]['end_date']
-    endTime = params[:event]['end_time']
-    eventhash[:name] = params[:event][:name]
-    eventhash[:description] = params[:event][:description]
-    eventhash[:location] = params[:event][:location]
-    eventhash[:user_id] = current_user.id
-    eventhash[:color] = params[:event][:color]
-    begin
-    eventhash[:start_at] = DateTime.strptime(startDate+startTime,'%m/%d/%Y%l:%M %P')
-    eventhash[:end_at] = DateTime.strptime(endDate+endTime,'%m/%d/%Y%l:%M %P')
-    rescue ArgumentError
-            flash[:notice] = "Invalid Date selected."	
-	    redirect_to new_admin_calendar_event_path
-	    return
-    end
-
-    if eventhash[:end_at] <= eventhash[:start_at]
-	    flash[:notice] = "Invalid End Date selected."	
-	    redirect_to new_admin_calendar_event_path
-	    return
-    end
-
-    @event = Event.create!(eventhash)
-    flash.keep[:notice] = "#{@event.name} was successfully created."
-    redirect_to admin_calendar_path
+    eventhash = self.setUpEventHash
+    self.validate(eventhash)
   end
 
   def update
