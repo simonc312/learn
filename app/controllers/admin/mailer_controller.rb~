@@ -10,10 +10,11 @@ class Admin::MailerController < ApplicationController
         end
       end
     }
-    @users = User.where("status = ?", @statuses)
+    @users = User.where("status IN (@statuses)")
     if @users.empty?
       flash[:notice] = "No users selected"
       redirect_to admin_path
+      return
     end
     MassMailer.mass_email(@users, @subject, @body)
     flash[:notice] = "Email sent successfully"

@@ -10,7 +10,7 @@ class Admin::MailerController < ApplicationController
         end
       end
     }
-    @users = User.where("status = ?", @statuses)
+    @users = User.where("status IN (:statuses)", {:statuses => @statuses})
     if @users.empty?
       flash[:notice] = "No users selected"
       redirect_to admin_path

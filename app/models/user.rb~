@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   def self.all_status
-    return ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate']
+    return ['admin', 'client', 'volunteer', 'staff', 'donor']
   end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
