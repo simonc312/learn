@@ -18,11 +18,10 @@ Scenario: Sending mass email
   | Password      | adminpasswd     |
 
   And I press "Sign in"
-  And I am on the admin page
-  When I press "Send email"
+  And I am on the admin mailer page
   And I fill in the following:
   | Subject       | Test subject   |
   | Body          | Test body      |
 
   And I press "Send"
-  Then I should see "Email sent successfully"
+  Then I should see flash_notice

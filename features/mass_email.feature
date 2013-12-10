@@ -23,5 +23,5 @@ Scenario: Sending mass email
   | Subject       | Test subject   |
   | Body          | Test body      |
 
-  And I press "Send"
-  Then I should see "Email sent successfully"
+  And I press "Send Mail"
+  Then I should see flash_notice
