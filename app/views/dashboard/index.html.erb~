@@ -3,24 +3,15 @@
 
 <div class='mainform'>
 
-<% if current_user.admin? %>
-  <%= link_to "admin", admin_path %>
-<% end %>
-
 <h1>Dashboard</h1><h3><%= link_to "My Calendar", dashboard_calendar_path %></h3>
 
-<h2> Apply as a client</h2>
-
-<div> Apply to participate in our 90-day program! </div>
-<br>
-<%= link_to "Apply as Client", '/dashboard/application/cl' %>
-
-
-<h2> Apply as a volunteers</h2>
-
-<div> We need all the help we can get, apply as a volunteer today!</div>
-<br>
-<%= link_to "Apply as Volunteer", '/dashboard/application/vol' %>
+<% if current_user.status == 'Client' %>
+  <%= render partial: "_clientmessage.html.haml" %>
+<% elsif current_user.status == "Volunteeer" %>
+  <%= render partial: "volmessage" %>
+<% else %>
+  <h3>You are not a client or a volunteer. Your status is:<%= current_user.status %></h3>
+<% end %>
 
 </div>
 
