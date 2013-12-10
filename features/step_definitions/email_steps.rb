@@ -47,7 +47,12 @@ end
 #
 # Check how many emails have been sent/received
 #
+Then "user should receive a confirmation email" do 
+  @email = ActionMailer::Base.deliveries.last
+  @email.to.should include "example@example.com"
+  @email.subject.should include("Thank you for signing up to the Learning Shelter!")
 
+end
 Then /^(?:I|they|"([^"]*?)") should receive (an|no|\d+) emails?$/ do |address, amount|
   unread_emails_for(address).size.should == parse_email_count(amount)
 end
