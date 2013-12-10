@@ -1,9 +1,0 @@
-<!-- Probably move the stylesheet to you layout. Also make sure you include the javascript. -->
-<%= stylesheet_link_tag "event_calendar" %>
-<%= javascript_include_tag 'event_calendar' %>
-
-<div id="usercalendarwrapper">
-  <%= button_to "Add New Event", new_dashboard_calendar_event_path, :method => :get, :id => 'neweventbutton' %>
-  <%= raw(event_calendar) %>
-</div>
-

@@ -1,6 +1,0 @@
-class AddAcceptedToApp < ActiveRecord::Migration
-  def change
-    add_column :apps, :accepted, :boolean
-    add_column :apps, :default, :false
-  end
-end
