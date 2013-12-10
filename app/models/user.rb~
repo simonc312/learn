@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
- # def self.all_status
-  #  return ['Client', 'Volunteeer', 'Staff', 'Donor', 'Other']
- # end
+  def self.all_status
+    return ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate']
+  end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
     valid_status = ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate']
     return valid_status.include?(self.status)
   end  
+
 
   protected
 

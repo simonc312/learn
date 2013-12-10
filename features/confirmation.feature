@@ -5,14 +5,13 @@ Feature: Email confirmation system
 
 Scenario: Receiving confirmation email for signup
 
-  Given I am on the home page
+  Given I am on the signup page
   And a clear email queue
   When I fill in the following:
-  | Email             	| example@example.com  |
-  | Password 	    	        | successpwd   	     |
-  | Password confirmation     | successpwd	     |
-
+  | Email             	    | example@example.com  |
+  | Password 	    	        | successpwd   	       |
+  | Password confirmation   | successpwd	         |
   When I press "Sign up"
-  When I open the email
-  Then I should have an email
+  Then I should see "Signed in as example@example.com."
+  And user should receive a confirmation email
 

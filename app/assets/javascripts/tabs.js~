@@ -73,7 +73,7 @@ $(document).ready(function () {
         //alert(tabnames[i]);
         var id = "#"+urltabnames[i];
         $(id).css({"color":"gold","font-weight":"bold","border-bottom":"1px solid gold"});
-        //break
+        break;
     }
   }
 });
@@ -92,7 +92,7 @@ if (pass.length < 8)
   }
 if (pass != cpass)
   {
-  alert("Passwords must match")
+  alert("Passwords must match");
   return false;
   }
 if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)

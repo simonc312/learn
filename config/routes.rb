@@ -14,7 +14,8 @@ LearningShelter::Application.routes.draw do
   get '/admin/mailer' => 'admin/mailer#send'
   post '/admin/mailer' => 'admin/mailer#send_mail'
   match '/admin' => 'admin#index'
-  #get '/admin#clients' => 'admin#accepted', :as => 'accepted'
+  match '/admin/acceptClient/:id' => 'admin#acceptClient'
+  match '/admin/acceptVol/:id' => 'admin#acceptVol'
   namespace :admin do
     resources :apps
   end

@@ -1,20 +1,8 @@
-  <div class="tabContent" id="signup">
+  <div class="tabContent" id="donate">
     <div class='tabtext'>
-		  <h3>Sign up</h3>
-		  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-			  <%= devise_error_messages! %>
-			  <div class='left'><%= f.label :email %></div>
-			  <div class='right'><%= f.email_field :email %></div>
-			  <div class='left'><%= f.label :password %></div>
-			  <div class='right'><%= f.password_field :password %></div>
-			  <div class='left'><%= f.label :password_confirmation %></div>
-			  <div class='right'>
-          <%= f.password_field :password_confirmation %>
-          <p><%= f.submit "Sign up", :class => "myButton", :onclick=>"return validateSignUpForm();" %></p>
-        </div>
-		  <% end %>
-		  <!-- newlines for height fit -->
-		  <br><br><br><br><br>
-		  <br><br><br><br><br> 
+      <h3>Donate</h3>
+		  <h3>Why Learning Shelter?</h3>
+      <p>Info about donating to The Learning Shelter...</p>
     </div>
   </div>
+
