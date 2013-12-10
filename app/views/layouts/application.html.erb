@@ -29,8 +29,11 @@
         <% else %>
           <% if current_user.status == 'client_candidate' %>
             <li><a href="/dashboard/application/cl" id="application">Apply</a></li>
-          <% else %>
+          <% elsif current_user.status == 'volunteer_candidate' %>
 		        <li><a href="/dashboard/application/vol" id="application">Apply</a></li>
+          <% else %><!-- The user has been accepted, and can see a tab linking to their details-->
+            <%- appdetailspage = "/admin/apps/#{App.find_by_user_id(current_user.id).id}" %>
+            <li><%= link_to "My Info", appdetailspage, :id => 'apps'%></li>
           <% end %>
         <% end %>
 

@@ -4,14 +4,17 @@
 <div class='mainform'>
 
 
-<h4><%= link_to "My Calendar", dashboard_calendar_path %></h4>
+<h3><%= link_to "My Calendar", dashboard_calendar_path %></h3>
 
 <% if current_user.status == 'client_candidate' %>
   <%= render partial: "prospective_clientmessage.html.haml" %>
 <% elsif current_user.status == "volunteer_candidate" %>
   <%= render partial: "prospective_volmessage" %>
 <% else %>
-  <h2>You are not a client or a volunteer. Your status is: <%= current_user.status %></h2>
+  <% if App.find_by_user_id(current_user.id) != nil %>
+    <h1>Welcome, <%= App.find_by_user_id(current_user.id).first_name %></h1>
+  <% end %>
+  <h2>Your current status is: <%= current_user.status %></h2>
 <% end %>
 
 </div>
