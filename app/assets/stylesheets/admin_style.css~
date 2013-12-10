@@ -32,12 +32,9 @@ body {font:11px Verdana,Arial; margin:25px; background:#fff url(table/bg.gif) re
 .page {margin-top:2px; font-style:italic}
 #selectedrow td {background:#c6d5e1}
 
-body {
-
-}
 
 
-h3 {font-size: 20pt;}
+#adminpage h1 {font-size: 30px; font-style: italic}
 
 body#admin_body
 {
