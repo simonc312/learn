@@ -14,7 +14,7 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div>Interested in: <%= f.select :status, options_for_select([['Participating in our 90-days program', 'client_candidate'],['Being a volunteer', 'volunteer_candidate'],['Donor', 'donor'],['Staff','staff']]) %><br />
+  <div>Interested in: <%= f.select :status, options_for_select([['Participating in our 90-days program', 'client_candidate'],['Being a volunteer', 'volunteer_candidate'],['Donor', 'donor']]) %><br />
 
   <div><%= f.submit "Sign up", :onclick=>"return validateSignUpForm();" %></div>
 <% end %>
