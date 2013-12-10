@@ -1,12 +1,11 @@
-/*
-label{
-    display: inline-block;
+
+bday-select {
+	width: 20%;
     float: left;
-    clear: left;
-    width: 100px;
     text-align: right;
 }
-input{
-  display: inline-block;
-  float: left;
-}*/
+.app_button{
+	width: 30%;
+	float: right;
+	text-align: center;
+}

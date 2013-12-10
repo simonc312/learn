@@ -34,7 +34,7 @@ body {font:11px Verdana,Arial; margin:25px; background:#fff url(table/bg.gif) re
 
 
 
-h3 {}
+#adminpage h1 {font-size: 30px; font-style: italic}
 
 body#admin_body
 {
@@ -59,8 +59,9 @@ ul#list{
 color: black;
 }
 
-li{
+#adminpage li{
 color: black;
+font-size: 15px
 }
 
 .content:target{
