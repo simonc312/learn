@@ -3,14 +3,15 @@
 
 <div class='mainform'>
 
-<h1>Dashboard</h1><h3><%= link_to "My Calendar", dashboard_calendar_path %></h3>
+
+<h4><%= link_to "My Calendar", dashboard_calendar_path %></h4>
 
 <% if current_user.status == 'client_candidate' %>
   <%= render partial: "prospective_clientmessage.html.haml" %>
 <% elsif current_user.status == "volunteer_candidate" %>
   <%= render partial: "prospective_volmessage" %>
 <% else %>
-  <h3>You are not a client or a volunteer. Your status is: <%= current_user.status %></h3>
+  <h2>You are not a client or a volunteer. Your status is: <%= current_user.status %></h2>
 <% end %>
 
 </div>

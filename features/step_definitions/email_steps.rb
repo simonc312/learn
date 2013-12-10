@@ -209,6 +209,3 @@ end
 Then /^save and open all raw emails$/ do
   EmailSpec::EmailViewer::save_and_open_all_raw_emails
 end
-Then (/^I should see flash_notice$/) do
-  find_by_id("flash_notice")
-end

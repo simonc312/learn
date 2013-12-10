@@ -5,7 +5,7 @@ Feature: Application Form
 
 Scenario: Successful client application
 
-  Given I am a new, authenticated client candidate
+  Given I am a new, authenticated user
   Given I am on the dashboard page
   Then I should see "Apply"
   When I follow "Apply"
