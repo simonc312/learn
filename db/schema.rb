@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20131209221500) do
     t.text     "street_address"
     t.string   "phone"
     t.string   "type"
-    t.integer  "user_id"
+    t.string   "user_id"
     t.text     "resume"
     t.text     "cover_letter"
     t.datetime "created_at",                        :null => false

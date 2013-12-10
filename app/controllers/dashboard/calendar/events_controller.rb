@@ -5,7 +5,7 @@ class Dashboard::Calendar::EventsController < ApplicationController
   end
 
   def new
-
+    self.fillFields
   end
 
   def show
@@ -16,6 +16,7 @@ class Dashboard::Calendar::EventsController < ApplicationController
   end
 
   def create
+    self.updateSessionParams
     eventhash = self.setUpEventHash
     self.validate(eventhash)
   end

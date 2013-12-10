@@ -1,7 +1,7 @@
 .body
   .mainform
     %h1 Add New Event
-    = form_tag dashboard_calendar_events_path, :method => :post do
+    = form_tag admin_calendar_events_path, :method => :post do
       .below
         = label :event, :name, 'Event Name'
       = text_field :event, 'name'

@@ -1,5 +1,15 @@
 module EventHashHelper
 
+  def updateSessionParams
+    session[:event] = params[:event]
+  end
+  def resetSession 
+    session[:event] = nil
+  end
+  #this method fills the fields for event form if there are session params not empty
+  def fillFields
+  
+  end
   def setUpEventHash
     eventhash = Hash.new()
     startDate = params[:event]['start_date']
@@ -35,7 +45,10 @@ module EventHashHelper
       return
     end
     @event = Event.create!(eventhash)
+    #reset session on successful create 
+    resetSession
     flash.keep[:notice] = "#{@event.name} was successfully created."
     redirect_to calendar_path
   end 
+
 end

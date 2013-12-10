@@ -5,7 +5,7 @@ class Admin::Calendar::EventsController < ApplicationController
 	end
 	
 	def new
-
+    self.fillFields
 	end
 
   def show

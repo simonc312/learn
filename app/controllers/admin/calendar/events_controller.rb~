@@ -1,5 +1,5 @@
 class Admin::Calendar::EventsController < ApplicationController
-
+  include EventHashHelper
 	def edit
 		@event = Event.find(params[:id])
 	end

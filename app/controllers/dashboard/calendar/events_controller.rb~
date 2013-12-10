@@ -16,21 +16,9 @@ class Dashboard::Calendar::EventsController < ApplicationController
   end
 
   def create
+    self.updateSessionParams
     eventhash = self.setUpEventHash
-    if (!eventhash)
-      flash[:notice] = "Invalid Date selected."
-      redirect_to new_dashboard_calendar_event_path
-      return
-    end
-
-    if eventhash[:end_at] <= eventhash[:start_at]
-      flash[:notice] = "Invalid End Date selected."  
-      redirect_to new_dashboard_calendar_event_path
-      return
-    end
-    @event = Event.create!(eventhash)
-    flash.keep[:notice] = "#{@event.name} was successfully created."
-    redirect_to dashboard_calendar_path
+    self.validate(eventhash)
   end
 
   def update
