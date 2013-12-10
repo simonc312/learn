@@ -1,0 +1,177 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+  font-family: myfont;
+  /*src:url('AmaticSC-Regular.ttf');*/
+  /*src: local("myfont"), asset_path "AmaticSC-Regular.ttf" ;*/
+}
+.maintitle {
+  font-family:Arial;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.left {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 65%;
+    margin-left: 10px;
+    float:left;
+}
+.tabtext {
+  margin-left:20px;
+  margin-right:20px;
+  color:white;
+}
+h1 {
+	color:black;
+	font-size: 200%;
+  height: 30px; 
+}
+#headertitle {
+	color:gold;
+  margin-left:0px;
+  padding:30px
+}
+
+h2 {
+  color:black;
+}
+#maininfo {
+	margin-left: 200px;
+	margin-right: 200px;
+	background-color: #E0B547;
+}
+body { 
+  font: 14px;
+  color:black;
+  margin-left:12%;
+  margin-right:12%;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif; 
+  position: absolute;
+	top:0px;
+  bottom: 0px;
+	left:0px;
+  right: 0px;
+	/*background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-type-a-machines.jpg?w=536');*/
+  //background-image:url('http://venturebeat.files.wordpress.com/2013/05/techshop-workstations.jpg');
+  background-image:url("http://www.johnsusek.com/projects/textures/lawdogs/woodwall4.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+ul#tabs { 
+  font:13px;
+	list-style-type: none;
+  margin:0px; 
+  margin-top:25px;
+	padding: 0 0 0.3em 0; 
+	align:center;
+  float:right;
+	border-bottom: 0px solid gold;
+}
+ul#tabs li {
+	display: inline;
+  margin-right:20px;
+}
+
+a{text-decoration: none; }
+
+.mainform a{margin: 5px; color: black; border-style: solid; padding: 10px;}
+.mainform a:hover{border-color: white;}
+ul#tabs li a { 
+	//color: #42454a; 
+  //color: white;//new
+	background-color: rgba(255,250,230,0);
+	border: 1px solid rgba(255,250,230,0);//#c9c3ba;  
+	padding: 0.4em; 
+	text-decoration: none; 
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+        color: white;
+}
+ul#tabs li a:hover { 
+	background-color: rgba(255,250,230,0.0);
+  color:gold;//new
+	border-bottom: 1px solid gold;
+}
+
+ul#tabs li a.selected { 
+	color: white;
+	background-color: rgba(255,250,230,0);
+	font-weight: normal; 
+	padding: 0.8em 0.7em 0.38em 0.7em; 
+	border-bottom: 0px solid gold;//new
+}
+
+.tabContent {
+	height: 68%;
+}
+div.tabContent { 
+	border: 0px solid gold;//#c9c3ba;
+	padding: 0.5em; 
+  //background-color:rgba(255,250,230,0.75); whitish
+	//background-color: #f1f0ee;
+  background-color:rgba(125,58,0,0.75);
+  height: 100%;
+}
+div.tabContent.hide { 
+	display: none; 
+}
+
+
+    .myButton {
+        
+        -moz-box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        -webkit-box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        box-shadow:inset 0px 0px 12px 0px #ffe0b5;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbb34f), color-stop(1, #e0b547));
+        background:-moz-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-webkit-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-o-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:-ms-linear-gradient(top, #dbb34f 5%, #e0b547 100%);
+        background:linear-gradient(to bottom, #dbb34f 5%, #e0b547 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbb34f', endColorstr='#e0b547',GradientType=0);
+        
+        background-color:#dbb34f;
+        
+        -moz-border-radius:12px;
+        -webkit-border-radius:12px;
+        border-radius:12px;
+        
+        border:1px solid #c97e1c;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:Georgia;
+        font-size:15px;
+        font-weight:bold;
+        padding:2px 18px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #8f7f24;
+        
+    }
+    .myButton:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e0b547), color-stop(1, #dbb34f));
+        background:-moz-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-webkit-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-o-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:-ms-linear-gradient(top, #e0b547 5%, #dbb34f 100%);
+        background:linear-gradient(to bottom, #e0b547 5%, #dbb34f 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0b547', endColorstr='#dbb34f',GradientType=0);
+        
+        background-color:#e0b547;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }

@@ -1,0 +1,20 @@
+
+<h1>New Event</h1>
+	<%= form_tag calendar_path do %>
+	<%= label_tag(:event, :title, "Title") %>
+	<%= text_field_tag(:event, :title) %>
+
+	<%= label_tag(:start, "Start Date") %>
+	<%= date_select(:event, :startdate) %>
+
+	<%= label_tag(:end, "End Date") %>
+	<%= date_select(:event, :enddate) %>
+
+	<%= label_tag(:start, "Start Time") %>
+	<%= time_select(:event, :starttime) %>
+
+	<%= label_tag(:end, "End Time") %>
+	<%= time_select(:event, :endtime) %>
+
+	<%= submit_tag("Save Event") %>
+<% end %>

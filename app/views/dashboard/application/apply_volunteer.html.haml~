@@ -1,0 +1,39 @@
+.body
+  .mainform
+    %h1 Apply to be a Volunteer
+
+    = form_tag dashboard_application_volunteers_path do
+
+      = label :volunteer, :first_name, 'First Name'
+      = text_field :volunteer, 'first_name'
+      %br
+
+      = label :volunteer, :last_name, 'Last Name'
+      = text_field :volunteer, 'last_name'
+      %br
+
+      /make to checkbox?
+      = label :volunteer, :gender, 'Gender' 
+      = text_field :volunteer, 'gender'
+      %br
+
+      = label :volunteer, :birthday, 'Birthday'
+      = date_select :volunteer, :birthday
+      %br
+
+      = label :volunteer, :phone, 'Phone number' 
+      = text_field :volunteer, 'phone'
+      %br
+
+      = label :volunteer, :street_address, 'Street Address' 
+      = text_field :volunteer, 'street_address'
+      %br
+
+      = label :volunteer, :city, 'City' 
+      = text_field :volunteer, 'city'
+      %br
+      = label :volunteer, :state, 'State' 
+      = text_field :volunteer, 'state'
+      %br
+
+      = submit_tag 'Apply'

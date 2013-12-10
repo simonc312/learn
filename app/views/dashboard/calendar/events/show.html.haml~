@@ -1,0 +1,19 @@
+.body
+  .mainform
+    %h2 Details about #{@event.name}
+    %ul#details
+      %li
+        Start Time:
+        = @event.start_at
+      %li
+        End Time:
+        = @event.end_at
+      %li
+        Location:
+        = @event.location
+
+    %h3 Description:
+
+    %p#description= @event.description
+  
+    = link_to 'Back to calendar', dashboard_calendar_path

@@ -1,0 +1,64 @@
+
+table
+{
+border-collapse: collapse;
+}
+
+th
+{
+background-color: yellow;
+font-size: 10pt;
+padding-right: 10px;
+padding-left: 10px;
+text-align: center;
+}
+
+td
+{
+padding-right: 10px;
+padding-left: 10px;
+text-align: center;
+}
+
+table, th, td
+{
+border: 1px solid black;
+font-family: Georgia;
+color: black;
+margin: auto
+}
+
+body#admin_body
+{
+background-image: none;
+background-color: white;
+}
+
+div#usertable
+{
+text-align: center;
+
+}
+
+ul#list{
+color: black;
+}
+
+li{
+color: black;
+}
+
+.content:target{
+display: block;
+}
+.content:target span{
+display: block;
+}
+
+.content{
+display: none;
+}
+.learningShelterLogo
+{
+
+}

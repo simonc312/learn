@@ -1,0 +1,37 @@
+%h1 Apply to be a Client
+
+= form_tag dashboard_application_clients_path do
+
+  = label :client, :first_name, 'First Name'
+  = text_field :client, 'first_name'
+  %br
+
+  = label :client, :last_name, 'Last Name'
+  = text_field :client, 'last_name'
+  %br
+
+  /make to checkbox?
+  = label :client, :gender, 'Gender' 
+  = text_field :client, 'gender'
+  %br
+
+  = label :client, :birthday, 'Birthday'
+  = date_select :client, :birthday
+  %br
+
+  = label :client, :phone, 'Phone number' 
+  = text_field :client, 'phone'
+  %br
+
+  = label :client, :street_address, 'Street Address' 
+  = text_field :client, 'street_address'
+  %br
+
+  = label :client, :city, 'City' 
+  = text_field :client, 'city'
+  %br
+  = label :client, :state, 'State' 
+  = text_field :client, 'state'
+  %br
+
+  = submit_tag 'Apply'

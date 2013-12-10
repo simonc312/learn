@@ -1,0 +1,20 @@
+.body
+  .mainform
+    %h2 Admin Details about #{@event.name}
+    %ul#details
+      %li
+        Start Time:
+        = prettyifyEventDate(@event.start_at)
+      %li
+        End Time:
+        = prettyifyEventDate(@event.end_at)
+      %li
+        Location:
+        = @event.location
+
+    %h3 Description:
+
+    %p#description= @event.description
+    - if isOwner?
+      = link_to 'Edit', edit_admin_calendar_event_path(@event)
+      = button_to 'Delete', admin_calendar_event_path(@event), :method => :delete, :confirm => 'Are you sure?'

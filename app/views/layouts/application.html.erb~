@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LearningShelter</title>
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body onload="init()">
+
+  <header>
+	  <h1><div id='headertitle'>The Learning Shelter</div></h1>
+    <div id='signinstatus'>
+      <% if user_signed_in? %>
+        Signed in as <%= current_user.email %>. Not You?
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        <%= link_to "Edit User", edit_user_registration_path %>
+      <% else %>
+        <%= link_to "sign in", new_user_session_path %>
+      <% end %>
+    </div>
+	  <ul id="tabs">
+      <% if user_signed_in? %>
+		    <li><a href="/" id="dashboard">My Dashboard</a></li>
+
+        <% if current_user.admin? %>
+          <li><%= link_to "Admin Page", admin_path, :id => 'admin'%></li>
+        <% else %>
+          <% if current_user.status == 'client' %>
+            <li><a href="/dashboard/application/cl" id="application">Apply</a></li>
+          <% else %>
+		        <li><a href="/dashboard/application/vol" id="application">Apply</a></li>
+          <% end %>
+        <% end %>
+
+      <% else %>
+		    <li><a href="/" id="home">Home</a></li>
+      <% end %>
+
+		  <li><a href="/about" id="about">About Us</a></li>
+		  <li><a href="/events" id="events">Events</a></li>
+      <% if not user_signed_in? %>
+		    <li><a href="/users/sign_up" id="sign_up">Sign Up</a></li>
+      <% end %>
+		  <li><a href="/donate" id="donate">Donate</a></li>
+	  </ul>
+
+  </header>
+
+<% flash.each do |name, msg| %>
+	<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

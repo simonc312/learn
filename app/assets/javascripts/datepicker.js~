@@ -1,0 +1,8 @@
+
+$(document).ready( function(){
+ $('.datepair').children().css("width",70);
+});
+
+
+
+

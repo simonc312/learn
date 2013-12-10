@@ -1,0 +1,7 @@
+class Dashboard::Application::ClientController < ActionController::Base
+  def create
+    Client.create!(params[:client])
+    flash[:notice] = "NEW APPLICATION"
+    redirect_to '/'
+  end
+end

@@ -1,0 +1,3 @@
+def change
+  change_column :apps, :user_id, :integer
+end

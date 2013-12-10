@@ -1,0 +1,4 @@
+class AddMandatoryIntegerToUserId < ActiveRecord::Migration
+  def change
+  end
+end
