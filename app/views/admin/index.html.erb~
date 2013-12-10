@@ -136,7 +136,6 @@
 	    <td><%= client.created_at %></td>
 	    <td><%= client.accepted %></td>
 	    <td><%= button_to "Accept this app", :action=>"accepted" %></td>
-            <td><%= link_to "Accept this application", '/admin#clientt', :id => client %></td>
 	  </tr>
           <% end %>
         </tbody>
