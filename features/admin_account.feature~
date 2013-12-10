@@ -20,9 +20,9 @@ Scenario: Successful admin log-in
   Then I should be on the dashboard page
   When I visit the admin page
 
-  Then I should see "Current Users"
-  Then I should see "Program Application"
-  Then I should see "Volunteer Application"
+  Then I should see "Users"
+  Then I should see "Clients"
+  Then I should see "Volunteers"
 
 Scenario: Unsuccessful admin log-in
   Given I am on the homepage

@@ -8,7 +8,6 @@ Background: On the sign up page
   Given I am on the signup page
 
 Scenario: Successful sign up
-  And I follow "Sign Up"
   When I fill in the following:
     | Email          				| success@gmail.com  |
     | Password      			  | successpwd   			 |

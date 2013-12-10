@@ -16,8 +16,8 @@ Scenario: Successful sign up
   When I press "Sign up"
   Then I should be on the dashboard page
 	And I should see "Signed in as success@gmail.com"
-	And I should see "Apply as a client"
-	And I should see "Apply as a volunteers"
+	And I should see "Apply"
+
 	
 
 
