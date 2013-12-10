@@ -12,11 +12,11 @@ module EventsHelper
  end
 
  def displayEventTime(eventTime)
-  eventTime ? eventTime.strftime('%l:%M %P') : nil
+  eventTime || (eventTime == "") ? eventTime.strftime('%l:%M %P') : 'hh/mm am'
  end
 
  def displayEventDate(eventDate)
-  eventDate ? eventDate.strftime('%m/%d/%Y') : nil
+  eventDate || (eventDate == "") ? eventDate.strftime('%m/%d/%Y') : 'mm/dd/yyyy'
  end
 
  def prettifyEventDate(eventTime)
@@ -24,27 +24,25 @@ module EventsHelper
  end
 
  def checkEvent(field)
-  return @event ? @event.send(field) : nil
+  return @event ? @event.send(field) : ""
  end
 
  def checkSession(field)
-  return session[:event] ? session[:event][field.parameterize.underscore.to_s] : ''
+  return session[:event] ? session[:event][field.parameterize.underscore.to_s] : nil
  end
 
  def setValue(field)
-   value = checkEvent(field)
-   value ||= checkSession(field)
+   value = checkSession(field)
+   value ||= checkEvent(field)
  end
 
- def setTime(field)
-    value = displayEventTime checkEvent(field) 
-    value ||= checkSession(field.gsub("at","time"))
-    value = (value== '') ? 'hh/mm am' : value   
+ def setTime(field) 
+    value = checkSession(field.gsub("at","time"))
+    value ||= displayEventTime checkEvent(field)    
  end
 
  def setDate(field)
     value = displayEventDate checkEvent(field) 
-    value ||= checkSession(field.gsub("at","date"))
-    value = (value== '') ? 'hh/mm am' : value    
+    value ||= checkSession(field.gsub("at","date"))   
  end
 end

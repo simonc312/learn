@@ -2,6 +2,6 @@
   .mainform
     %h1 Add New Event
     = form_tag dashboard_calendar_events_path, :method => :post do
-      = render :partial => 'event_form'
+      = render :partial => 'shared/event_form'
       %p
         = submit_tag 'Save Event'

@@ -3,4 +3,5 @@
     %h1 Edit Event
     = form_tag dashboard_calendar_event_path, :method => :put do
       = render :partial => 'event_form', :object => @event
-      
+      %p
+        = submit_tag 'Save Changes'

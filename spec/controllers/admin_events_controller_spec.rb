@@ -4,6 +4,7 @@ describe Admin::Calendar::EventsController do
   before(:each) do 
     @admin = FactoryGirl.create(:user, :is_admin)
     sign_in @admin
+    current_user = @admin
     @event = FactoryGirl.create(:event)
   end
   describe 'get events_controller' do 
@@ -79,7 +80,11 @@ describe Admin::Calendar::EventsController do
   end
   describe '#update' do 
     it 'should redirect to the event path' do
-      put :update, {:id => @event.id}
+      put :update, {:id => @event.id}, :event => { 'start_date' => '24/12/2013',
+                                'start_time' => '9:00 am',
+                                'end_date' => '25/12/2013',
+                                'end_time' => '11:10 am'
+                              }
       response.should redirect_to "/admin/calendar/events/#{@event.id}"
     end
   end

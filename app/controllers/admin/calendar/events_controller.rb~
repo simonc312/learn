@@ -5,7 +5,6 @@ class Admin::Calendar::EventsController < ApplicationController
 	end
 	
 	def new
-
 	end
 
   def show
@@ -16,15 +15,24 @@ class Admin::Calendar::EventsController < ApplicationController
   end
 
   def create
-    eventhash = self.setUpEventHash
-    self.validate(eventhash)
+    self.setNewPaths
+    self.updateSessionParams
+    @eventhash = self.setUpEventHash
+    if(self.validate)
+      self.createEvent
+    end
   end
 
   def update
     @event = Event.find params[:id]
-    @event.update_attributes!(params[:event])
+    self.setEditPaths
+    self.updateSessionParams
+    @eventhash = self.setUpEventHash
+    if(self.validate)
+      @event.update_attributes!(@eventhash)
     flash[:notice] = "#{@event.name} was successfully updated."
     redirect_to admin_calendar_event_path(@event)
+    end
   end
 
   def destroy
