@@ -28,48 +28,5 @@
 
   </div>
 
-	<div class="tabContent" id="goals">
-    <div class='tabtext'>
-      <h3>Our Goals</h3>
-		  <h3>The Learning Shelter will:</h3>
-		  <ul>
-			  <li>Expose learners to possibilities via hands on experience with various technologies including; 3D printing, laser cutting, welding, CAD Design, Web Design and Development</li>
-			  <li>Empower learners to develop a physical and digital identity</li>
-			  <li>Provide a daily structure for learners to develop technical and interpersonal skills</li>
-			  <li>Enable learners to build and present hardware or software prototypes</li>
-			  <li>Assist learners with setting goals for personal and professional development</li>
-		  </ul>
-    </div>
-	</div>
-
-  <div class="tabContent" id="signup">
-    <div class='tabtext'>
-		  <h3>Sign up</h3>
-		  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-			  <%= devise_error_messages! %>
-			  <div class='left'><%= f.label :email %></div>
-			  <div class='right'><%= f.email_field :email %></div>
-			  <div class='left'><%= f.label :password %></div>
-			  <div class='right'><%= f.password_field :password %></div>
-			  <div class='left'><%= f.label :password_confirmation %></div>
-			  <div class='right'>
-          <%= f.password_field :password_confirmation %>
-          <p><%= f.submit "Sign up", :class => "myButton", :onclick=>"return validateSignUpForm();" %></p>
-        </div>
-		  <% end %>
-		  <!-- newlines for height fit -->
-		  <br><br><br><br><br>
-		  <br><br><br><br><br> 
-    </div>
-  </div>
-
-  <div class="tabContent" id="donate">
-    <div class='tabtext'>
-      <h3>Donate</h3>
-		  <h3>Why Learning Shelter?</h3>
-      <p>Info about donating to The Learning Shelter...</p>
-    </div>
-  </div>
-
 
 
