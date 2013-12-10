@@ -23,8 +23,8 @@ Scenario: Unsuccessful client application
 
   Given I am a new, authenticated user
   Given I am on the dashboard page
-  Then I should see "Apply"
-  When I follow "Apply"
+  Then I should see "Apply as a client"
+  When I follow "Apply as Client"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -35,7 +35,7 @@ Scenario: Unsuccessful client application
   And I should be on the dashboard page
   Then I should see "A new Client Application has been submitted"
 
-  When I follow "Apply"
+  When I follow "Apply as Client"
   And I fill in the following:
     | First Name          | success@gmail.com  |
     | Last Name           | successpwd         |
@@ -51,8 +51,8 @@ Scenario: Successful volunteer application
 
   Given I am a new, authenticated user
   Given I am on the dashboard page
-  Then I should see "Apply"
-  When I follow "Apply"
+  Then I should see "Apply as a volunteer"
+  When I follow "Apply as Volunteer"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -67,8 +67,8 @@ Scenario: Unsuccessful volunteer application
 
   Given I am a new, authenticated user
   Given I am on the dashboard page
-  Then I should see "Apply"
-  When I follow "Apply"
+  Then I should see "Apply as a volunteer"
+  When I follow "Apply as Volunteer"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -79,7 +79,7 @@ Scenario: Unsuccessful volunteer application
   And I should be on the dashboard page
   Then I should see "A new Volunteer Application has been submitted"
 
-  When I follow "Apply"
+  When I follow "Apply as Volunteer"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
