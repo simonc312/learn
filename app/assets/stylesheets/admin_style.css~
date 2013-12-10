@@ -1,5 +1,5 @@
 * {margin:0; padding:0; outline:0}
-body#admin_body {font:11px Verdana,Arial; margin:25px; background:#fff url(table/bg.gif) repeat-x}
+body {font:11px Verdana,Arial; margin:25px; background:#fff url(table/bg.gif) repeat-x}
 #tablewrapper {width:980px; margin:0 auto}
 #tableheader {height:55px}
 .search {float:left; padding:3px; border:1px solid #c6d5e1; background:#fff}
@@ -45,7 +45,7 @@ background-image: none;
 background-color: white;
 }
 #adminpage {
-  background-color:#CECEF6;
+  background-color:white;
   padding:35px;
   border-radius:5px;
   align:center;
