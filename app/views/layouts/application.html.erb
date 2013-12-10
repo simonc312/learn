@@ -27,7 +27,7 @@
         <% if current_user.admin? %>
           <li><%= link_to "Admin Page", admin_path, :id => 'admin'%></li>
         <% else %>
-          <% if current_user.status == 'client' %>
+          <% if current_user.status == 'client_candidate' %>
             <li><a href="/dashboard/application/cl" id="application">Apply</a></li>
           <% else %>
 		        <li><a href="/dashboard/application/vol" id="application">Apply</a></li>
