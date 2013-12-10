@@ -23,12 +23,21 @@
 	  <ul id="tabs">
       <% if user_signed_in? %>
 		    <li><a href="/" id="dashboard">My Dashboard</a></li>
+
+        <% if current_user.admin? %>
+          <li><%= link_to "Admin Page", admin_path, :id => 'admin'%></li>
+        <% else %>
+          <% if current_user.status == 'client' %>
+            <li><a href="/dashboard/application/cl" id="application">Apply</a></li>
+          <% else %>
+		        <li><a href="/dashboard/application/vol" id="application">Apply</a></li>
+          <% end %>
+        <% end %>
+
       <% else %>
 		    <li><a href="/" id="home">Home</a></li>
       <% end %>
-      <% if user_signed_in? and current_user.admin? %>
-        <li><%= link_to "Admin Page", admin_path, :id => 'admin'%></li>
-      <% end %>
+
 		  <li><a href="/about" id="about">About Us</a></li>
 		  <li><a href="/events" id="events">Events</a></li>
       <% if not user_signed_in? %>

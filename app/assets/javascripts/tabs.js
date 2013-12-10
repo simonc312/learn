@@ -67,12 +67,13 @@ function getHash( url ) {
 */
 
 $(document).ready(function () {
-  var urltabnames = ["home","dashboard","about","events","sign_up","donate","admin"];
+  var urltabnames = ["home","application","dashboard","about","events","sign_up","donate","admin"];
   for (var i = 0; i < urltabnames.length; i++) {
     if(window.location.href.indexOf(urltabnames[i]) > -1) {
         //alert(tabnames[i]);
         var id = "#"+urltabnames[i];
         $(id).css({"color":"gold","font-weight":"bold","border-bottom":"1px solid gold"});
+        break
     }
   }
 });
