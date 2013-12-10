@@ -6,44 +6,44 @@
 
   = form_tag dashboard_application_clients_path do
 
-    = label :client, :first_name, 'First Name'
-    = text_field :client, 'first_name'
+    = label :client, :first_name, 'First Name', :class => "left"
+    = text_field :client, 'first_name', :class => "right"
     %br
 
-    = label :client, :last_name, 'Last Name'
-    = text_field :client, 'last_name'
+    = label :client, :last_name, 'Last Name', :class => "left"
+    = text_field :client, 'last_name', :class => "right"
     %br
 
     /make to checkbox?
-    = label :client, :gender, 'Gender' 
-    = text_field :client, 'gender'
+    = label :client, :gender, 'Gender' , :class => "left"
+    = text_field :client, 'gender', :class => "right"
     %br
 
-    = label :client, :birthday, 'Birthday'
-    = date_select :client, :birthday, start_year: 1950, end_year: Time.now.year - 10
+    = label :client, :birthday, 'Birthday', :class => "left"
+    = date_select :client, :birthday, start_year: 1950, end_year: Time.now.year - 10, :class => "right"
+    %br
+    = label :client, :phone, 'Phone number' , :class => "left"
+    = text_field :client, 'phone', :class => "right"
+    %br
+
+    = label :client, :street_address, 'Street Address', :class => "left" 
+    = text_field :client, 'street_address', :class => "right"
+    %br
+
+    = label :client, :city, 'City' , :class => "left"
+    = text_field :client, 'city', :class => "right"
+    %br
+    = label :client, :state, 'State', :class => "left" 
+    = text_field :client, 'state', :class => "right"
+    %br
+    = label :client, :resume, 'Resume' , :class => "left"
+    = text_field :client, 'resume', :rows => 5, :class => "span5", :placeholder => 'Please paste your resume here.', :size => 100, :class => "right"
+    %br
+    = label :client, :cover_letter, 'Cover Letter' , :class => "left"
+    = text_field :client,'cover_letter', :rows => 5, :class => "span5", :placeholder => 'Please paste your cover letter here.', :size => 100, :class => "right"
     %br
     %br
     %br
 
-    = label :client, :phone, 'Phone number' 
-    = text_field :client, 'phone'
-    %br
-
-    = label :client, :street_address, 'Street Address' 
-    = text_field :client, 'street_address'
-    %br
-
-    = label :client, :city, 'City' 
-    = text_field :client, 'city'
-    %br
-    = label :client, :state, 'State' 
-    = text_field :client, 'state'
-    %br
-    = label :client, :resume, 'Resume' 
-    = text_field :client, 'resume', :rows => 5, :class => "span5", :placeholder => 'Please paste your resume here.', :size => 100
-    %br
-    = label :client, :cover_letter, 'Cover Letter' 
-    = text_field :client,'cover_letter', :rows => 5, :class => "span5", :placeholder => 'Please paste your cover letter here.', :size => 100
-    %br
-
-    = submit_tag 'Apply'
+    = label :temp, '', :class => "left"
+    = submit_tag 'Apply',:class => "app_button"

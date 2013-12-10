@@ -6,42 +6,45 @@
 
   = form_tag dashboard_application_volunteers_path do
 
-    = label :volunteer, :first_name, 'First Name'
-    = text_field :volunteer, 'first_name'
+    = label :volunteer, :first_name, 'First Name', :class => "left"
+    = text_field :volunteer, 'first_name', :class => "right"
     %br
 
-    = label :volunteer, :last_name, 'Last Name'
-    = text_field :volunteer, 'last_name'
+    = label :volunteer, :last_name, 'Last Name', :class => "left"
+    = text_field :volunteer, 'last_name', :class => "right"
     %br
 
     /make to checkbox?
-    = label :volunteer, :gender, 'Gender' 
-    = text_field :volunteer, 'gender'
+    = label :volunteer, :gender, 'Gender' , :class => "left"
+    = text_field :volunteer, 'gender', :class => "right"
     %br
 
-    = label :volunteer, :birthday, 'Birthday'
-    = date_select :volunteer, :birthday, start_year: 1950, end_year: Time.now.year - 10
+    = label :volunteer, :birthday, 'Birthday', :class => "left"
+    = date_select :volunteer, :birthday, start_year: 1950, end_year: Time.now.year - 10, :class => "right"
     %br
 
-    = label :volunteer, :phone, 'Phone number' 
-    = text_field :volunteer, 'phone'
+    = label :volunteer, :phone, 'Phone number' , :class => "left"
+    = text_field :volunteer, 'phone', :class => "right"
     %br
 
-    = label :volunteer, :street_address, 'Street Address' 
-    = text_field :volunteer, 'street_address'
+    = label :volunteer, :street_address, 'Street Address' , :class => "left"
+    = text_field :volunteer, 'street_address', :class => "right"
     %br
 
-    = label :volunteer, :city, 'City' 
-    = text_field :volunteer, 'city'
+    = label :volunteer, :city, 'City' , :class => "left"
+    = text_field :volunteer, 'city', :class => "right"
     %br
-    = label :volunteer, :state, 'State' 
-    = text_field :volunteer, 'state'
+    = label :volunteer, :state, 'State' , :class => "left"
+    = text_field :volunteer, 'state', :class => "right"
     %br
-    = label :volunteer, :resume, 'Resume' 
-    = text_field :volunteer, 'resume', :rows => 5, :class => "span6", :placeholder => 'Please paste your resume here.', :size => 100
+    = label :volunteer, :resume, 'Resume' , :class => "left"
+    = text_field :volunteer, 'resume', :rows => 5, :class => "span6", :placeholder => 'Please paste your resume here.', :size => 100, :class => "right"
     %br
-    = label :volunteer, :cover_letter, 'Cover Letter' 
-    = text_field :volunteer, 'cover_letter', :rows => 5, :class => "span6", :placeholder => 'Please paste your cover letter here.', :size => 100
+    = label :volunteer, :cover_letter, 'Cover Letter' , :class => "left"
+    = text_field :volunteer, 'cover_letter', :rows => 5, :class => "span6", :placeholder => 'Please paste your cover letter here.', :size => 100, :class => "right"
+    %br
+    %br
     %br
 
-    = submit_tag 'Apply'
+    = label :temp, '', :class => "left"
+    = submit_tag 'Apply',:class => "app_button"
