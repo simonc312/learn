@@ -7,9 +7,9 @@
 
 
   <div class="learningShelterLogo", align="right"> 
-    <%= image_tag("logo_wrench_bed.png") %>
+    <%= image_tag("logo_wrench_bed.png"), :id => 'logo_wrench' %>
   </div>
-  <h1 class='maintitle'>Welcome to Admin Page</h1>
+  <h1>Welcome to Admin Page</h1>
   <h3><%= link_to "Admin Calendar", admin_calendar_path %></h3>
   <h4><%= link_to "Send email", admin_mailer_path %></h4>
 
@@ -200,6 +200,7 @@
 	    <th><h3>State</h3></th>
 	    <th><h3>User ID</h3></th>
 	    <th><h3>Submission Time</h3></th>
+            <th><h3>Accepted?</h3></th>
           </tr>
         </thead>
         <tbody>
@@ -215,6 +216,7 @@
 	    <td><%= volunteer.state %></td>
 	    <td><%= volunteer.user_id %></td>
 	    <td><%= volunteer.created_at %></td>
+            <td><%= volunteer.accepted %></td>
 	  </tr>
           <% end %>
         </tbody>
