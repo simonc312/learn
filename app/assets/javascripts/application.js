@@ -19,3 +19,15 @@
 //= require imageslideshow.js
 //= require script.js
 //= require_tree .
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
