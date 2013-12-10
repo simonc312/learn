@@ -118,7 +118,8 @@
 	    <th><h3>State</h3></th>
 	    <th><h3>User ID</h3></th>
 	    <th><h3>Submission Time</h3></th>
-            <th><h3>Accepted?</h3></th>   
+            <th><h3>Accepted?</h3></th>
+            <th><h3>Decision</h3></th>   
           </tr>
         </thead>
         <tbody>
@@ -135,7 +136,7 @@
 	    <td><%= client.user_id %></td>
 	    <td><%= client.created_at %></td>
 	    <td><%= client.accepted %></td>
-	    <td><%= button_to "Accept this app", :action=>"accepted" %></td>
+	    <td><%= button_to "Accept this app", :action => "accept", :id => client.id %></td>
 	  </tr>
           <% end %>
         </tbody>
@@ -202,6 +203,7 @@
 	    <th><h3>User ID</h3></th>
 	    <th><h3>Submission Time</h3></th>
             <th><h3>Accepted?</h3></th>
+            <th><h3>Decision</h3></th> 
           </tr>
         </thead>
         <tbody>
@@ -218,6 +220,8 @@
 	    <td><%= volunteer.user_id %></td>
 	    <td><%= volunteer.created_at %></td>
             <td><%= volunteer.accepted %></td>
+            <td><%= volunteer.type %></td>
+            <td><%= button_to "Accept this app", :action => "accept", :id => volunteer.id %></td>
 	  </tr>
           <% end %>
         </tbody>
