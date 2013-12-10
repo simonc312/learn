@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   def self.all_status
-    return ['admin', 'client', 'volunteer', 'staff', 'donor']
+    return ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate', 'donor']
   end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   def choose_status(input)
   end
   def is_valid_status?
-    valid_status = ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate']
+    valid_status = ['admin', 'client', 'volunteer', 'client_candidate', 'volunteer_candidate', 'donor']
     return valid_status.include?(self.status)
   end  
 
