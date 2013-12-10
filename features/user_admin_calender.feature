@@ -31,7 +31,7 @@ Scenario: Admin creates, edits, and deletes event
   And I should see "the admin event"
   When I follow "the admin event"
   When I follow "Edit"
-  And I fill in "Event Name" for "new admin event"
+  And I fill in "new admin event" for "Event Name"
   And I press "Save Changes"
   Then I should see "new admin event"
   When I press "Delete"
