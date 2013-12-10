@@ -136,7 +136,7 @@
 	    <td><%= client.user_id %></td>
 	    <td><%= client.created_at %></td>
 	    <td><%= client.accepted %></td>
-	    <td><%= button_to "Accept this app", :action => "accept", :id => client.id %></td>
+	    <td><%= button_to "Accept this app", :action => "acceptClient", :id => client.id %></td>
 	  </tr>
           <% end %>
         </tbody>
@@ -221,7 +221,7 @@
 	    <td><%= volunteer.created_at %></td>
             <td><%= volunteer.accepted %></td>
             <td><%= volunteer.type %></td>
-            <td><%= button_to "Accept this app", :action => "accept", :id => volunteer.id %></td>
+            <td><%= button_to "Accept this app", :action => "acceptVol", :id => volunteer.id %></td>
 	  </tr>
           <% end %>
         </tbody>

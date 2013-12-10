@@ -220,7 +220,6 @@
 	    <td><%= volunteer.user_id %></td>
 	    <td><%= volunteer.created_at %></td>
             <td><%= volunteer.accepted %></td>
-            <td><%= volunteer.type %></td>
             <td><%= button_to "Accept this app", :action => "acceptVol", :id => volunteer.id %></td>
 	  </tr>
           <% end %>
