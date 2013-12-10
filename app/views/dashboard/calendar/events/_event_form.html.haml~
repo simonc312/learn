@@ -1,0 +1,27 @@
+.below
+  = label :event, :name, 'Event Name'
+= text_field :event, 'name', value: "#{setValue('name')}"
+%p
+.below
+  = label :event, :location, 'Location'
+= text_field :event, 'location', value: "#{setValue('location')}"
+%p
+.below
+  = label :event, :description, 'Description'
+= text_area :event, 'description', value: "#{setValue('description')}"
+%p
+  .datepair
+    = label :event, :start_date, 'From'
+    = text_field :event, 'start_date', class: "date start", value: ', class: "time end", value: "#{setDate('start_at')}"
+    = text_field :event, 'start_time', class: "time start", value: ', class: "time end", value: "#{setTime('start_at')}"
+    = label :event, :end_date, '- To'
+    = text_field :event, 'end_date', class: "date end", value: ', class: "time end", value: "#{setDate('end_at')}"
+    = text_field :event, 'end_time', class: "time end", value: "#{setTime('end_at')}" 
+%p
+  .below 
+    = label :event, :color, 'Event Color'
+    - [ 'red', 'green', 'orange', 'blue' ].each do |color|
+      %div{:id => color, :class => "color"} 
+        = color 
+        = radio_button :event, :color, @color = color
+

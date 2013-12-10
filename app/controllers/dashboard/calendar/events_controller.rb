@@ -5,7 +5,6 @@ class Dashboard::Calendar::EventsController < ApplicationController
   end
 
   def new
-    self.fillFields
   end
 
   def show
@@ -16,16 +15,24 @@ class Dashboard::Calendar::EventsController < ApplicationController
   end
 
   def create
+    self.setNewPaths
     self.updateSessionParams
-    eventhash = self.setUpEventHash
-    self.validate(eventhash)
+    @eventhash = self.setUpEventHash
+    if(self.validate)
+      self.createEvent
+    end
   end
 
   def update
     @event = Event.find params[:id]
-    @event.update_attributes!(params[:event])
-    flash[:notice] = "#{@event.name} was successfully updated."
-    redirect_to dashboard_calendar_event_path(@event)
+    self.setEditPaths
+    self.updateSessionParams
+    @eventhash = self.setUpEventHash
+    if(self.validate)
+      @event.update_attributes!(@eventhash)
+      flash[:notice] = "#{@event.name} was successfully updated."
+      redirect_to dashboard_calendar_event_path(@event)
+    end  
   end
 
   def destroy
