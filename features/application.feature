@@ -5,7 +5,7 @@ Feature: Application Form
 
 Scenario: Successful client application
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated client candidate
   Given I am on the dashboard page
   Then I should see "Apply"
   When I follow "Apply"
@@ -21,7 +21,7 @@ Scenario: Successful client application
 
 Scenario: Unsuccessful client application
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated client candidate
   Given I am on the dashboard page
   Then I should see "Apply"
   When I follow "Apply"
@@ -49,7 +49,7 @@ Scenario: Unsuccessful client application
   
 Scenario: Successful volunteer application
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated volunteer candidate
   Given I am on the dashboard page
   Then I should see "Apply"
   When I follow "Apply"
@@ -65,7 +65,7 @@ Scenario: Successful volunteer application
   
 Scenario: Unsuccessful volunteer application 
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated volunteer candidate
   Given I am on the dashboard page
   Then I should see "Apply"
   When I follow "Apply"

@@ -1,4 +1,4 @@
-Features:
+Feature:
 
 As an Admin
 I want to create events that everyone sees

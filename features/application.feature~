@@ -21,10 +21,10 @@ Scenario: Successful client application
 
 Scenario: Unsuccessful client application
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated client candidate
   Given I am on the dashboard page
-  Then I should see "Apply as a client"
-  When I follow "Apply as Client"
+  Then I should see "Apply"
+  When I follow "Apply"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -35,7 +35,7 @@ Scenario: Unsuccessful client application
   And I should be on the dashboard page
   Then I should see "A new Client Application has been submitted"
 
-  When I follow "Apply as Client"
+  When I follow "Apply"
   And I fill in the following:
     | First Name          | success@gmail.com  |
     | Last Name           | successpwd         |
@@ -49,10 +49,10 @@ Scenario: Unsuccessful client application
   
 Scenario: Successful volunteer application
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated volunteer candidate
   Given I am on the dashboard page
-  Then I should see "Apply as a volunteer"
-  When I follow "Apply as Volunteer"
+  Then I should see "Apply"
+  When I follow "Apply"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -65,10 +65,10 @@ Scenario: Successful volunteer application
   
 Scenario: Unsuccessful volunteer application 
 
-  Given I am a new, authenticated user
+  Given I am a new, authenticated volunteer candidate
   Given I am on the dashboard page
-  Then I should see "Apply as a volunteer"
-  When I follow "Apply as Volunteer"
+  Then I should see "Apply"
+  When I follow "Apply"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
@@ -79,7 +79,7 @@ Scenario: Unsuccessful volunteer application
   And I should be on the dashboard page
   Then I should see "A new Volunteer Application has been submitted"
 
-  When I follow "Apply as Volunteer"
+  When I follow "Apply"
 
   And I fill in the following:
     | First Name          | success@gmail.com  |
