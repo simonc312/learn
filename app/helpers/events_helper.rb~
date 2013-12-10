@@ -12,11 +12,11 @@ module EventsHelper
  end
 
  def displayEventTime(eventTime)
-  eventTime || (eventTime == "") ? eventTime.strftime('%l:%M %P') : 'hh/mm am'
+  ((eventTime != "") || (eventTime != nil)) ? eventTime.strftime('%l:%M %P') : 'hh/mm am'
  end
 
  def displayEventDate(eventDate)
-  eventDate || (eventDate == "") ? eventDate.strftime('%m/%d/%Y') : 'mm/dd/yyyy'
+  ((eventDate != "") || (eventDate != nil)) ? eventDate.strftime('%m/%d/%Y') : 'mm/dd/yyyy'
  end
 
  def prettifyEventDate(eventTime)
@@ -42,7 +42,8 @@ module EventsHelper
  end
 
  def setDate(field)
-    value = displayEventDate checkEvent(field) 
-    value ||= checkSession(field.gsub("at","date"))   
+    value = checkSession(field.gsub("at","date"))   
+    value ||= displayEventDate checkEvent(field) 
+    
  end
 end

@@ -12,11 +12,11 @@ module EventsHelper
  end
 
  def displayEventTime(eventTime)
-  eventTime || (eventTime == "") ? eventTime.strftime('%l:%M %P') : 'hh/mm am'
+  ((eventTime != "") && (eventTime != nil)) ? eventTime.strftime('%l:%M %P') : 'hh/mm am'
  end
 
  def displayEventDate(eventDate)
-  eventDate || (eventDate == "") ? eventDate.strftime('%m/%d/%Y') : 'mm/dd/yyyy'
+  ((eventDate != "") && (eventDate != nil)) ? eventDate.strftime('%m/%d/%Y') : 'mm/dd/yyyy'
  end
 
  def prettifyEventDate(eventTime)
