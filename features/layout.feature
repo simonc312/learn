@@ -8,8 +8,8 @@ Scenario: Bad URL
 	When I visit a non-existent url
 	Then I should see "The page you were looking for doesn't exist."
 
-Scenario: Login fields visible on the home page
-	Given I am on the home page
+Scenario: Login fields visible on the signup page 
+	Given I am on the signup page
 	Given I am not authenticated
 	Then I should see "Email"
 	And I should see "Password"
@@ -24,13 +24,12 @@ Scenario: About Us tab
 Scenario: Donate tab
 	Given I am on the home page
 	When I follow "Donate"
-	Then I should see "Info about donating to The Learning Shelter"
+	Then I should see "Why Learning Shelter?"
 	And I should not see "Not Found"
 
 Scenario: Events tab
 	Given I am on the home page
 	When I follow "Events"
 	Then I should see "Upcoming Events"
-	Then I should see "Calendar"
 	And I should not see "Not Found"
 
