@@ -10,7 +10,7 @@
 <% elsif current_user.status == "volunteer_candidate" %>
   <%= render partial: "prospective_volmessage" %>
 <% else %>
-  <h3>You are not a client or a volunteer. Your status is:<%= current_user.status %></h3>
+  <h2>You are not a client or a volunteer. Your status is: <%= current_user.status %></h2>
 <% end %>
 
 </div>
