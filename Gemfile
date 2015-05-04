@@ -7,9 +7,6 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do 
   gem 'sqlite3'
-#  gem 'launchy'
-#  gem 'simplecov'
-#  gem 'rspec-rails'
   gem 'jasmine'
   gem 'bullet'
   gem 'capybara'
@@ -29,13 +26,8 @@ gem 'thin'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-#  gem 'cucumber-rails', :require =>false
-#  gem 'database_cleaner' 
+  gem 'coffee-rails', '~> 3.2.1' 
   gem 'uglifier', '>= 1.0.3'
-#  gem 'haml-rails', "~>0.4"
 end
 gem 'haml'
 gem 'jquery-rails'
@@ -48,16 +40,7 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'email_spec'
 end
-#gem 'factory_girl'
-#gem 'launchy'
-#gem 'simplecov'
-#gem 'rspec-rails'
-#gem 'rails_12factor'
-#gem 'capybara'
-#group :test do
-#  gem 'cucumber-rails', :require => false
-#  gem 'cucumber-rails-training-wheels'
-#end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
