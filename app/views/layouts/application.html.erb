@@ -10,7 +10,7 @@
 <body onload="init()">
 
   <header>
-	  <h1><div id='headertitle'>The Learning Shelter</div></h1>
+	  <%= image_tag "logo.png" %>
     <div id='signinstatus'>
       <% if user_signed_in? %>
         Signed in as <%= current_user.email %>. Not You?

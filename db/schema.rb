@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20131209221500) do
     t.text     "street_address"
     t.string   "phone"
     t.string   "type"
-    t.string   "user_id"
+    t.integer  "user_id"
     t.text     "resume"
     t.text     "cover_letter"
     t.datetime "created_at",                        :null => false
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20131209221500) do
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
     t.boolean  "admin",                  :default => false
-    t.string   "status"
+    t.string   "status",                 :default => ""
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
