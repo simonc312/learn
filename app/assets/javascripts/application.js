@@ -12,10 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
 //= require jquery.timepicker.js
 //= require datepair.js
-//= require jquery.flexslider
-//= require imageslideshow.js
 //= require script.js
+//= require skrollr.min.js
 //= require_tree .

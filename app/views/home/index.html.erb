@@ -1,18 +1,18 @@
 
-  <div class="tabContent" id="home">
-    <!-- slideshow stuff -->
-    <div class ="flex-container">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <%= image_tag "section-1.jpg" %>
-	          <p class="flex-caption"></p>
-          </li>
-        </ul>
+  <div class="sections" id="home">
+    <!-- sections -->
+    <section id="slide-1" class="homeSlide" data-start="background-position:50% 0px", 
+          data-70-top-bottom="background-position:50% -80px">
+      <div class="background">
+        <div class="container">
+          <div class="foreground-content jumbotron info-panel" 
+          data-os-animation="none" data-os-animation-delay="0s" data-60-top-bottom="opacity:0" 
+          data-start="opacity:1" data-center="opacity:1">  
+            <%= image_tag "logo_large.png", :class => "center-block center-offset" %>
+          </div>
+        </div>
       </div>
-    </div>
-    <a class="twitter-timeline"  href="https://twitter.com/Simonchen312"  data-widget-id="404838744454221824">Tweets by @Simonchen312</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </section>
 
   </div>
 
